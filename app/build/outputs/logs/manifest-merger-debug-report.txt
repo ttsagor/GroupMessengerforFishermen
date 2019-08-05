@@ -1,18 +1,39 @@
 -- Merging decision tree log ---
 manifest
 ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:2:1-111:12
+MERGED from [com.android.support:design:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\design-23.2.1.aar\4b8b16cfe1c1238df7f827fd7b9a1505\AndroidManifest.xml:17:1-24:12
+MERGED from [org.florescu.android.rangeseekbar:rangeseekbar-library:0.3.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\rangeseekbar-library-0.3.0.aar\d27bdc57bd090cf0cabab9742920cf04\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.2.1.aar\356c8452e0fc4ef5ad8a48c28bf9a812\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\play-services-appindexing-8.4.0.aar\50b3244cdaff72c6e5aa8e7def830af5\AndroidManifest.xml:16:1-20:12
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\5bccfb517aaff7d387c5f1e4990f2f0b\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.angads25:filepicker:1.1.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\filepicker-1.1.1.aar\f8b9f3c266e136e22d660cf9fe3fb935\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\121a9cfadb5f8fdb725de15cc4c73732\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-23.2.1.aar\e594539b301a0ae01cf8f4d56282cb9d\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-23.2.1.aar\2cb0fc17894bba23bc1efccd296659e0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:recyclerview-v7:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-23.2.1.aar\39a19320af2329313fbd2b320cd7e51e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\play-services-base-8.4.0.aar\2b3572c6590d9e93264f36141b5411e6\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\play-services-basement-8.4.0.aar\227cb9b496b89135b84309359647ca20\AndroidManifest.xml:16:1-26:12
+MERGED from [com.android.support:support-v4:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\support-v4-23.2.1.aar\aa606e0cc73272d7ff4da92b6fb8f63d\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:2:1-111:12
 	package
 		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:3:5-63
 		INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:2:1-111:12
+		INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:2:1-111:12
 		INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:2:11-69
-	android:versionCode
-		INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.READ_CALENDAR
 ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:5:5-72
 	android:name
@@ -71,22 +92,30 @@ ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\Androi
 		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:18:22-73
 application
 ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:20:5-109:19
-MERGED from [com.android.support:design:23.2.1] C:\Users\Sagor\.android\build-cache\d0eba566880e9464da2b70763bee47567d205907\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Sagor\.android\build-cache\dd44a416327c9260b03c0977fa442e4c780db788\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Sagor\.android\build-cache\4535af50972d86337d569664f737ffb939354e2b\output\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Sagor\.android\build-cache\57b2bb4385073a569ad65c485ec1a9f6b724350b\output\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Sagor\.android\build-cache\1e82160f15bb8c08e3a8db75234988e790d8a3d1\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Sagor\.android\build-cache\122921202969e25a178a9914e48225fd19164041\output\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.2.1] C:\Users\Sagor\.android\build-cache\a073bca1842846dac7cef94fee66a1fd79507f0e\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\Sagor\.android\build-cache\bbd6031ecd7fb8d0ba38d82407b8285408dd5aa7\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\design-23.2.1.aar\4b8b16cfe1c1238df7f827fd7b9a1505\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\design-23.2.1.aar\4b8b16cfe1c1238df7f827fd7b9a1505\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.2.1.aar\356c8452e0fc4ef5ad8a48c28bf9a812\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.2.1.aar\356c8452e0fc4ef5ad8a48c28bf9a812\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\play-services-appindexing-8.4.0.aar\50b3244cdaff72c6e5aa8e7def830af5\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\play-services-appindexing-8.4.0.aar\50b3244cdaff72c6e5aa8e7def830af5\AndroidManifest.xml:19:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\5bccfb517aaff7d387c5f1e4990f2f0b\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\5bccfb517aaff7d387c5f1e4990f2f0b\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-23.2.1.aar\e594539b301a0ae01cf8f4d56282cb9d\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-23.2.1.aar\e594539b301a0ae01cf8f4d56282cb9d\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-23.2.1.aar\2cb0fc17894bba23bc1efccd296659e0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-23.2.1.aar\2cb0fc17894bba23bc1efccd296659e0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\play-services-basement-8.4.0.aar\227cb9b496b89135b84309359647ca20\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\play-services-basement-8.4.0.aar\227cb9b496b89135b84309359647ca20\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\support-v4-23.2.1.aar\aa606e0cc73272d7ff4da92b6fb8f63d\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\support-v4-23.2.1.aar\aa606e0cc73272d7ff4da92b6fb8f63d\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:23:9-41
-	android:allowBackup
-		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:21:9-35
-	android:icon
-		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:22:9-38
 	android:largeHeap
 		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:24:9-33
+	android:icon
+		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:22:9-38
+	android:allowBackup
+		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:21:9-35
 	android:theme
 		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:25:9-40
 activity#bd.dof.groupmessenger.groupmessengerforfishermen.MainActivity
@@ -219,7 +248,7 @@ activity#bd.dof.groupmessenger.groupmessengerforfishermen.PhoneNumberValidation
 ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:87:9-93:20
 	android:name
 		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:87:19-56
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:88:13-92:29
 action#android.intent.action.MAIN
 ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:89:17-69
@@ -239,7 +268,8 @@ ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\Androi
 		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:95:19-49
 meta-data#com.google.android.gms.version
 ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:100:9-102:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Sagor\.android\build-cache\122921202969e25a178a9914e48225fd19164041\output\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\play-services-basement-8.4.0.aar\227cb9b496b89135b84309359647ca20\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\play-services-basement-8.4.0.aar\227cb9b496b89135b84309359647ca20\AndroidManifest.xml:21:9-23:69
 	android:value
 		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:102:13-66
 	android:name
@@ -266,28 +296,47 @@ ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\Androi
 		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:108:19-42
 uses-sdk
 INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:design:23.2.1] C:\Users\Sagor\.android\build-cache\d0eba566880e9464da2b70763bee47567d205907\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.2.1] C:\Users\Sagor\.android\build-cache\35431f36c1c7248807c242a2f2e06271439d30c4\output\AndroidManifest.xml:20:5-43
-MERGED from [org.florescu.android.rangeseekbar:rangeseekbar-library:0.3.0] C:\Users\Sagor\.android\build-cache\3477e422809fdad52294c48f926e5edf28da3b8a\output\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Sagor\.android\build-cache\dd44a416327c9260b03c0977fa442e4c780db788\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Sagor\.android\build-cache\4535af50972d86337d569664f737ffb939354e2b\output\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Sagor\.android\build-cache\57b2bb4385073a569ad65c485ec1a9f6b724350b\output\AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Sagor\.android\build-cache\1e82160f15bb8c08e3a8db75234988e790d8a3d1\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Users\Sagor\.android\build-cache\5d6c5858f2de5be0828a1ae0e8d553686a33f58c\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Sagor\.android\build-cache\122921202969e25a178a9914e48225fd19164041\output\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.2.1] C:\Users\Sagor\.android\build-cache\a073bca1842846dac7cef94fee66a1fd79507f0e\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\Sagor\.android\build-cache\bbd6031ecd7fb8d0ba38d82407b8285408dd5aa7\output\AndroidManifest.xml:7:5-43
-MERGED from [com.github.angads25:filepicker:1.1.1] C:\Users\Sagor\.android\build-cache\3a95d9b1ddddfec8074102e63de5f75ce8e3f3c6\output\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:multidex:1.0.1] C:\Users\Sagor\.android\build-cache\4c720b915c4e19dfc16e0c5b1ace8726111aa1e8\output\AndroidManifest.xml:18:5-42
+INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\design-23.2.1.aar\4b8b16cfe1c1238df7f827fd7b9a1505\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\design-23.2.1.aar\4b8b16cfe1c1238df7f827fd7b9a1505\AndroidManifest.xml:20:5-43
+MERGED from [org.florescu.android.rangeseekbar:rangeseekbar-library:0.3.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\rangeseekbar-library-0.3.0.aar\d27bdc57bd090cf0cabab9742920cf04\AndroidManifest.xml:7:5-9:41
+MERGED from [org.florescu.android.rangeseekbar:rangeseekbar-library:0.3.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\rangeseekbar-library-0.3.0.aar\d27bdc57bd090cf0cabab9742920cf04\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.2.1.aar\356c8452e0fc4ef5ad8a48c28bf9a812\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.2.1.aar\356c8452e0fc4ef5ad8a48c28bf9a812\AndroidManifest.xml:21:5-23:78
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\play-services-appindexing-8.4.0.aar\50b3244cdaff72c6e5aa8e7def830af5\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\play-services-appindexing-8.4.0.aar\50b3244cdaff72c6e5aa8e7def830af5\AndroidManifest.xml:18:5-42
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\5bccfb517aaff7d387c5f1e4990f2f0b\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\5bccfb517aaff7d387c5f1e4990f2f0b\AndroidManifest.xml:7:5-43
+MERGED from [com.github.angads25:filepicker:1.1.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\filepicker-1.1.1.aar\f8b9f3c266e136e22d660cf9fe3fb935\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.angads25:filepicker:1.1.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\filepicker-1.1.1.aar\f8b9f3c266e136e22d660cf9fe3fb935\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\121a9cfadb5f8fdb725de15cc4c73732\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\121a9cfadb5f8fdb725de15cc4c73732\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-23.2.1.aar\e594539b301a0ae01cf8f4d56282cb9d\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-23.2.1.aar\e594539b301a0ae01cf8f4d56282cb9d\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-23.2.1.aar\2cb0fc17894bba23bc1efccd296659e0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-23.2.1.aar\2cb0fc17894bba23bc1efccd296659e0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:recyclerview-v7:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-23.2.1.aar\39a19320af2329313fbd2b320cd7e51e\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-23.2.1.aar\39a19320af2329313fbd2b320cd7e51e\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\play-services-base-8.4.0.aar\2b3572c6590d9e93264f36141b5411e6\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\play-services-base-8.4.0.aar\2b3572c6590d9e93264f36141b5411e6\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\play-services-basement-8.4.0.aar\227cb9b496b89135b84309359647ca20\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\play-services-basement-8.4.0.aar\227cb9b496b89135b84309359647ca20\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\support-v4-23.2.1.aar\aa606e0cc73272d7ff4da92b6fb8f63d\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\support-v4-23.2.1.aar\aa606e0cc73272d7ff4da92b6fb8f63d\AndroidManifest.xml:20:5-43
+INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Sagor\.android\build-cache\dd44a416327c9260b03c0977fa442e4c780db788\output\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.2.1.aar\356c8452e0fc4ef5ad8a48c28bf9a812\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from [com.github.angads25:filepicker:1.1.1] C:\Users\Sagor\.android\build-cache\3a95d9b1ddddfec8074102e63de5f75ce8e3f3c6\output\AndroidManifest.xml:11:5-80
+ADDED from [com.github.angads25:filepicker:1.1.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\filepicker-1.1.1.aar\f8b9f3c266e136e22d660cf9fe3fb935\AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from [com.github.angads25:filepicker:1.1.1] C:\Users\Sagor\.android\build-cache\3a95d9b1ddddfec8074102e63de5f75ce8e3f3c6\output\AndroidManifest.xml:11:22-77
+		ADDED from [com.github.angads25:filepicker:1.1.1] C:\Users\Sagor\.gradle\caches\transforms-1\files-1.1\filepicker-1.1.1.aar\f8b9f3c266e136e22d660cf9fe3fb935\AndroidManifest.xml:11:22-77
