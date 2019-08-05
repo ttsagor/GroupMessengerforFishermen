@@ -4,24 +4,32 @@
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\prpnticon.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_light.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\c3a68de657ffcbffa4714ca7fab3602de49a7320\\output\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\5d6c5858f2de5be0828a1ae0e8d553686a33f58c\\output\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\save_template.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\save_template.png"
     },
     {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alarm.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\alarm.png"
+    },
+    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\c3a68de657ffcbffa4714ca7fab3602de49a7320\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\5d6c5858f2de5be0828a1ae0e8d553686a33f58c\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease11.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease11.png"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background_border_fill.xml",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\background_border_fill.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\5d6c5858f2de5be0828a1ae0e8d553686a33f58c\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease2.png",
@@ -36,28 +44,20 @@
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\background_border.xml"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease1.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease1.png"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pp.jpg",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\pp.jpg"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_sign.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\right_sign.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\button.png"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease10.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease10.png"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\editicon.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\editicon.png"
     },
     {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease10.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease10.png"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pp.jpg",
@@ -65,63 +65,39 @@
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_light.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\c3a68de657ffcbffa4714ca7fab3602de49a7320\\output\\res\\drawable\\common_plus_signin_btn_text_light.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\5d6c5858f2de5be0828a1ae0e8d553686a33f58c\\output\\res\\drawable\\common_plus_signin_btn_text_light.xml"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\noimage.jpg",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\noimage.jpg"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease1.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease1.png"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\temp_send.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\temp_send.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\87ca42afe6ce10e1a8090d7381f9fcad6a760210\\output\\res\\drawable\\design_fab_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease3.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease3.png"
-    },
-    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\c3a68de657ffcbffa4714ca7fab3602de49a7320\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\5d6c5858f2de5be0828a1ae0e8d553686a33f58c\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\top_banner3.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\top_banner3.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_light.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\ccef19e15f3858b2eaff1e8b1caf0d8242da00c2\\output\\res\\drawable\\common_plus_signin_btn_text_light.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease12.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease12.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\phone_call.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\phone_call.png"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease14.jpg",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease14.jpg"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\659e41d6e7276d0829c220c9a1725c39b96d4c4f\\output\\res\\drawable\\design_fab_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_btn_radio_material.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\d0eba566880e9464da2b70763bee47567d205907\\output\\res\\drawable\\design_fab_background.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lower.png",
@@ -132,464 +108,80 @@
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\right_sign.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alarm.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\alarm.png"
-    },
-    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\c3a68de657ffcbffa4714ca7fab3602de49a7320\\output\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\5d6c5858f2de5be0828a1ae0e8d553686a33f58c\\output\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease14.jpg",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease14.jpg"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\5d6c5858f2de5be0828a1ae0e8d553686a33f58c\\output\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\ccef19e15f3858b2eaff1e8b1caf0d8242da00c2\\output\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\top_banner.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\top_banner.png"
     },
     {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dof.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\dof.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease4.jpg",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease4.jpg"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\settingicon.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\settingicon.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\reminder.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\reminder.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_seekbar_track_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rdolist.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\rdolist.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo1.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\logo1.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\ccef19e15f3858b2eaff1e8b1caf0d8242da00c2\\output\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\button.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shareicon.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\shareicon.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\search.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\historyicon.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\historyicon.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smstemplet.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\smstemplet.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\textbar.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\textbar.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\saveicon.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\saveicon.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\ccef19e15f3858b2eaff1e8b1caf0d8242da00c2\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\inovation_top1.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\inovation_top1.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\c3a68de657ffcbffa4714ca7fab3602de49a7320\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\reza.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\reza.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\search.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\inventor.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\inventor.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smsicon.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\smsicon.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease9.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease9.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\edit.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\edit.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\remind.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\remind.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\temp_send.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\temp_send.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\farming.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\farming.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\inovation_top4.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\inovation_top4.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_cab_background_top_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\addicon.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\addicon.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\text_bar.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\text_bar.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_light.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\ccef19e15f3858b2eaff1e8b1caf0d8242da00c2\\output\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dof.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\dof.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\inovation_top3.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\inovation_top3.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user_sms.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\user_sms.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\settingicon.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\settingicon.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\top_banner1.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\top_banner1.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\reza.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\reza.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back.xml",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\back.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_seekbar_track_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\listbaruser.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\listbaruser.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bottom_shadow.9.png",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\e53c87b7059eca3750187a3cb8c1c98f6176e5c3\\output\\res\\drawable\\bottom_shadow.9.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_bg.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\main_bg.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\icon.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user_add.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\user_add.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\farming_bar.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\farming_bar.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease6.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease6.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_dialog_material_background_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bistarito.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\bistarito.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\inovation_top.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\inovation_top.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rdolist.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\rdolist.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alarm.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\alarm.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\ccef19e15f3858b2eaff1e8b1caf0d8242da00c2\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease11.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease11.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\c3a68de657ffcbffa4714ca7fab3602de49a7320\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background_border_fill.xml",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\background_border_fill.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\editicon.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\editicon.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\inovation_top1.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\inovation_top1.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background_border.xml",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\background_border.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease12.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease12.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\farming.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\farming.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease1.png",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease1.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\save.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\save.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_item_background_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\prpnticon.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\prpnticon.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease14.jpg",
-        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease14.jpg"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\send.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\send.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lower.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\lower.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease5.jpg",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease5.jpg"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\remind.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\remind.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\c3a68de657ffcbffa4714ca7fab3602de49a7320\\output\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\inovation_top3.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\inovation_top3.png"
-    },
-    {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_item_background_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease10.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease10.png"
-    },
-    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_dialog_material_background_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\templet_bar.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\templet_bar.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease4.jpg",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease4.jpg"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease.png"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\reminder.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\reminder.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user_sms.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\user_sms.png"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shareicon.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\shareicon.png"
     },
     {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\listbaruser.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\listbaruser.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\template_add.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\template_add.png"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sms.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\sms.png"
     },
     {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rdolist.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\rdolist.png"
+    },
+    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\farming_bar.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\farming_bar.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_cab_background_top_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\inovation_top4.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\inovation_top4.png"
+    },
+    {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo1.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\logo1.png"
+    },
+    {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\button.png"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\template_add.png",
@@ -600,36 +192,36 @@
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\smsbg.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\saveicon.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\saveicon.png"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\search.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\search.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease2.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease2.png"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\historyicon.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\historyicon.png"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\textbar.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\textbar.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\icon.png"
-    },
-    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bottom_shadow.9.png",
         "source": "C:\\Users\\Sagor\\.android\\build-cache\\3a95d9b1ddddfec8074102e63de5f75ce8e3f3c6\\output\\res\\drawable\\bottom_shadow.9.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease8.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease8.png"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smstemplet.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\smstemplet.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user_add.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\user_add.png"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\saveicon.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\saveicon.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\inovation_top1.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\inovation_top1.png"
+    },
+    {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\5d6c5858f2de5be0828a1ae0e8d553686a33f58c\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\save.png",
@@ -637,43 +229,31 @@
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_edit_text_material.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\659e41d6e7276d0829c220c9a1725c39b96d4c4f\\output\\res\\drawable\\design_snackbar_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\inventor.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\inventor.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_edit_text_material.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\d0eba566880e9464da2b70763bee47567d205907\\output\\res\\drawable\\design_snackbar_background.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\top_banner1.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\top_banner1.png"
     },
     {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\reza.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\reza.png"
+    },
+    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\templeteicon.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\templeteicon.png"
     },
     {
-        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\top_banner.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\top_banner.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\templet_bar.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\templet_bar.png"
-    },
-    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back.xml",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\back.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease8.png",
@@ -681,39 +261,47 @@
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\inventor.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\inventor.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\save_template.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\save_template.png"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smsicon.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\smsicon.png"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\remind.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\remind.png"
+    },
+    {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\top_banner3.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\top_banner3.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\ccef19e15f3858b2eaff1e8b1caf0d8242da00c2\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease6.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease6.png"
-    },
-    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\noimage.jpg",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\noimage.jpg"
     },
     {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\farming.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\farming.png"
+    },
+    {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\phone_call.png",
@@ -725,67 +313,55 @@
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dof.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\dof.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bistarito.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\bistarito.png"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\inovation_top3.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\inovation_top3.png"
+    },
+    {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user_sms.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\user_sms.png"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\send.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\send.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\ccef19e15f3858b2eaff1e8b1caf0d8242da00c2\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_btn_colored_material.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sms.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\sms.png"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\settingicon.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\settingicon.png"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\text_bar.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\text_bar.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smsicon.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\smsicon.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\87ca42afe6ce10e1a8090d7381f9fcad6a760210\\output\\res\\drawable\\design_snackbar_background.xml"
-    },
-    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo1.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\logo1.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\historyicon.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\historyicon.png"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\inovation_top.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\inovation_top.png"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\addicon.png",
@@ -796,39 +372,47 @@
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease5.jpg"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease11.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease11.png"
-    },
-    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease9.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease9.png"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\templeteicon.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\templeteicon.png"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smsbg.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\smsbg.png"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user_add.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\user_add.png"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease3.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease3.png"
     },
     {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smstemplet.png",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\smstemplet.png"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\dd44a416327c9260b03c0977fa442e4c780db788\\output\\res\\drawable\\abc_dialog_material_background_light.xml"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\2d2b080f63b81647bda657d6e9ba76790d30f3da\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\disease6.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\disease6.png"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_bg.png",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\main_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bistarito.png",
+        "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\drawable\\bistarito.png"
     }
 ]

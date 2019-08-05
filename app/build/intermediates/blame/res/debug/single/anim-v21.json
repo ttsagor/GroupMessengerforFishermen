@@ -1,18 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\87ca42afe6ce10e1a8090d7381f9fcad6a760210\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
-    },
-    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\659e41d6e7276d0829c220c9a1725c39b96d4c4f\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\d0eba566880e9464da2b70763bee47567d205907\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
-        "source": "C:\\Users\\Sagor\\.android\\build-cache\\659e41d6e7276d0829c220c9a1725c39b96d4c4f\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
-        "source": "C:\\Users\\sagor\\.android\\build-cache\\87ca42afe6ce10e1a8090d7381f9fcad6a760210\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+        "source": "C:\\Users\\Sagor\\.android\\build-cache\\d0eba566880e9464da2b70763bee47567d205907\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     }
 ]

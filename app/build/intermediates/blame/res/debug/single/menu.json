@@ -1,23 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_inventor_information.xml",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\menu\\menu_inventor_information.xml"
-    },
-    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_group_sms_farming_category.xml",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\menu\\menu_group_sms_farming_category.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_add_update_user.xml",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\menu\\menu_add_update_user.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_add_update_user.xml",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\menu\\menu_add_update_user.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_group_sms_farming_category.xml",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\menu\\menu_group_sms_farming_category.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_group_sms_template_selection.xml",
@@ -32,36 +20,12 @@
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\menu\\menu_group_sms_new_message.xml"
     },
     {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_group_sms_template_selection.xml",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\menu\\menu_group_sms_template_selection.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_group_sms_new_message.xml",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\menu\\menu_group_sms_new_message.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_add_farmer_personal_information.xml",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\menu\\menu_add_farmer_personal_information.xml"
-    },
-    {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\menu\\menu_main.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_add_template.xml",
         "source": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\menu\\menu_add_template.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_add_template.xml",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\menu\\menu_add_template.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_group_sms_area_selection.xml",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\menu\\menu_group_sms_area_selection.xml"
-    },
-    {
-        "merged": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
-        "source": "C:\\Users\\sagor\\Desktop\\GroupMessengerforFishermen\\app\\src\\main\\res\\menu\\menu_main.xml"
     },
     {
         "merged": "C:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_inventor_information.xml",

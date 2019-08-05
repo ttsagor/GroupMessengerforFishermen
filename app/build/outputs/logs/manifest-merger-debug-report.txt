@@ -71,13 +71,13 @@ ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\Androi
 		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:18:22-73
 application
 ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:20:5-109:19
-MERGED from [com.android.support:design:23.2.1] C:\Users\Sagor\.android\build-cache\659e41d6e7276d0829c220c9a1725c39b96d4c4f\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Sagor\.android\build-cache\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Sagor\.android\build-cache\217e898277c2fdeebe6cef5358d24ba4ac18188b\output\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Sagor\.android\build-cache\54f810f2764327b442f9e2e6eb51e1ec82c58481\output\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Sagor\.android\build-cache\e48935e50f434352f3e62a6ed8450aca60159de4\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Sagor\.android\build-cache\eb0a75fe211683507088fcfded11c980bd38b2a7\output\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.2.1] C:\Users\Sagor\.android\build-cache\139dc9ac4d6bb314bfd3d93a8535196262038f31\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.2.1] C:\Users\Sagor\.android\build-cache\d0eba566880e9464da2b70763bee47567d205907\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Sagor\.android\build-cache\dd44a416327c9260b03c0977fa442e4c780db788\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Sagor\.android\build-cache\4535af50972d86337d569664f737ffb939354e2b\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Sagor\.android\build-cache\57b2bb4385073a569ad65c485ec1a9f6b724350b\output\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Sagor\.android\build-cache\1e82160f15bb8c08e3a8db75234988e790d8a3d1\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Sagor\.android\build-cache\122921202969e25a178a9914e48225fd19164041\output\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.2.1] C:\Users\Sagor\.android\build-cache\a073bca1842846dac7cef94fee66a1fd79507f0e\output\AndroidManifest.xml:22:5-20
 MERGED from [com.android.volley:volley:1.0.0] C:\Users\Sagor\.android\build-cache\bbd6031ecd7fb8d0ba38d82407b8285408dd5aa7\output\AndroidManifest.xml:9:5-20
 	android:label
 		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:23:9-41
@@ -239,7 +239,7 @@ ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\Androi
 		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:95:19-49
 meta-data#com.google.android.gms.version
 ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:100:9-102:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Sagor\.android\build-cache\eb0a75fe211683507088fcfded11c980bd38b2a7\output\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Sagor\.android\build-cache\122921202969e25a178a9914e48225fd19164041\output\AndroidManifest.xml:21:9-23:69
 	android:value
 		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:102:13-66
 	android:name
@@ -266,21 +266,21 @@ ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\Androi
 		ADDED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:108:19-42
 uses-sdk
 INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:multidex:1.0.1] C:\Users\Sagor\.android\build-cache\6478f6837fdb7d89c12b6673698772ee2d8fa9e6\output\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:design:23.2.1] C:\Users\Sagor\.android\build-cache\659e41d6e7276d0829c220c9a1725c39b96d4c4f\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.2.1] C:\Users\Sagor\.android\build-cache\bcc6c8776901b3c64850041ef8d9f3d6dfde4c2a\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.2.1] C:\Users\Sagor\.android\build-cache\d0eba566880e9464da2b70763bee47567d205907\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.2.1] C:\Users\Sagor\.android\build-cache\35431f36c1c7248807c242a2f2e06271439d30c4\output\AndroidManifest.xml:20:5-43
 MERGED from [org.florescu.android.rangeseekbar:rangeseekbar-library:0.3.0] C:\Users\Sagor\.android\build-cache\3477e422809fdad52294c48f926e5edf28da3b8a\output\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Sagor\.android\build-cache\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Sagor\.android\build-cache\217e898277c2fdeebe6cef5358d24ba4ac18188b\output\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Sagor\.android\build-cache\54f810f2764327b442f9e2e6eb51e1ec82c58481\output\AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Sagor\.android\build-cache\e48935e50f434352f3e62a6ed8450aca60159de4\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Users\Sagor\.android\build-cache\c3a68de657ffcbffa4714ca7fab3602de49a7320\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Sagor\.android\build-cache\eb0a75fe211683507088fcfded11c980bd38b2a7\output\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.2.1] C:\Users\Sagor\.android\build-cache\139dc9ac4d6bb314bfd3d93a8535196262038f31\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Sagor\.android\build-cache\dd44a416327c9260b03c0977fa442e4c780db788\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Sagor\.android\build-cache\4535af50972d86337d569664f737ffb939354e2b\output\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Sagor\.android\build-cache\57b2bb4385073a569ad65c485ec1a9f6b724350b\output\AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Sagor\.android\build-cache\1e82160f15bb8c08e3a8db75234988e790d8a3d1\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Users\Sagor\.android\build-cache\5d6c5858f2de5be0828a1ae0e8d553686a33f58c\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Sagor\.android\build-cache\122921202969e25a178a9914e48225fd19164041\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.2.1] C:\Users\Sagor\.android\build-cache\a073bca1842846dac7cef94fee66a1fd79507f0e\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.volley:volley:1.0.0] C:\Users\Sagor\.android\build-cache\bbd6031ecd7fb8d0ba38d82407b8285408dd5aa7\output\AndroidManifest.xml:7:5-43
 MERGED from [com.github.angads25:filepicker:1.1.1] C:\Users\Sagor\.android\build-cache\3a95d9b1ddddfec8074102e63de5f75ce8e3f3c6\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\Sagor\.android\build-cache\4c720b915c4e19dfc16e0c5b1ace8726111aa1e8\output\AndroidManifest.xml:18:5-42
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Sagor\.android\build-cache\80d41bcf7d04a832943087f8b4bfdeb04e9eab49\output\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Sagor\.android\build-cache\dd44a416327c9260b03c0977fa442e4c780db788\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
