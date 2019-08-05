@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 3.3.1">
+
+    <issue
+        id="NamespaceTypo"
+        severity="Fatal"
+        message="Suspicious namespace and prefix combination"
+        category="Correctness"
+        priority="8"
+        summary="Misspelled namespace declaration"
+        explanation="Accidental misspellings in namespace declarations can lead to some very obscure error messages. This check looks for potential misspellings to help track these down."
+        errorLine1="    xmlns:app=&quot;http://schemas.android.com/tools&quot;"
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\GroupMessengerforFishermen\app\src\main\res\layout\activity_recpiant_limit.xml"
+            line="4"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/AddFarmerPersonalInformationName`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/AddFarmerPersonalInformationName&quot;/>"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\GroupMessengerforFishermen\app\src\main\res\layout\activity_add_farmer_personal_information.xml"
+            line="46"
+            column="17"/>
+        <location
+            file="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\GroupMessengerforFishermen\app\src\main\res\layout\activity_add_farmer_personal_information.xml"
+            line="41"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/AddFarmerPersonalInformationName`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/AddFarmerPersonalInformationName&quot;/>"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\GroupMessengerforFishermen\app\src\main\res\layout\activity_add_farmer_personal_information.xml"
+            line="51"
+            column="17"/>
+        <location
+            file="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\GroupMessengerforFishermen\app\src\main\res\layout\activity_add_farmer_personal_information.xml"
+            line="41"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/AddFarmerPersonalInformationName`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/AddFarmerPersonalInformationName&quot;/>"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\GroupMessengerforFishermen\app\src\main\res\layout\activity_add_farmer_personal_information.xml"
+            line="56"
+            column="17"/>
+        <location
+            file="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\GroupMessengerforFishermen\app\src\main\res\layout\activity_add_farmer_personal_information.xml"
+            line="41"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/AddFarmerPersonalInformationName`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/AddFarmerPersonalInformationName&quot;/>"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\GroupMessengerforFishermen\app\src\main\res\layout\activity_add_farmer_personal_information.xml"
+            line="61"
+            column="17"/>
+        <location
+            file="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\GroupMessengerforFishermen\app\src\main\res\layout\activity_add_farmer_personal_information.xml"
+            line="41"
+            column="17"/>
+    </issue>
+
+</issues>

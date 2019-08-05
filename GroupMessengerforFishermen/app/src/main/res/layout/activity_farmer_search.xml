@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bd.dof.groupmessenger.groupmessengerforfishermen.farmerSearchActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/top_banner"
+        android:id="@+id/view"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".05"
+                    android:gravity="right"
+                    android:layout_gravity="right">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".9"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="49dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/dof"
+                        android:layout_gravity="center_vertical"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="মৎস্য অধিদপ্তর"
+                            android:textColor="@android:color/white"
+                            android:gravity="center_horizontal"
+                            android:textSize="25dp"
+                            android:id="@+id/top_head_farmersearch"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="চাষি বার্তা"
+                            android:textColor="@android:color/white"
+                            android:gravity="center_horizontal"
+                            android:textSize="20dp"
+                            android:id="@+id/top_head_app_farmersearch"/>
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/logo1"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".05"
+                    android:layout_gravity="left"
+                    >
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".15"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/search"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="চাষি অনুসন্ধান"
+                android:id="@+id/smsMainFarmerSearchText"
+                android:gravity="center_vertical"
+                android:textSize="30dp"
+                android:paddingLeft="25dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".75">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".15"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <EditText
+                    android:background="@drawable/background_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="অনুসন্ধান করুন"
+                    android:layout_margin="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/searcheditbox"
+                    android:singleLine="true"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".85"
+                android:orientation="vertical">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/farmerinfolistview"
+                    android:layout_gravity="center_horizontal"
+                    android:divider="#00000000"
+                    android:dividerHeight="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

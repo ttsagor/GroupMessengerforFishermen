@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.2.1_21d1c0f20f8b6f9c4a9883dd8c182dc4ab948ae6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d6f341726538138f87adfe38637044020052b1be">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_4bbc643b7d9ee3aa4887e7dcb333fecdb642527a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.2.1_62057146aeee14d0f7e4e267cad3a7536712e523\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\exploded-aar\org.florescu.android.rangeseekbar\rangeseekbar-library\0.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b8f19036e690aaf0676a0926db48e3ebaeb12fe4">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\org.florescu.android.rangeseekbar-rangeseekbar-library-0.3.0_dade8b2ac75cd26c6639ca811f34f240f86bd637\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.2.1_2ae9ed16e7e9634e136434a84054a9ffb15218cb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\.gradle\caches\modules-2\files-2.1\com.itextpdf\itextg\5.5.10\247811bfc4d8f4e99c909236eadf4dfc6dfa1615\itextg-5.5.10.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="247811bfc4d8f4e99c909236eadf4dfc6dfa1615">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\itextg-5.5.10_64b9a50bee2f817859182663a6a181b003b23d28\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2db5d1836372b54a3baaafd9e31e0de78b4810aa">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_252604f898a64845261a58a27895f9850c078df1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.2.1_3fca2921130c32d34a5b18700e180363c1141175\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\libs\poi-ooxml-schemas-3.12-20150511-a.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7a6b3e092ba41954ccc15649f528920437217832">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\2\poi-ooxml-schemas-3.12-20150511-a_3974438f809cb7965af52d8e27c9f90dad4fe506\classes.dex" />
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\2\poi-ooxml-schemas-3.12-20150511-a_3974438f809cb7965af52d8e27c9f90dad4fe506\classes2.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.4.0_5f2649c9ddd7e9037442599c25a015c9b009a437\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.2.1_e5b5bf77e0aa9a91ce701d7030caa6826814a0bc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\exploded-aar\com.github.angads25\filepicker\1.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c7fd152c455d73dd61eed2e0c11416d004e3b203">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.angads25-filepicker-1.1.1_86ee09b12ada223eb6302a188514eb3af39cc32f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.4.0_94f5f267687ad24c175a072b75af1663d1fecc0d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_801da2d88b92c305cc84563320b7357cd7bc0ed2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-8.4.0_009aab0424f8b282e0260c3e7e3574f9df4ff1cb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.2.1_cca9de5506cbd56e878860756593b60ec4ee0388\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.2.1_07dcd0584ad3edf8aff1109939cbc944075b8bc6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\exploded-aar\com.android.volley\volley\1.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.volley-volley-1.0.0_da2421792a157e255c397761d36605113428ff38\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.2.1_c2d783be1707f30f42c3496314f81e9c25b9ff71\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\libs\poi-3.12-android-a.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ef534d94a8aaffb3e09b5602c60a2e5ac7617d0a">
+        <dex dex="C:\Users\Sagor\Desktop\GroupMessengerforFishermen\app\build\intermediates\transforms\dex\debug\folders\1000\2\poi-3.12-android-a_e58f203f484ee6ff99819ecc435f4128d5670698\classes.dex" />
+    </item>
+
+</items>
