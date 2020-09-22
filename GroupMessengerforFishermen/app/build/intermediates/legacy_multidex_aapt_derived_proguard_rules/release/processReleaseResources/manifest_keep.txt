@@ -1,2 +1,0 @@
-# Referenced at C:\Users\Sagor\Desktop\GroupMessengerforFishermen\GroupMessengerforFishermen\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:27
--keep class android.support.multidex.MultiDexApplication { <init>(); }

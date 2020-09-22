@@ -1,17 +1,18 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:recyclerview-v7:23.2.1@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.2.1.aar/39a19320af2329313fbd2b320cd7e51e/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7f0ae24836886e108299c41c42ac5d76/recyclerview-v7-23.2.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.2.1.aar/39a19320af2329313fbd2b320cd7e51e/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.2.1.aar/39a19320af2329313fbd2b320cd7e51e/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7f0ae24836886e108299c41c42ac5d76/recyclerview-v7-23.2.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7f0ae24836886e108299c41c42ac5d76/recyclerview-v7-23.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7f0ae24836886e108299c41c42ac5d76/recyclerview-v7-23.2.1/res" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/23.2.1/recyclerview-v7-23.2.1-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/recyclerview-v7/23.2.1/c92791aa490d4475543942a74e62b9ac0ebdf42c/recyclerview-v7-23.2.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/23.2.1/recyclerview-v7-23.2.1-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/recyclerview-v7/23.2.1/224c4478f52870696e23ddd3d04c07eb70c72622/recyclerview-v7-23.2.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

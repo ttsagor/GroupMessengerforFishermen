@@ -1,7 +1,0 @@
-#Mon Oct 02 03:06:43 BDT 2017
-base.0=C\:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_4bbc643b7d9ee3aa4887e7dcb333fecdb642527a
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=C\:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_252604f898a64845261a58a27895f9850c078df1\\classes.dex
-base.1=C\:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_252604f898a64845261a58a27895f9850c078df1
-file.0=C\:\\Users\\Sagor\\Desktop\\GroupMessengerforFishermen\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_4bbc643b7d9ee3aa4887e7dcb333fecdb642527a\\classes.dex
