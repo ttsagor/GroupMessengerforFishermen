@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bd.dof.groupmessenger.groupmessengerforfishermen">
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GroupSmsAreaSelection"
+            android:label="@string/title_activity_group_sms_area_selection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GroupSmsFarmingCategory"
+            android:label="@string/title_activity_group_sms_farming_category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GroupSmsTemplateSelection"
+            android:label="@string/title_activity_group_sms_template_selection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GroupSmsNewMessage"
+            android:label="@string/title_activity_group_sms_new_message"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddFarmerPersonalInformation"
+            android:label="@string/title_activity_add_farmer_personal_information"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".groupsmsfilter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GroupSmsSending"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".farmerSearchActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".AddUpdateUser"
+            android:label="@string/title_activity_add_update_user"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddTemplate"
+            android:label="@string/title_activity_add_template" />
+        <activity
+            android:name=".InventorInformation"
+            android:label="@string/title_activity_inventor_information"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".recpiant_limit"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".ForegroundService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".fishFarming" />
+        <activity android:name=".pona_mojud" />
+        <activity android:name=".khaddo_prooig" />
+        <activity android:name=".Protein_base_food" />
+        <activity
+            android:name=".AgeWiseFood"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".PhoneNumberValidation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".disease" />
+        <activity android:name=".diseaseDetails" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".ppm_formula" />
+        <activity android:name=".fertilizer_formula" />
+        <activity android:name=".KhetrofolFormula" />
+        <activity android:name=".AreaFormula" />
+        <activity android:name=".Setting"></activity>
+    </application>
+
+</manifest>

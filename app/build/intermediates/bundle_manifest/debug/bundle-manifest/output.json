@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "bd.dof.groupmessenger.groupmessengerforfishermen",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "BUNDLE_MANIFEST"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 2,
+        "versionName": "1.0",
+        "outputFile": "app-debug.apk",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "bd.dof.groupmessenger.groupmessengerforfishermen",
+        "split": "",
+        "minSdkVersion": "19"
+      }
+    }
+  ]
+}

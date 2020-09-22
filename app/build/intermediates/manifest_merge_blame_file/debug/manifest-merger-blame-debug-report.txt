@@ -1,0 +1,237 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="bd.dof.groupmessenger.groupmessengerforfishermen"
+4    android:versionCode="2"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_CALENDAR" />
+11-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:5:5-72
+11-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:5:22-69
+12    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+12-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:6:5-73
+12-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:6:22-70
+13    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+13-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:7:5-75
+13-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:7:22-72
+14    <uses-permission android:name="android.permission.READ_CONTACTS" />
+14-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:8:5-72
+14-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:8:22-69
+15    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+15-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:9:5-73
+15-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:9:22-70
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:10:5-81
+16-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:10:22-78
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:11:5-67
+17-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:11:22-64
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:12:5-79
+18-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:12:22-76
+19    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+19-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:13:5-81
+19-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:13:22-78
+20    <uses-permission android:name="android.permission.WAKE_LOCK" />
+20-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:14:5-68
+20-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:14:22-65
+21    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+21-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:15:5-76
+21-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:15:22-73
+22    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+22-->[com.github.angads25:filepicker:1.1.1] C:\Users\sagor\.gradle\caches\transforms-2\files-2.1\b5f657d12345bc29f49819961d0c2b59\filepicker-1.1.1\AndroidManifest.xml:11:5-80
+22-->[com.github.angads25:filepicker:1.1.1] C:\Users\sagor\.gradle\caches\transforms-2\files-2.1\b5f657d12345bc29f49819961d0c2b59\filepicker-1.1.1\AndroidManifest.xml:11:22-77
+23
+24    <application
+24-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:17:5-106:19
+25        android:name="android.support.multidex.MultiDexApplication"
+26        android:allowBackup="true"
+26-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:18:9-35
+27        android:debuggable="true"
+28        android:icon="@drawable/icon"
+28-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:19:9-38
+29        android:label="@string/app_name"
+29-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:20:9-41
+30        android:largeHeap="true"
+30-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:21:9-33
+31        android:testOnly="true"
+32        android:theme="@style/AppTheme" >
+32-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:22:9-40
+33        <activity
+33-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:23:9-26:52
+34            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.MainActivity"
+34-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:24:13-41
+35            android:label="@string/app_name"
+35-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:25:13-45
+36            android:screenOrientation="portrait" />
+36-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:26:13-49
+37        <activity
+37-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:27:9-30:52
+38            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.GroupSmsAreaSelection"
+38-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:28:13-50
+39            android:label="@string/title_activity_group_sms_area_selection"
+39-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:29:13-76
+40            android:screenOrientation="portrait" />
+40-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:30:13-49
+41        <activity
+41-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:31:9-34:52
+42            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.GroupSmsFarmingCategory"
+42-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:32:13-52
+43            android:label="@string/title_activity_group_sms_farming_category"
+43-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:33:13-78
+44            android:screenOrientation="portrait" />
+44-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:34:13-49
+45        <activity
+45-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:35:9-38:52
+46            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.GroupSmsTemplateSelection"
+46-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:36:13-54
+47            android:label="@string/title_activity_group_sms_template_selection"
+47-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:37:13-80
+48            android:screenOrientation="portrait" />
+48-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:38:13-49
+49        <activity
+49-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:39:9-43:52
+50            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.GroupSmsNewMessage"
+50-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:40:13-47
+51            android:label="@string/title_activity_group_sms_new_message"
+51-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:41:13-73
+52            android:noHistory="true"
+52-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:42:13-37
+53            android:screenOrientation="portrait" />
+53-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:43:13-49
+54        <activity
+54-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:44:9-47:52
+55            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AddFarmerPersonalInformation"
+55-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:45:13-57
+56            android:label="@string/title_activity_add_farmer_personal_information"
+56-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:46:13-83
+57            android:screenOrientation="portrait" />
+57-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:47:13-49
+58        <activity
+58-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:48:9-50:52
+59            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.groupsmsfilter"
+59-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:49:13-43
+60            android:screenOrientation="portrait" />
+60-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:50:13-49
+61        <activity
+61-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:51:9-53:52
+62            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.GroupSmsSending"
+62-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:52:13-44
+63            android:screenOrientation="portrait" />
+63-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:53:13-49
+64        <activity
+64-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:54:9-56:67
+65            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.farmerSearchActivity"
+65-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:55:13-49
+66            android:windowSoftInputMode="stateHidden|adjustPan" />
+66-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:56:13-64
+67        <activity
+67-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:57:9-60:52
+68            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AddUpdateUser"
+68-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:58:13-42
+69            android:label="@string/title_activity_add_update_user"
+69-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:59:13-67
+70            android:screenOrientation="portrait" />
+70-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:60:13-49
+71        <activity
+71-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:61:9-63:67
+72            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AddTemplate"
+72-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:62:13-40
+73            android:label="@string/title_activity_add_template" />
+73-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:63:13-64
+74        <activity
+74-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:64:9-67:52
+75            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.InventorInformation"
+75-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:65:13-48
+76            android:label="@string/title_activity_inventor_information"
+76-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:66:13-72
+77            android:screenOrientation="portrait" />
+77-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:67:13-49
+78        <activity
+78-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:68:9-70:52
+79            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.recpiant_limit"
+79-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:69:13-43
+80            android:screenOrientation="portrait" />
+80-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:70:13-49
+81
+82        <service
+82-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:72:9-75:39
+83            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.ForegroundService"
+83-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:73:13-46
+84            android:enabled="true"
+84-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:74:13-35
+85            android:exported="true" />
+85-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:75:13-36
+86
+87        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.fishFarming" />
+87-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:77:9-49
+87-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:77:19-46
+88        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.pona_mojud" />
+88-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:78:9-48
+88-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:78:19-45
+89        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.khaddo_prooig" />
+89-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:79:9-51
+89-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:79:19-48
+90        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.Protein_base_food" />
+90-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:80:9-55
+90-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:80:19-52
+91        <activity
+91-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:81:9-83:67
+92            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AgeWiseFood"
+92-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:82:13-40
+93            android:windowSoftInputMode="stateHidden|adjustPan" />
+93-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:83:13-64
+94        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.PhoneNumberValidation" >
+94-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:84:9-90:20
+94-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:84:19-56
+95            <intent-filter>
+95-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:85:13-89:29
+96                <action android:name="android.intent.action.MAIN" />
+96-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:86:17-69
+96-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:86:25-66
+97
+98                <category android:name="android.intent.category.LAUNCHER" />
+98-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:88:17-77
+98-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:88:27-74
+99            </intent-filter>
+100        </activity>
+101        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.disease" />
+101-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:91:9-45
+101-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:91:19-42
+102        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.diseaseDetails" />
+102-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:92:9-52
+102-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:92:19-49
+103        <!--
+104 ATTENTION: This was auto-generated to add Google Play services to your project for
+105     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+106        -->
+107        <meta-data
+107-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:97:9-99:69
+108            android:name="com.google.android.gms.version"
+108-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:98:13-58
+109            android:value="@integer/google_play_services_version" />
+109-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:99:13-66
+110
+111        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.ppm_formula" />
+111-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:101:9-49
+111-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:101:19-46
+112        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.fertilizer_formula" />
+112-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:102:9-56
+112-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:102:19-53
+113        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.KhetrofolFormula" />
+113-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:103:9-54
+113-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:103:19-51
+114        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AreaFormula" />
+114-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:104:9-49
+114-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:104:19-46
+115        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.Setting" />
+115-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:105:9-54
+115-->C:\Users\sagor\StudioProjects\GroupMessengerforFishermen\app\src\main\AndroidManifest.xml:105:19-42
+116    </application>
+117
+118</manifest>
