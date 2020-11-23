@@ -65,8 +65,7 @@ public class Protein_base_food extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+
         setContentView(R.layout.activity_protein_base_food2);
 
         proteinAmount = (EditText) findViewById(R.id.proteinAmount);

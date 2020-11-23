@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class fishFarming extends AppCompatActivity {
 
@@ -21,29 +22,23 @@ public class fishFarming extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fish_farming);
 
-        Button pona_mojud_formula = (Button) findViewById(R.id.pona_mojud_formula);
-        Button khaddo_prooig_formula = (Button) findViewById(R.id.khaddo_prooig_formula);
-        Button age_wise_food_formula = (Button) findViewById(R.id.age_wise_food_formula);
-        Button protin_wise_food = (Button) findViewById(R.id.protin_wise_food);
-        Button ppm_formula= (Button) findViewById(R.id.ppm_formula);
-        TextView fertilizer_formula = (TextView) findViewById(R.id.fertilizer_formula);
+        CardView pona_mojud_formula =  findViewById(R.id.pona_mojud_formula);
+        CardView khaddo_prooig_formula = findViewById(R.id.khaddo_prooig_formula);
+        CardView age_wise_food_formula =  findViewById(R.id.age_wise_food_formula);
+        CardView protin_wise_food = findViewById(R.id.protin_wise_food);
+        CardView ppm_formula=  findViewById(R.id.ppm_formula);
+        CardView fertilizer_formula =  findViewById(R.id.fertilizer_formula);
 
-        TextView khetrofol_formula = (TextView) findViewById(R.id.khetrofol_formula);
-        TextView area_formula = (TextView) findViewById(R.id.area_formula);
+        CardView khetrofol_formula =  findViewById(R.id.khetrofol_formula);
+        CardView area_formula =  findViewById(R.id.area_formula);
 
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
 
-        pona_mojud_formula.setTypeface(tf);
-        khaddo_prooig_formula.setTypeface(tf);
-        age_wise_food_formula.setTypeface(tf);
-        protin_wise_food.setTypeface(tf);
-        ppm_formula.setTypeface(tf);
-        fertilizer_formula.setTypeface(tf);
-        khetrofol_formula.setTypeface(tf);
-        area_formula.setTypeface(tf);
+
+
 
         pona_mojud_formula.setOnClickListener(new View.OnClickListener() {
             @Override

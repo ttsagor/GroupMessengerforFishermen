@@ -40,8 +40,7 @@ public class fertilizer_formula extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+
         setContentView(R.layout.activity_fertilizer_formula);
 
         fertilizer_length_text = (TextView) findViewById(R.id.fertilizer_length_text);

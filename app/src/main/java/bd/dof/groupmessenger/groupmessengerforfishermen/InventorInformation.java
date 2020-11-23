@@ -18,8 +18,7 @@ public class InventorInformation extends AppCompatActivity {
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+
         setContentView(R.layout.activity_inventor_information);
 
         TextView top_head_inova = (TextView) findViewById(R.id.top_head_inova);

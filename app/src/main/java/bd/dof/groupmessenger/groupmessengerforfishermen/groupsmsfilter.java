@@ -56,8 +56,7 @@ public class groupsmsfilter extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+
         setContentView(R.layout.smsreceiverfilter);
 
         String fontPath = "fonts/SolaimanLipi.ttf";

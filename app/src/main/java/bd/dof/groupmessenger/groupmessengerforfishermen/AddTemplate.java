@@ -20,8 +20,7 @@ public class AddTemplate extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_template);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+
         final DbHandler db = new DbHandler(this,null,null,1);
         final ImageButton addtemplateMsgBoxMessageSave = (ImageButton) findViewById(R.id.addtemplateMsgBoxMessageSave);
         final EditText addtemplateMsgBox = (EditText) findViewById(R.id.addtemplateMsgBox);

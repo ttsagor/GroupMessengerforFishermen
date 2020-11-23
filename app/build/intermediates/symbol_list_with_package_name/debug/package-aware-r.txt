@@ -1488,6 +1488,9 @@ drawable editicon
 drawable farming
 drawable farming_bar
 drawable historyicon
+drawable ic_baseline_arrow_back_ios_24
+drawable ic_baseline_lens_24
+drawable ic_baseline_model_training_24
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
@@ -1982,12 +1985,10 @@ id pin
 id ponaAmount
 id ponaArea
 id ponaAreaSubmit
-id pona_mojud_are
 id pona_mojud_formula
 id pona_mojud_katla
 id pona_mojud_mrigel
 id pona_mojud_panggas
-id pona_mojud_pos_amount
 id pona_mojud_puti
 id pona_mojud_rui
 id pona_mojud_save
@@ -2157,7 +2158,6 @@ id top_farming_banner_area_formula
 id top_farming_banner_fertilizer
 id top_farming_banner_food_formula_single
 id top_farming_banner_khetrofol
-id top_farming_banner_pona_mojud
 id top_farming_banner_ppm
 id top_farming_banner_protein_base_food
 id top_farming_banner_setting
@@ -2179,7 +2179,6 @@ id top_head_app_fish_farming_disease_details
 id top_head_app_fish_farming_fertilizer
 id top_head_app_fish_farming_food_formula_single
 id top_head_app_fish_farming_khetrofol
-id top_head_app_fish_farming_pona_mojud
 id top_head_app_fish_farming_ppm
 id top_head_app_fish_farming_protein_base_food
 id top_head_app_groupsmsfilter
@@ -2197,7 +2196,6 @@ id top_head_fish_farming_area_formula
 id top_head_fish_farming_fertilizer
 id top_head_fish_farming_food_formula_single
 id top_head_fish_farming_khetrofol
-id top_head_fish_farming_pona_mojud
 id top_head_fish_farming_ppm
 id top_head_fish_farming_protein_base_food
 id top_head_groupsmsfilter
@@ -2352,6 +2350,7 @@ layout dialog_main
 layout diseaselist
 layout farmer_list_iteam
 layout fragment_home
+layout header_timeline
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title

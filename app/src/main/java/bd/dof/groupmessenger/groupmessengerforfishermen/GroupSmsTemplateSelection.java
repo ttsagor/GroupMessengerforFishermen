@@ -31,8 +31,7 @@ public class GroupSmsTemplateSelection extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+
         setContentView(R.layout.activity_group_sms_template_selection);
 
         TextView smsMainTemplateSelectionText = (TextView) findViewById(R.id.smsMainTemplateSelectionText);

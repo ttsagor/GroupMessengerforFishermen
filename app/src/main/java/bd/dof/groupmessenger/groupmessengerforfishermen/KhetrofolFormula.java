@@ -40,8 +40,7 @@ public class KhetrofolFormula extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+
         setContentView(R.layout.activity_khetrofol_formula);
 
         khetrofol_length_text = (TextView) findViewById(R.id.khetrofol_length_text);

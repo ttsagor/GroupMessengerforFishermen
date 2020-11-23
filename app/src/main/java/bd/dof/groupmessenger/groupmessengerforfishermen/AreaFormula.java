@@ -42,8 +42,7 @@ public class AreaFormula extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+
         setContentView(R.layout.activity_area_formula);
 
         area_formula_length_text = (TextView) findViewById(R.id.area_formula_length_text);

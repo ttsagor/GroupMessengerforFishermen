@@ -39,8 +39,7 @@ public class ppm_formula extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+
         setContentView(R.layout.activity_ppm_formula);
 
         ppm_length_text = (TextView) findViewById(R.id.ppm_length_text);

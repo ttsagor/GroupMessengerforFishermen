@@ -76,8 +76,6 @@ public class pona_mojud extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
         setContentView(R.layout.activity_pona_mojud);
 
         ponaArea = (EditText) findViewById(R.id.ponaArea);
@@ -95,11 +93,7 @@ public class pona_mojud extends AppCompatActivity {
         pona_mojud_share = (ImageView) findViewById(R.id.pona_mojud_share);
         pona_mojud_save = (ImageView) findViewById(R.id.pona_mojud_save);
 
-        TextView top_head_fish_farming_pona_mojud = (TextView) findViewById(R.id.top_head_fish_farming_pona_mojud);
-        TextView top_head_app_fish_farming_pona_mojud = (TextView) findViewById(R.id.top_head_app_fish_farming_pona_mojud);
-        TextView top_farming_banner_pona_mojud = (TextView) findViewById(R.id.top_farming_banner_pona_mojud);
-        TextView pona_mojud_are = (TextView) findViewById(R.id.pona_mojud_are);
-        TextView pona_mojud_pos_amount = (TextView) findViewById(R.id.pona_mojud_pos_amount);
+
         Button ponaAreaSubmit = (Button) findViewById(R.id.ponaAreaSubmit);
 
         TextView pona_mojud_katla = (TextView) findViewById(R.id.pona_mojud_katla);
@@ -116,11 +110,7 @@ public class pona_mojud extends AppCompatActivity {
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
-        top_head_fish_farming_pona_mojud.setTypeface(tf);
-        top_head_app_fish_farming_pona_mojud.setTypeface(tf);
-        top_farming_banner_pona_mojud.setTypeface(tf);
-        pona_mojud_are.setTypeface(tf);
-        pona_mojud_pos_amount.setTypeface(tf);
+
         ponaAreaSubmit.setTypeface(tf);
 
         pona_mojud_katla.setTypeface(tf);
