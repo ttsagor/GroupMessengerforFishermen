@@ -41,7 +41,7 @@ public class DiseaseListAdapter extends BaseAdapter implements ListAdapter {
         this.context = context;
     }
     private static class rowHolder{
-        public Button diseaseName;
+        public TextView diseaseName;
     }
 
     @Override
@@ -69,7 +69,7 @@ public class DiseaseListAdapter extends BaseAdapter implements ListAdapter {
             inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
             view = inflater.inflate(R.layout.diseaselist, null);
-            holder.diseaseName  = (Button) view.findViewById(R.id.diseaseName);
+            holder.diseaseName  =  view.findViewById(R.id.diseaseName);
             view.setTag(holder);
         }
         else
