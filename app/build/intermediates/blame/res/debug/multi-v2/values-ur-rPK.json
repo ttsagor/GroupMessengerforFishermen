@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\sagor\\StudioProjects\\GroupMessengerforFishermen\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ur-rPK\\values-ur-rPK.xml",
+            "outputFile": "/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ur-rPK/values-ur-rPK.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sagor\\.gradle\\caches\\transforms-2\\files-2.1\\0f873496fd3cccbdf708c7f657b42207\\play-services-base-8.4.0\\res\\values-ur-rPK\\base_strings.xml",
+                    "source": "/Users/admin/.gradle/caches/transforms-2/files-2.1/0f873496fd3cccbdf708c7f657b42207/play-services-base-8.4.0/res/values-ur-rPK/base_strings.xml",
                     "from": {
                         "startLines": "24,10,9,8,7,5,6,4,19,18,17,16,3,28,27,26,25,21,20,22,12,11,15,14,13,23,29,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\sagor\\.gradle\\caches\\transforms-2\\files-2.1\\a5d016896464e2fba3bfee954e357d34\\appcompat-v7-23.2.1\\res\\values-ur-rPK\\values-ur-rPK.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,165,273,396,502,611,697,801,921,997,1073,1158,1266,1375,1477,1588,1688,1796,1925,2023",
-                        "endColumns": "109,107,122,105,108,85,103,119,75,75,84,107,108,101,110,99,107,128,97,102",
-                        "endOffsets": "160,268,391,497,606,692,796,916,992,1068,1153,1261,1370,1472,1583,1683,1791,1920,2018,2121"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,50",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,215,323,446,552,661,747,851,971,1047,1123,1208,1316,1425,1527,1638,1738,1846,1975,6732",
-                        "endColumns": "109,107,122,105,108,85,103,119,75,75,84,107,108,101,110,99,107,128,97,102",
-                        "endOffsets": "210,318,441,547,656,742,846,966,1042,1118,1203,1311,1420,1522,1633,1733,1841,1970,2068,6830"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\sagor\\.gradle\\caches\\transforms-2\\files-2.1\\55873286a1453871245af2670dd8d01b\\play-services-basement-8.4.0\\res\\values-ur-rPK\\common_strings.xml",
+                    "source": "/Users/admin/.gradle/caches/transforms-2/files-2.1/55873286a1453871245af2670dd8d01b/play-services-basement-8.4.0/res/values-ur-rPK/common_strings.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -52,6 +35,23 @@
                         "startOffsets": "4807",
                         "endColumns": "257",
                         "endOffsets": "5060"
+                    }
+                },
+                {
+                    "source": "/Users/admin/.gradle/caches/transforms-2/files-2.1/a5d016896464e2fba3bfee954e357d34/appcompat-v7-23.2.1/res/values-ur-rPK/values-ur-rPK.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,165,273,396,502,611,697,801,921,997,1073,1158,1266,1375,1477,1588,1688,1796,1925,2023",
+                        "endColumns": "109,107,122,105,108,85,103,119,75,75,84,107,108,101,110,99,107,128,97,102",
+                        "endOffsets": "160,268,391,497,606,692,796,916,992,1068,1153,1261,1370,1472,1583,1683,1791,1920,2018,2121"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,50",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,215,323,446,552,661,747,851,971,1047,1123,1208,1316,1425,1527,1638,1738,1846,1975,6732",
+                        "endColumns": "109,107,122,105,108,85,103,119,75,75,84,107,108,101,110,99,107,128,97,102",
+                        "endOffsets": "210,318,441,547,656,742,846,966,1042,1118,1203,1311,1420,1522,1633,1733,1841,1970,2068,6830"
                     }
                 }
             ]

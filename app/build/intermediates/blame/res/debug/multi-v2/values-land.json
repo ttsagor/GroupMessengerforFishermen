@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\sagor\\StudioProjects\\GroupMessengerforFishermen\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sagor\\.gradle\\caches\\transforms-2\\files-2.1\\a51cc67a7b572d1d3bbe81655472133e\\design-23.2.1\\res\\values-land\\values-land.xml",
+                    "source": "/Users/admin/.gradle/caches/transforms-2/files-2.1/a51cc67a7b572d1d3bbe81655472133e/design-23.2.1/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\sagor\\.gradle\\caches\\transforms-2\\files-2.1\\a5d016896464e2fba3bfee954e357d34\\appcompat-v7-23.2.1\\res\\values-land\\values-land.xml",
+                    "source": "/Users/admin/.gradle/caches/transforms-2/files-2.1/a5d016896464e2fba3bfee954e357d34/appcompat-v7-23.2.1/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

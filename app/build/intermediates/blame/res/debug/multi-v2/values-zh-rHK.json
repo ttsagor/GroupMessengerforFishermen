@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\sagor\\StudioProjects\\GroupMessengerforFishermen\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rHK\\values-zh-rHK.xml",
+            "outputFile": "/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sagor\\.gradle\\caches\\transforms-2\\files-2.1\\0f873496fd3cccbdf708c7f657b42207\\play-services-base-8.4.0\\res\\values-zh-rHK\\base_strings.xml",
+                    "source": "/Users/admin/.gradle/caches/transforms-2/files-2.1/0f873496fd3cccbdf708c7f657b42207/play-services-base-8.4.0/res/values-zh-rHK/base_strings.xml",
                     "from": {
                         "startLines": "24,10,9,8,7,5,6,4,19,18,17,16,3,28,27,26,25,21,20,22,12,11,15,14,13,23,29,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\sagor\\.gradle\\caches\\transforms-2\\files-2.1\\55873286a1453871245af2670dd8d01b\\play-services-basement-8.4.0\\res\\values-zh-rHK\\common_strings.xml",
+                    "source": "/Users/admin/.gradle/caches/transforms-2/files-2.1/55873286a1453871245af2670dd8d01b/play-services-basement-8.4.0/res/values-zh-rHK/common_strings.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\sagor\\.gradle\\caches\\transforms-2\\files-2.1\\a5d016896464e2fba3bfee954e357d34\\appcompat-v7-23.2.1\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "source": "/Users/admin/.gradle/caches/transforms-2/files-2.1/a5d016896464e2fba3bfee954e357d34/appcompat-v7-23.2.1/res/values-zh-rHK/values-zh-rHK.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

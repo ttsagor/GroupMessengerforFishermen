@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\sagor\\StudioProjects\\GroupMessengerforFishermen\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-eu-rES\\values-eu-rES.xml",
+            "outputFile": "/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-eu-rES/values-eu-rES.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sagor\\.gradle\\caches\\transforms-2\\files-2.1\\55873286a1453871245af2670dd8d01b\\play-services-basement-8.4.0\\res\\values-eu-rES\\common_strings.xml",
+                    "source": "/Users/admin/.gradle/caches/transforms-2/files-2.1/a5d016896464e2fba3bfee954e357d34/appcompat-v7-23.2.1/res/values-eu-rES/values-eu-rES.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,164,272,395,493,603,689,795,919,1006,1090,1172,1281,1391,1490,1599,1712,1823,1960,2059",
+                        "endColumns": "108,107,122,97,109,85,105,123,86,83,81,108,109,98,108,112,110,136,98,100",
+                        "endOffsets": "159,267,390,488,598,684,790,914,1001,1085,1167,1276,1386,1485,1594,1707,1818,1955,2054,2155"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,50",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,214,322,445,543,653,739,845,969,1056,1140,1222,1331,1441,1540,1649,1762,1873,2010,6840",
+                        "endColumns": "108,107,122,97,109,85,105,123,86,83,81,108,109,98,108,112,110,136,98,100",
+                        "endOffsets": "209,317,440,538,648,734,840,964,1051,1135,1217,1326,1436,1535,1644,1757,1868,2005,2104,6936"
+                    }
+                },
+                {
+                    "source": "/Users/admin/.gradle/caches/transforms-2/files-2.1/55873286a1453871245af2670dd8d01b/play-services-basement-8.4.0/res/values-eu-rES/common_strings.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\sagor\\.gradle\\caches\\transforms-2\\files-2.1\\0f873496fd3cccbdf708c7f657b42207\\play-services-base-8.4.0\\res\\values-eu-rES\\base_strings.xml",
+                    "source": "/Users/admin/.gradle/caches/transforms-2/files-2.1/0f873496fd3cccbdf708c7f657b42207/play-services-base-8.4.0/res/values-eu-rES/base_strings.xml",
                     "from": {
                         "startLines": "24,10,9,8,7,5,6,4,19,18,17,16,3,28,27,26,25,21,20,22,12,11,15,14,13,23,29,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -35,23 +52,6 @@
                         "startOffsets": "2109,2402,2531,2739,2867,2997,3212,3426,3555,3724,3849,4017,4138,4275,4441,4569,4756,5147,5423,5549,5659,5857,5989,6216,6352,6541,6636,6731",
                         "endColumns": "292,128,207,127,129,214,213,128,168,124,167,120,136,165,127,186,130,275,125,109,197,131,226,135,188,94,94,108",
                         "endOffsets": "2397,2526,2734,2862,2992,3207,3421,3550,3719,3844,4012,4133,4270,4436,4564,4751,4882,5418,5544,5654,5852,5984,6211,6347,6536,6631,6726,6835"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\sagor\\.gradle\\caches\\transforms-2\\files-2.1\\a5d016896464e2fba3bfee954e357d34\\appcompat-v7-23.2.1\\res\\values-eu-rES\\values-eu-rES.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,164,272,395,493,603,689,795,919,1006,1090,1172,1281,1391,1490,1599,1712,1823,1960,2059",
-                        "endColumns": "108,107,122,97,109,85,105,123,86,83,81,108,109,98,108,112,110,136,98,100",
-                        "endOffsets": "159,267,390,488,598,684,790,914,1001,1085,1167,1276,1386,1485,1594,1707,1818,1955,2054,2155"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,50",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,214,322,445,543,653,739,845,969,1056,1140,1222,1331,1441,1540,1649,1762,1873,2010,6840",
-                        "endColumns": "108,107,122,97,109,85,105,123,86,83,81,108,109,98,108,112,110,136,98,100",
-                        "endOffsets": "209,317,440,538,648,734,840,964,1051,1135,1217,1326,1436,1535,1644,1757,1868,2005,2104,6936"
                     }
                 }
             ]
