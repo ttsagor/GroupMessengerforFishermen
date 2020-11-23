@@ -7,6 +7,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -25,18 +26,13 @@ public class disease extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_disease);
         final DbHandler db = new DbHandler(this,null,null,1);
-        TextView top_head_fish_disease = (TextView) findViewById(R.id.top_head_fish_disease);
-        TextView top_head_app_fish_farming_disease = (TextView) findViewById(R.id.top_head_app_fish_farming_disease);
-        TextView top_disease_banner = (TextView) findViewById(R.id.top_disease_banner);
-        ListView diseaseListListview = (ListView) findViewById(R.id.diseaseListListview);
+
+        GridView diseaseListListview = findViewById(R.id.diseaseListListview);
 
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
-        top_head_fish_disease.setTypeface(tf);
-        top_head_app_fish_farming_disease.setTypeface(tf);
-        top_disease_banner.setTypeface(tf);
 
 
        ArrayList<DiseaseModel> diseaseList =  db.getDiseases("1=1");

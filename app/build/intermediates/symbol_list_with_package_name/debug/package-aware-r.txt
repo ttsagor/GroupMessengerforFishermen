@@ -1697,10 +1697,7 @@ id ageWeek
 id ageWeight
 id ageWiseFoodSaveImg
 id ageWiseFoodShareImg
-id age_wise_fish_amout
-id age_wise_fish_weight
 id age_wise_food_formula
-id age_wise_food_weight
 id age_wise_week
 id agerowfoodweight
 id agerowweek
@@ -2137,10 +2134,8 @@ id title_template
 id toolbar
 id top
 id topPanel
-id top_disease_banner
 id top_disease_banner_details
 id top_farming_banner_add_farmer
-id top_farming_banner_age_wise
 id top_farming_banner_setting
 id top_head
 id top_head_add_template
@@ -2153,8 +2148,6 @@ id top_head_app_fish_farming_add_farmer_mobile
 id top_head_app_fish_farming_add_farmer_name
 id top_head_app_fish_farming_add_farmer_union_name
 id top_head_app_fish_farming_add_father_name
-id top_head_app_fish_farming_age_wise
-id top_head_app_fish_farming_disease
 id top_head_app_fish_farming_disease_details
 id top_head_app_groupsmsfilter
 id top_head_app_inova
@@ -2163,10 +2156,8 @@ id top_head_app_recept_limit
 id top_head_app_setting
 id top_head_app_smstemplete
 id top_head_farmersearch
-id top_head_fish_disease
 id top_head_fish_disease_details
 id top_head_fish_farming_add_farmer
-id top_head_fish_farming_age_wise
 id top_head_groupsmsfilter
 id top_head_inova
 id top_head_new_sms

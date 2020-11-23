@@ -64,6 +64,7 @@
                         android:layout_weight=".5">
 
                         <Spinner
+                            android:padding="8dp"
                             android:id="@+id/ageWeek"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

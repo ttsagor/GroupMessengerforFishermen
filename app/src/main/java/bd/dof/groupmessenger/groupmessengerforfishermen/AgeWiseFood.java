@@ -95,13 +95,9 @@ public class AgeWiseFood extends AppCompatActivity {
         avgWeight.add("");
         foodPrecent.add("");
 
-        TextView top_head_fish_farming_age_wise = (TextView) findViewById(R.id.top_head_fish_farming_age_wise);
-        TextView top_head_app_fish_farming_age_wise = (TextView) findViewById(R.id.top_head_app_fish_farming_age_wise);
-        TextView top_farming_banner_age_wise = (TextView) findViewById(R.id.top_farming_banner_age_wise);
+
         TextView age_wise_week = (TextView) findViewById(R.id.age_wise_week);
-        TextView age_wise_fish_weight = (TextView) findViewById(R.id.age_wise_fish_weight);
-        TextView age_wise_food_weight = (TextView) findViewById(R.id.age_wise_food_weight);
-        TextView age_wise_fish_amout = (TextView) findViewById(R.id.age_wise_fish_amout);
+
 
         ageWiseFoodShareImg = (ImageView) findViewById(R.id.ageWiseFoodShareImg);
         ageWiseFoodSaveImg = (ImageView) findViewById(R.id.ageWiseFoodSaveImg);
@@ -110,14 +106,7 @@ public class AgeWiseFood extends AppCompatActivity {
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
-        top_head_fish_farming_age_wise.setTypeface(tf);
-        top_head_app_fish_farming_age_wise.setTypeface(tf);
-        top_farming_banner_age_wise.setTypeface(tf);
-        age_wise_week.setTypeface(tf);
-        age_wise_fish_weight.setTypeface(tf);
-        age_wise_food_weight.setTypeface(tf);
-        agePonaSubmit.setTypeface(tf);
-        age_wise_fish_amout.setTypeface(tf);
+
 
         agePonaSubmit.setOnClickListener(new View.OnClickListener() {
             @Override

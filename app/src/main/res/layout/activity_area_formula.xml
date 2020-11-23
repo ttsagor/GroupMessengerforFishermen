@@ -18,8 +18,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".35"
+            android:layout_height="wrap_content"
+
             android:orientation="vertical"
             android:gravity="center"
             android:paddingLeft="30dp"
@@ -27,24 +27,16 @@
             android:paddingTop="5dp">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
+
                 android:orientation="vertical"
                >
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.05">
-                </View>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".2"
-                    android:orientation="horizontal">
+
 
 
 
                         <EditText
+                            android:layout_marginBottom="8dp"
                             android:hint="পুকুরের দৈর্ঘ্য(ফুট)"
                             android:padding="10dp"
                             android:layout_width="match_parent"
@@ -57,17 +49,13 @@
                             android:paddingLeft="2dp"/>
 
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".2"
-                    android:orientation="horizontal">
+
+
 
 
 
                         <EditText
-
+                            android:layout_marginBottom="8dp"
                             android:hint="পুকুরের উচ্চতা(ফুট)"
                             android:padding="10dp"
                             android:layout_width="match_parent"
@@ -79,17 +67,13 @@
                             android:background="@drawable/background_border"
                             android:paddingLeft="2dp"/>
 
-                </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".2"
-                    android:orientation="horizontal">
+
 
 
 
                         <EditText
+                            android:layout_marginBottom="8dp"
                             android:hint="পুকুরের প্রস্থ(ফুট)"
                             android:padding="10dp"
                             android:layout_width="match_parent"
@@ -101,12 +85,14 @@
                             android:background="@drawable/background_border"
                             android:paddingLeft="2dp"/>
 
-                </LinearLayout>
+
 
 
 
 
                         <Button
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
                             android:layout_width="match_parent"
                             android:layout_height="38dp"
                             android:background="@drawable/button_background"
