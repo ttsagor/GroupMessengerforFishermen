@@ -35,17 +35,12 @@ public class farmerSearchActivity extends AppCompatActivity {
         farmerinfolistview = (ListView) findViewById(R.id.farmerinfolistview);
         EditText searcheditbox = (EditText) findViewById(R.id.searcheditbox);
 
-        TextView top_head_farmersearch = (TextView) findViewById(R.id.top_head_farmersearch);
-        TextView smsMainFarmerSearchText = (TextView) findViewById(R.id.smsMainFarmerSearchText);
-        TextView top_head_app_farmersearch = (TextView) findViewById(R.id.top_head_app_farmersearch);
+
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
-
-        top_head_farmersearch.setTypeface(tf);
-        smsMainFarmerSearchText.setTypeface(tf);
         searcheditbox.setTypeface(tf);
-        top_head_app_farmersearch.setTypeface(tf);
+
         System.out.println("size : "+MainActivity.allFarmerInfo.size());
         MyCustomAdapter adapter = new MyCustomAdapter(this, MainActivity.allFarmerInfo);
         farmerinfolistview.setAdapter(adapter);
