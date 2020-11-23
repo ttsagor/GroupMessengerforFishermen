@@ -33,9 +33,7 @@ public class diseaseDetails extends AppCompatActivity {
         Bundle b = iin.getExtras();
         final DbHandler db = new DbHandler(this, null, null, 1);
         final Context mContext = this;
-        TextView top_head_fish_disease_details = (TextView) findViewById(R.id.top_head_fish_disease_details);
-        TextView top_head_app_fish_farming_disease_details = (TextView) findViewById(R.id.top_head_app_fish_farming_disease_details);
-        TextView top_disease_banner_details = (TextView) findViewById(R.id.top_disease_banner_details);
+
 
         TextView disease_name = (TextView) findViewById(R.id.disease_name);
         TextView disease_reason_text = (TextView) findViewById(R.id.disease_reason_text);
@@ -52,9 +50,7 @@ public class diseaseDetails extends AppCompatActivity {
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
-        top_head_fish_disease_details.setTypeface(tf);
-        top_head_app_fish_farming_disease_details.setTypeface(tf);
-        top_disease_banner_details.setTypeface(tf);
+
 
         disease_name.setTypeface(tf);
         disease_reason_text.setTypeface(tf);
