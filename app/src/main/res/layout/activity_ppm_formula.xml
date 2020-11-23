@@ -4,101 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/smsbg">
+    <include layout="@layout/row_slim_header" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.1"
-        android:background="@drawable/top_banner"
-        android:id="@+id/view"
-        android:orientation="horizontal">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".05"
-                    android:gravity="right"
-                    android:layout_gravity="right">
+    <include layout="@layout/header_timeline" />
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".9"
-                    android:orientation="horizontal"
-                    android:gravity="center_horizontal">
-                    <ImageView
-                        android:layout_width="49dp"
-                        android:layout_height="45dp"
-                        android:background="@drawable/dof"
-                        android:layout_gravity="center_vertical"/>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:paddingRight="10dp"
-                        android:paddingLeft="10dp">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="মৎস্য অধিদপ্তর"
-                            android:textColor="@android:color/white"
-                            android:gravity="center_horizontal"
-                            android:textSize="25dp"
-                            android:id="@+id/top_head_fish_farming_ppm"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="চাষি বার্তা"
-                            android:textColor="@android:color/white"
-                            android:gravity="center_horizontal"
-                            android:textSize="20dp"
-                            android:id="@+id/top_head_app_fish_farming_ppm"/>
-                    </LinearLayout>
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/logo1"
-                        android:layout_gravity="center_vertical"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".05"
-                    android:layout_gravity="left"
-                    >
-
-                </LinearLayout>
-
-            </LinearLayout>
-        </LinearLayout>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.15"
-        android:background="@drawable/farming"
-        android:id="@+id/view2"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="পিপিএম নির্নয় ফরমুলা "
-            android:textColor="@android:color/black"
-            android:textSize="30dp"
-            android:gravity="center_vertical"
-            android:paddingLeft="10dp"
-            android:id="@+id/top_farming_banner_ppm"/>
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -113,44 +22,27 @@
             android:layout_weight=".35"
             android:orientation="vertical"
             android:gravity="center"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
             android:paddingTop="5dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:background="@drawable/textbar"
-                android:paddingLeft="20dp">
+
+           >
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="0.05">
                 </View>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".2"
-                    android:orientation="horizontal">
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".6">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text=" দৈর্ঘ্য (ফুট)"
-                            android:id="@+id/ppm_length_text"/>
-                    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".4">
                         <EditText
-                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:hint=" দৈর্ঘ্য (ফুট)"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="number"
                             android:minWidth="80dp"
@@ -158,32 +50,12 @@
                             android:id="@+id/ppm_length"
                             android:background="@drawable/background_border"
                             android:paddingLeft="2dp"/>
-                    </LinearLayout>
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".2"
-                    android:orientation="horizontal">
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".6">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text=" উচ্চতা(ফুট)"
-                            android:id="@+id/ppm_height_text"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".4">
                         <EditText
-                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:hint="উচ্চতা(ফুট)"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="number"
                             android:minWidth="80dp"
@@ -191,32 +63,13 @@
                             android:id="@+id/ppm_height"
                             android:background="@drawable/background_border"
                             android:paddingLeft="2dp"/>
-                    </LinearLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".2"
-                    android:orientation="horizontal"
-                    android:id="@+id/areaTotalcountHolder">
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".6">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text=" প্রস্থ(ফুট)"
-                            android:id="@+id/ppm_width_text"/>
-                    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".4">
+
                         <EditText
-                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:hint="প্রস্থ(ফুট)"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:minWidth="80dp"
                             android:inputType="number"
@@ -224,33 +77,15 @@
                             android:background="@drawable/background_border"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:paddingLeft="2dp"/>
-                    </LinearLayout>
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".2"
-                    android:orientation="horizontal"
-                    android:id="@+id/catagoryTotalcountHolder">
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".6">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text=" মাত্র (পিপিএম)"
-                            android:id="@+id/ppm_density_text"/>
-                    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".4">
+
+
                         <EditText
-                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:hint="মাত্র (পিপিএম)"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="number"
                             android:minWidth="80dp"
@@ -258,64 +93,48 @@
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:id="@+id/ppm_density"
                             android:paddingLeft="2dp" />
-                    </LinearLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".2"
-                    android:orientation="horizontal">
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".6">
-                    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight=".4"
-                        android:paddingBottom="10dp">
+
+
                         <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/background_border_fill"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:background="@drawable/button_background"
                             android:textColor="@color/windowBackground"
                             android:textSize="15dp"
                             android:text="নির্ণয় করুন"
                             android:id="@+id/ppm_agePonaSubmit"/>
-                    </LinearLayout>
-                </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.05">
-                </View>
-            </LinearLayout>
-        </LinearLayout>
+
+
+
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.0">
         </View>
         <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight=".4"
             android:orientation="vertical"
             android:gravity="center"
             android:paddingLeft="30dp"
+            android:background="@drawable/background_border"
             android:paddingRight="30dp"
             android:paddingTop="5dp"
             android:id="@+id/countShowlayout">
 
             <LinearLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:background="@drawable/textbar"
-                android:paddingLeft="20dp">
+             >
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -327,13 +146,9 @@
                     android:layout_height="0dp"
                     android:layout_weight=".9"
                     android:orientation="horizontal">
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.05">
-                    </View>
+
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="vertical">
@@ -407,68 +222,43 @@
                                 android:layout_weight=".1">
                             </LinearLayout>
                         </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".1"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ic_round_save_24"
+                                android:id="@+id/ppm_SaveImg"/>
+                            <View
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent">
+                            </View>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ic_round_share_24"
+                                android:id="@+id/ppm_ShareImg"/>
 
+
+                        </LinearLayout>
                     </LinearLayout>
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.05">
-                    </View>
+
                 </LinearLayout>
 
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.05">
-                </View>
+
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".1"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/saveicon"
-                android:id="@+id/ppm_SaveImg"/>
-            <View
-                android:layout_width="20dp"
-                android:layout_height="match_parent">
-            </View>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/shareicon"
-                android:id="@+id/ppm_ShareImg"/>
-            <!--<View
-                android:layout_width="20dp"
-                android:layout_height="match_parent">
-            </View>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/smsicon"/>
-            <View
-                android:layout_width="20dp"
-                android:layout_height="match_parent">
-            </View>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/prpnticon"/>-->
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.05"
-            android:background="@drawable/lower">
-        </View>
 
+
+
+</LinearLayout>>           </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+

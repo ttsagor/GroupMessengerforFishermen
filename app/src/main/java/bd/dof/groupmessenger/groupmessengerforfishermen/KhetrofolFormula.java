@@ -43,16 +43,13 @@ public class KhetrofolFormula extends AppCompatActivity {
 
         setContentView(R.layout.activity_khetrofol_formula);
 
-        khetrofol_length_text = (TextView) findViewById(R.id.khetrofol_length_text);
-        khetrofol_width_text = (TextView) findViewById(R.id.khetrofol_width_text);
+
         khetrofol_sotangso_text = (TextView) findViewById(R.id.khetrofol_sotangso_text);
         khetrofol_sotangso = (TextView) findViewById(R.id.khetrofol_sotangso);
         khetrofol_hector_text = (TextView) findViewById(R.id.khetrofol_hector_text);
         khetrofol_hector = (TextView) findViewById(R.id.khetrofol_hector);
 
-        top_head_fish_farming_khetrofol = (TextView) findViewById(R.id.top_head_fish_farming_khetrofol);
-        top_head_app_fish_farming_khetrofol = (TextView) findViewById(R.id.top_head_app_fish_farming_khetrofol);
-        top_farming_banner_khetrofol = (TextView) findViewById(R.id.top_farming_banner_khetrofol);
+
 
         khetrofol_agePonaSubmit = (Button) findViewById(R.id.khetrofol_agePonaSubmit);
 
@@ -63,16 +60,8 @@ public class KhetrofolFormula extends AppCompatActivity {
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
-        khetrofol_length_text.setTypeface(tf);
-        khetrofol_width_text.setTypeface(tf);
-        khetrofol_sotangso_text.setTypeface(tf);
-        khetrofol_sotangso.setTypeface(tf);
-        khetrofol_hector_text.setTypeface(tf);
-        khetrofol_hector.setTypeface(tf);
-        top_head_fish_farming_khetrofol.setTypeface(tf);
-        top_head_app_fish_farming_khetrofol.setTypeface(tf);
-        top_farming_banner_khetrofol.setTypeface(tf);
-        khetrofol_agePonaSubmit.setTypeface(tf);
+
+
 
 
         khetrofol_agePonaSubmit.setOnClickListener(new View.OnClickListener() {

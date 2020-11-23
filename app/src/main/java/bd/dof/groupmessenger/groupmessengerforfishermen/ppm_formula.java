@@ -42,17 +42,11 @@ public class ppm_formula extends AppCompatActivity {
 
         setContentView(R.layout.activity_ppm_formula);
 
-        ppm_length_text = (TextView) findViewById(R.id.ppm_length_text);
-        ppm_height_text = (TextView) findViewById(R.id.ppm_height_text);
-        ppm_width_text = (TextView) findViewById(R.id.ppm_width_text);
-        ppm_density_text = (TextView) findViewById(R.id.ppm_density_text);
+
         ppm_area_text = (TextView) findViewById(R.id.ppm_area_text);
         ppm_area = (TextView) findViewById(R.id.ppm_area);
         ppm_med_quantity_text = (TextView) findViewById(R.id.ppm_med_quantity_text);
         ppm_med_quantity = (TextView) findViewById(R.id.ppm_med_quantity);
-        top_farming_banner_ppm = (TextView) findViewById(R.id.top_farming_banner_ppm);
-        top_head_app_fish_farming_ppm = (TextView) findViewById(R.id.top_head_app_fish_farming_ppm);
-        top_head_fish_farming_ppm = (TextView) findViewById(R.id.top_head_fish_farming_ppm);
 
         ppm_length = (EditText) findViewById(R.id.ppm_length);
         ppm_height = (EditText) findViewById(R.id.ppm_height);
@@ -67,18 +61,7 @@ public class ppm_formula extends AppCompatActivity {
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
-        ppm_length_text.setTypeface(tf);
-        ppm_height_text.setTypeface(tf);
-        ppm_width_text.setTypeface(tf);
-        ppm_density_text.setTypeface(tf);
-        ppm_area_text.setTypeface(tf);
-        ppm_area.setTypeface(tf);
-        ppm_med_quantity_text.setTypeface(tf);
-        ppm_med_quantity.setTypeface(tf);
-        ppm_agePonaSubmit.setTypeface(tf);
-        top_farming_banner_ppm.setTypeface(tf);
-        top_head_app_fish_farming_ppm.setTypeface(tf);
-        top_head_fish_farming_ppm.setTypeface(tf);
+
 
 
         ppm_agePonaSubmit.setOnClickListener(new View.OnClickListener() {

@@ -77,12 +77,6 @@ public class Protein_base_food extends AppCompatActivity {
         rice = (TextView) findViewById(R.id.rice);
         totalfoodSum = (TextView) findViewById(R.id.totalfoodSum);
 
-        TextView top_head_fish_farming_protein_base_food = (TextView) findViewById(R.id.top_head_fish_farming_protein_base_food);
-        TextView top_head_app_fish_farming_protein_base_food = (TextView) findViewById(R.id.top_head_app_fish_farming_protein_base_food);
-        TextView top_farming_banner_protein_base_food = (TextView) findViewById(R.id.top_farming_banner_protein_base_food);
-
-        TextView protein_base_food_perc = (TextView) findViewById(R.id.protein_base_food_perc);
-        TextView protein_base_food_weight = (TextView) findViewById(R.id.protein_base_food_weight);
         TextView protein_base_food_fishmeal = (TextView) findViewById(R.id.protein_base_food_fishmeal);
 
         TextView protein_base_food_khoil = (TextView) findViewById(R.id.protein_base_food_khoil);
@@ -96,11 +90,6 @@ public class Protein_base_food extends AppCompatActivity {
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
-        top_head_fish_farming_protein_base_food.setTypeface(tf);
-        top_head_app_fish_farming_protein_base_food.setTypeface(tf);
-        top_farming_banner_protein_base_food.setTypeface(tf);
-        protein_base_food_perc.setTypeface(tf);
-        protein_base_food_weight.setTypeface(tf);
         protein_base_food_fishmeal.setTypeface(tf);
         protein_base_food_khoil.setTypeface(tf);
         protein_base_food_maze.setTypeface(tf);

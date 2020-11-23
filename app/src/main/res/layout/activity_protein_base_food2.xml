@@ -5,101 +5,9 @@
     android:layout_height="match_parent"
     android:background="@drawable/smsbg">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.1"
-        android:background="@drawable/top_banner"
-        android:id="@+id/view"
-        android:orientation="horizontal">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".05"
-                    android:gravity="right"
-                    android:layout_gravity="right">
+    <include layout="@layout/row_slim_header" />
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".9"
-                    android:orientation="horizontal"
-                    android:gravity="center_horizontal">
-                    <ImageView
-                        android:layout_width="49dp"
-                        android:layout_height="45dp"
-                        android:background="@drawable/dof"
-                        android:layout_gravity="center_vertical"/>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:paddingRight="10dp"
-                        android:paddingLeft="10dp">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="মৎস্য অধিদপ্তর"
-                            android:textColor="@android:color/white"
-                            android:gravity="center_horizontal"
-                            android:textSize="25dp"
-                            android:id="@+id/top_head_fish_farming_protein_base_food"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="চাষি বার্তা"
-                            android:textColor="@android:color/white"
-                            android:gravity="center_horizontal"
-                            android:textSize="20dp"
-                            android:id="@+id/top_head_app_fish_farming_protein_base_food"/>
-                    </LinearLayout>
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/logo1"
-                        android:layout_gravity="center_vertical"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".05"
-                    android:layout_gravity="left"
-                    >
-
-                </LinearLayout>
-
-            </LinearLayout>
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.15"
-        android:background="@drawable/farming"
-        android:id="@+id/view2"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="প্রোটিনের জন্য\nখাদ্য প্রস্তুত"
-            android:textColor="@android:color/black"
-            android:textSize="30dp"
-            android:gravity="center_vertical"
-            android:paddingLeft="25dp"
-            android:id="@+id/top_farming_banner_protein_base_food"/>
-    </LinearLayout>
+    <include layout="@layout/header_timeline" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -108,135 +16,79 @@
         android:orientation="vertical"
         android:gravity="center">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".4"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:paddingTop="5dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="@drawable/textbar"
-                android:paddingLeft="20dp">
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.1">
-                </View>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".5"
-                    android:orientation="vertical"
-                    android:id="@+id/areaTotalcountHolder">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight=".5">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="প্রোটিনের কাঙ্ক্ষিত পরিমাণ (শতাংশে) "
-                            android:id="@+id/protein_base_food_perc"/>
-                    </LinearLayout>
+                android:paddingLeft="20dp"
+                android:paddingEnd="20dp"
+                >
+
+
+
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".5">
+                  >
                         <EditText
-                            android:layout_width="wrap_content"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:minWidth="80dp"
+
                             android:inputType="number"
                             android:id="@+id/proteinAmount"
                             android:background="@drawable/background_border"
                             android:paddingLeft="2dp"
+                            android:hint="প্রোটিনের কাঙ্ক্ষিত পরিমাণ (শতাংশে) "
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             />
-                    </LinearLayout>
+
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".5"
-                    android:orientation="vertical"
-                    android:id="@+id/catagoryTotalcountHolder">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight=".4">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="মোট খাদ্যের পরিমাণ (কেজি)"
-                            android:id="@+id/protein_base_food_weight"/>
-                    </LinearLayout>
+
 
                     <LinearLayout
+                        android:layout_marginTop="8dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight=".4">
+                       >
                         <EditText
-                            android:layout_width="wrap_content"
+                            android:padding="10dp"
+                            android:hint="মোট খাদ্যের পরিমাণ (কেজি)"
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:inputType="number"
-                            android:minWidth="80dp"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:background="@drawable/background_border"
                             android:paddingLeft="2dp"
                             android:id="@+id/totalfood"/>
-                    </LinearLayout>
+
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".5"
-                    android:orientation="horizontal">
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".5"></View>
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".5">
+
                         <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_marginTop="8dp"
                             android:id="@+id/proteinAmountButton"
-                            android:background="@drawable/background_border_fill"
+                            android:background="@drawable/button_background"
                             android:textColor="@color/windowBackground"
                             android:textSize="15dp"
                             android:text="নির্ণয় করুন"/>
-                    </LinearLayout>
 
-                </LinearLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.1">
-                </View>
+
             </LinearLayout>
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.05">
-        </View>
+
+
         <LinearLayout
+            android:layout_marginTop="7dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight=".35"
@@ -247,11 +99,12 @@
             android:paddingTop="5dp"
             android:id="@+id/countShowlayout">
             <LinearLayout
+                android:layout_marginBottom="50dp"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:background="@drawable/textbar"
+                android:background="@drawable/white_bg"
                 android:paddingLeft="20dp">
                 <View
                     android:layout_width="match_parent"
@@ -407,58 +260,36 @@
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text=":০"/>
                     </LinearLayout>
+
                 </LinearLayout>
-                <View
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="0.1">
-                </View>
+                    android:layout_weight=".2"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_round_save_24"
+                        android:id="@+id/protein_base_save"/>
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent">
+                    </View>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_round_share_24"
+                        android:id="@+id/protein_base_share"/>
+
+                </LinearLayout>
 
             </LinearLayout>
+
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".1"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/saveicon"
-                android:id="@+id/protein_base_save"/>
-            <View
-                android:layout_width="20dp"
-                android:layout_height="match_parent">
-            </View>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/shareicon"
-                android:id="@+id/protein_base_share"/>
-            <!--<View
-                android:layout_width="20dp"
-                android:layout_height="match_parent">
-            </View>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/smsicon"/>
-            <View
-                android:layout_width="20dp"
-                android:layout_height="match_parent">
-            </View>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/prpnticon"/> -->
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.05"
-            android:background="@drawable/lower">
-        </View>
+
+
 
     </LinearLayout>
 

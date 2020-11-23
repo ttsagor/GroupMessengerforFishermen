@@ -96,12 +96,7 @@ public class khaddo_prooig extends AppCompatActivity {
         foodAmount = (TextView) findViewById(R.id.foodAmount);
         totalWeigt = (TextView) findViewById(R.id.totalWeigt);
 
-        TextView top_head_fish_farming_food_formula_single = (TextView) findViewById(R.id.top_head_fish_farming_food_formula_single);
-        TextView top_head_app_fish_farming_food_formula_single = (TextView) findViewById(R.id.top_head_app_fish_farming_food_formula_single);
-        TextView top_farming_banner_food_formula_single = (TextView) findViewById(R.id.top_farming_banner_food_formula_single);
-        TextView khaddo_prooig_fish_amount = (TextView) findViewById(R.id.khaddo_prooig_fish_amount);
-        TextView khaddo_prooig_weight = (TextView) findViewById(R.id.khaddo_prooig_weight);
-        TextView khaddo_prooig_foogper = (TextView) findViewById(R.id.khaddo_prooig_foogper);
+
         TextView khaddo_prooig_result_food = (TextView) findViewById(R.id.khaddo_prooig_result_food);
         TextView khaddo_prooig_result_fish_weight = (TextView) findViewById(R.id.khaddo_prooig_result_fish_weight);
         Button foodPercentButton = (Button) findViewById(R.id.foodPercentButton);
@@ -111,12 +106,6 @@ public class khaddo_prooig extends AppCompatActivity {
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
-        top_head_fish_farming_food_formula_single.setTypeface(tf);
-        top_head_app_fish_farming_food_formula_single.setTypeface(tf);
-        top_farming_banner_food_formula_single.setTypeface(tf);
-        khaddo_prooig_fish_amount.setTypeface(tf);
-        khaddo_prooig_weight.setTypeface(tf);
-        khaddo_prooig_foogper.setTypeface(tf);
         khaddo_prooig_result_food.setTypeface(tf);
         khaddo_prooig_result_fish_weight.setTypeface(tf);
         foodPercentButton.setTypeface(tf);
