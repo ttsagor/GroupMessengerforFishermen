@@ -45,17 +45,10 @@ public class AreaFormula extends AppCompatActivity {
 
         setContentView(R.layout.activity_area_formula);
 
-        area_formula_length_text = (TextView) findViewById(R.id.area_formula_length_text);
-        area_formula_height_text = (TextView) findViewById(R.id.area_formula_height_text);
-        area_formula_width_text = (TextView) findViewById(R.id.area_formula_width_text);
         area_formula_sotangso_text = (TextView) findViewById(R.id.area_formula_sotangso_text);
         area_formula_sotangso = (TextView) findViewById(R.id.area_formula_sotangso);
         area_formula_hector_text = (TextView) findViewById(R.id.area_formula_hector_text);
         area_formula_hector = (TextView) findViewById(R.id.area_formula_hector);
-
-        top_head_fish_farming_area_formula = (TextView) findViewById(R.id.top_head_fish_farming_area_formula);
-        top_head_app_fish_farming_area_formula = (TextView) findViewById(R.id.top_head_app_fish_farming_area_formula);
-        top_farming_banner_area_formula = (TextView) findViewById(R.id.top_farming_banner_area_formula);
 
         area_formula_length = (EditText) findViewById(R.id.area_formula_length);
         area_formula_height = (EditText) findViewById(R.id.area_formula_height);
@@ -68,20 +61,7 @@ public class AreaFormula extends AppCompatActivity {
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
-        area_formula_length_text.setTypeface(tf);
-        area_formula_height_text.setTypeface(tf);
-        area_formula_width_text.setTypeface(tf);
-        area_formula_sotangso_text.setTypeface(tf);
-        area_formula_sotangso.setTypeface(tf);
-        area_formula_hector_text.setTypeface(tf);
-        area_formula_hector.setTypeface(tf);
-        area_formula_length.setTypeface(tf);
-        area_formula_height.setTypeface(tf);
-        area_formula_width.setTypeface(tf);
-        top_head_fish_farming_area_formula.setTypeface(tf);
-        top_head_app_fish_farming_area_formula.setTypeface(tf);
-        top_farming_banner_area_formula.setTypeface(tf);
-        area_formula_agePonaSubmit.setTypeface(tf);
+
 
         area_formula_agePonaSubmit.setOnClickListener(new View.OnClickListener() {
             @Override

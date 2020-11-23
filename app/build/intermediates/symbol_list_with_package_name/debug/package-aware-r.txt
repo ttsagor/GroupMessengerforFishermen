@@ -1719,13 +1719,10 @@ id area_formula_agePonaSubmit
 id area_formula_hector
 id area_formula_hector_text
 id area_formula_height
-id area_formula_height_text
 id area_formula_length
-id area_formula_length_text
 id area_formula_sotangso
 id area_formula_sotangso_text
 id area_formula_width
-id area_formula_width_text
 id areawise
 id areawiserdo
 id async
@@ -1821,11 +1818,8 @@ id fertilizer_area
 id fertilizer_area_text
 id fertilizer_formula
 id fertilizer_length
-id fertilizer_length_text
 id fertilizer_qunatity
-id fertilizer_qunatity_text
 id fertilizer_width
-id fertilizer_width_text
 id fileList
 id file_dir_select
 id file_mark
@@ -2147,8 +2141,6 @@ id top_disease_banner
 id top_disease_banner_details
 id top_farming_banner_add_farmer
 id top_farming_banner_age_wise
-id top_farming_banner_area_formula
-id top_farming_banner_fertilizer
 id top_farming_banner_setting
 id top_head
 id top_head_add_template
@@ -2162,10 +2154,8 @@ id top_head_app_fish_farming_add_farmer_name
 id top_head_app_fish_farming_add_farmer_union_name
 id top_head_app_fish_farming_add_father_name
 id top_head_app_fish_farming_age_wise
-id top_head_app_fish_farming_area_formula
 id top_head_app_fish_farming_disease
 id top_head_app_fish_farming_disease_details
-id top_head_app_fish_farming_fertilizer
 id top_head_app_groupsmsfilter
 id top_head_app_inova
 id top_head_app_new_sms
@@ -2177,8 +2167,6 @@ id top_head_fish_disease
 id top_head_fish_disease_details
 id top_head_fish_farming_add_farmer
 id top_head_fish_farming_age_wise
-id top_head_fish_farming_area_formula
-id top_head_fish_farming_fertilizer
 id top_head_groupsmsfilter
 id top_head_inova
 id top_head_new_sms
