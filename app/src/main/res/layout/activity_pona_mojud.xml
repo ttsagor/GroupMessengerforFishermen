@@ -372,17 +372,18 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
-                        android:background="@drawable/ic_round_save_24"
+                           android:tint="@color/colorPrimaryDark"
+                        android:background="@drawable/saveicon"
                         android:id="@+id/pona_mojud_save"/>
                     <View
                         android:layout_width="20dp"
                         android:layout_height="match_parent">
                     </View>
                     <ImageView
+                        android:tint="@color/colorPrimaryDark"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/ic_round_share_24"
+                        android:background="@drawable/shareicon"
                         android:id="@+id/pona_mojud_share"/>
 
                 </LinearLayout>
