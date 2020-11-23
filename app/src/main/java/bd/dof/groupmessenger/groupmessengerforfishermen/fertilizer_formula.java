@@ -43,9 +43,6 @@ public class fertilizer_formula extends AppCompatActivity {
 
         setContentView(R.layout.activity_fertilizer_formula);
 
-        fertilizer_length_text = (TextView) findViewById(R.id.fertilizer_length_text);
-        fertilizer_width_text = (TextView) findViewById(R.id.fertilizer_width_text);
-        fertilizer_qunatity_text = (TextView) findViewById(R.id.fertilizer_qunatity_text);
         fertilizer_area_text = (TextView) findViewById(R.id.fertilizer_area_text);
         fertilizer_area = (TextView) findViewById(R.id.fertilizer_area);
 
@@ -58,25 +55,12 @@ public class fertilizer_formula extends AppCompatActivity {
         fertilizer_SaveImg = (ImageView) findViewById(R.id.fertilizer_SaveImg);
         fertilizer_ShareImg = (ImageView) findViewById(R.id.fertilizer_ShareImg);
 
-        top_farming_banner_fertilizer = (TextView) findViewById(R.id.top_farming_banner_fertilizer);
-        top_head_app_fish_farming_fertilizer = (TextView) findViewById(R.id.top_head_app_fish_farming_fertilizer);
-        top_head_fish_farming_fertilizer = (TextView) findViewById(R.id.top_head_fish_farming_fertilizer);
+
 
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
-        fertilizer_length_text.setTypeface(tf);
-        fertilizer_width_text.setTypeface(tf);
-        fertilizer_qunatity_text.setTypeface(tf);
-        fertilizer_area_text.setTypeface(tf);
-        fertilizer_area.setTypeface(tf);
-        fertilizer_length.setTypeface(tf);
-        fertilizer_width.setTypeface(tf);
-        fertilizer_qunatity.setTypeface(tf);
-        fertilizer_agePonaSubmit.setTypeface(tf);
-        top_farming_banner_fertilizer.setTypeface(tf);
-        top_head_app_fish_farming_fertilizer .setTypeface(tf);
-        top_head_fish_farming_fertilizer.setTypeface(tf);
+
 
 
 
