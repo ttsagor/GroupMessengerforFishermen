@@ -89,7 +89,7 @@
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:id="@+id/ponaAreaSubmit"
-                            android:background="@color/colorPrimaryDark"
+                            android:background="@drawable/button_background"
                             android:textColor="@color/textColorPrimary"
                             android:text="নির্ণয় করুন"/>
 
@@ -373,7 +373,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
-                        android:background="@drawable/saveicon"
+                        android:background="@drawable/ic_round_save_24"
                         android:id="@+id/pona_mojud_save"/>
                     <View
                         android:layout_width="20dp"
@@ -382,7 +382,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/shareicon"
+                        android:background="@drawable/ic_round_share_24"
                         android:id="@+id/pona_mojud_share"/>
 
                 </LinearLayout>

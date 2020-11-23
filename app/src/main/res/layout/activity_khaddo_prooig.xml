@@ -5,100 +5,9 @@
     android:layout_height="match_parent"
     android:background="@drawable/smsbg">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.1"
-        android:background="@drawable/top_banner"
-        android:id="@+id/view"
-        android:orientation="horizontal">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".05"
-                    android:gravity="right"
-                    android:layout_gravity="right">
+    <include layout="@layout/row_slim_header" />
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".9"
-                    android:orientation="horizontal"
-                    android:gravity="center_horizontal">
-                    <ImageView
-                        android:layout_width="49dp"
-                        android:layout_height="45dp"
-                        android:background="@drawable/dof"
-                        android:layout_gravity="center_vertical"/>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:paddingRight="10dp"
-                        android:paddingLeft="10dp">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="মৎস্য অধিদপ্তর"
-                            android:textColor="@android:color/white"
-                            android:gravity="center_horizontal"
-                            android:textSize="25dp"
-                            android:id="@+id/top_head_fish_farming_food_formula_single"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="চাষি বার্তা"
-                            android:textColor="@android:color/white"
-                            android:gravity="center_horizontal"
-                            android:textSize="20dp"
-                            android:id="@+id/top_head_app_fish_farming_food_formula_single"/>
-                    </LinearLayout>
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/logo1"
-                        android:layout_gravity="center_vertical"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".05"
-                    android:layout_gravity="left"
-                    >
-
-                </LinearLayout>
-
-            </LinearLayout>
-        </LinearLayout>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.15"
-        android:background="@drawable/farming"
-        android:id="@+id/view2"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="মাছের খাদ্য\nপ্রয়োগের সূত্র"
-            android:textColor="@android:color/black"
-            android:textSize="30dp"
-            android:gravity="center_vertical"
-            android:paddingLeft="25dp"
-            android:id="@+id/top_farming_banner_food_formula_single"/>
-    </LinearLayout>
+    <include layout="@layout/header_timeline" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -109,49 +18,21 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".6"
+            android:layout_height="wrap_content"
+
             android:orientation="vertical"
             android:gravity="center"
             android:paddingLeft="30dp"
             android:paddingRight="30dp"
             android:paddingTop="5dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:background="@drawable/textbar"
-                android:paddingLeft="20dp">
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.1">
-                </View>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".23"
-                    android:orientation="horizontal"
-                    android:id="@+id/areaTotalcountHolder">
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".5">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="মাছের সংখ্যা"
-                            android:id="@+id/khaddo_prooig_fish_amount"/>
-                    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".5">
+
+
                         <EditText
-                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:padding="10dp"
+                             android:hint="মাছের সংখ্যা"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:minWidth="80dp"
                             android:inputType="number"
@@ -160,33 +41,16 @@
                             android:paddingLeft="2dp"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             />
-                    </LinearLayout>
 
-                </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".23"
-                    android:orientation="horizontal">
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".5">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="গড় ওজন (গ্রাম)"
-                            android:id="@+id/khaddo_prooig_weight"/>
-                    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".5">
+
+
                         <EditText
-                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:padding="10dp"
+                            android:hint="গড় ওজন (গ্রাম)"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="number"
                             android:minWidth="80dp"
@@ -194,33 +58,14 @@
                             android:background="@drawable/background_border"
                             android:paddingLeft="2dp"
                             android:id="@+id/avgWeight"/>
-                    </LinearLayout>
-                </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".23"
-                    android:orientation="horizontal"
-                    >
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight=".5">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="খাদ্য হার(%) "
-                            android:id="@+id/khaddo_prooig_foogper"/>
-                    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".5">
+
                         <EditText
-                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:padding="10dp"
+                            android:hint="খাদ্য হার(%)"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="number"
                             android:minWidth="80dp"
@@ -228,50 +73,30 @@
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:id="@+id/foodPercent"
                             android:paddingLeft="2dp"/>
-                    </LinearLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".23"
-                    android:orientation="horizontal"
-                    >
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight=".5">
-                    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight=".5">
+
                         <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
                             android:minWidth="90dp"
-                            android:background="@drawable/background_border_fill"
+                            android:background="@drawable/button_background"
                             android:text="নির্ণয় করুন"
                             android:textColor="@color/windowBackground"
                             android:id="@+id/foodPercentButton"/>
-                    </LinearLayout>
-                </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.1">
-                </View>
-            </LinearLayout>
+
+
+
+
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.05">
-        </View>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".3"
+            android:layout_weight=".2"
+            android:layout_marginBottom="100dp"
             android:orientation="vertical"
             android:gravity="center"
             android:paddingLeft="30dp"
@@ -281,14 +106,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_weight=".1"
                 android:orientation="vertical"
-                android:background="@drawable/textbar"
+                android:background="@android:color/white"
                 android:paddingLeft="20dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight=".13"
+                    android:layout_weight=".1"
                     android:orientation="horizontal"
                     android:paddingTop="10dp">
                     <LinearLayout
@@ -319,7 +144,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight=".13"
+                    android:layout_weight=".1"
                     android:orientation="horizontal">
                     <LinearLayout
                         android:layout_width="0dp"
@@ -346,75 +171,36 @@
                     </LinearLayout>
 
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".15"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_round_save_24"
+                        android:id="@+id/khaddo_prooig_save_img"/>
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent">
+                    </View>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_round_share_24"
+                        android:id="@+id/khaddo_prooig_share_img"/>
 
+                </LinearLayout>
             </LinearLayout>
+
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".15"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/saveicon"
-                android:id="@+id/khaddo_prooig_save_img"/>
-            <View
-                android:layout_width="20dp"
-                android:layout_height="match_parent">
-            </View>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/shareicon"
-                android:id="@+id/khaddo_prooig_share_img"/>
-            <!--<View
-                android:layout_width="20dp"
-                android:layout_height="match_parent">
-            </View>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/smsicon"/>
-            <View
-                android:layout_width="20dp"
-                android:layout_height="match_parent">
-            </View>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/prpnticon"/>-->
-        </LinearLayout>
-        <!--  <LinearLayout
-              android:layout_width="match_parent"
-              android:layout_height="0dp"
-              android:layout_weight=".1"
-              android:orientation="vertical"
-              android:gravity="center">
 
-              <LinearLayout
-                  android:layout_width="match_parent"
-                  android:layout_height="0dp"
-                  android:layout_weight=".1"
-                  android:orientation="vertical">
-                  <Button
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:id="@+id/buttonCalculatePona"
-                      android:layout_gravity="center_horizontal"
-                      android:text="calculate"
-                      />
-              </LinearLayout>
-          </LinearLayout> -->
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.05"
-            android:background="@drawable/lower">
-        </View>
+
+
 
     </LinearLayout>
 
