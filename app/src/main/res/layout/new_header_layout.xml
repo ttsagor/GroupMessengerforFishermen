@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    android:layout_alignParentTop="true"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <LinearLayout
@@ -16,7 +17,7 @@
             android:layout_height="80dp"
             android:layout_weight="0.5"
             android:padding="8dp"
-            android:src="@drawable/newBdIcon"
+            android:src="@drawable/new_bdicon"
             android:layout_marginStart="15dp" />
 
         <LinearLayout
@@ -52,7 +53,7 @@
             android:layout_height="80dp"
             android:layout_weight="0.5"
             android:padding="8dp"
-            android:src="@drawable/newMossoIcon"
+            android:src="@drawable/new_mosso_icon"
             android:layout_marginEnd="15dp" />
     </LinearLayout>
 

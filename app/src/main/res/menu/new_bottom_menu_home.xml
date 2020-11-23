@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="সতর্কতা"
+        android:icon="@drawable/new_sotorkota"
+        android:id="@+id/menu_sotorkota"
+
+        />
+    <item android:title="ব্যবহারবিধি"
+        android:icon="@drawable/new_baboharbidi"
+        android:id="@+id/menu_beboharbidi"
+
+        />
+    <item android:title="সমস্যা জমাদিন"
+        android:icon="@drawable/new_somosha_jomadin"
+        android:id="@+id/menu_somoshajomadin"
+
+
+        />
+    <item android:title="লগইন"
+        android:icon="@drawable/new_login"
+        android:id="@+id/menu_login"
+
+        />
+</menu>

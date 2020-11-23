@@ -20,7 +20,7 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewDesign.HomeScreenActivity"></activity>
+        <activity android:name=".NewDesign.HomeScreenActivity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

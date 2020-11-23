@@ -3,13 +3,15 @@ package bd.dof.groupmessenger.groupmessengerforfishermen;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class fishFarming extends AppCompatActivity {
 
@@ -17,8 +19,6 @@ public class fishFarming extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
         setContentView(R.layout.activity_fish_farming);
 
         Button pona_mojud_formula = (Button) findViewById(R.id.pona_mojud_formula);
@@ -26,9 +26,6 @@ public class fishFarming extends AppCompatActivity {
         Button age_wise_food_formula = (Button) findViewById(R.id.age_wise_food_formula);
         Button protin_wise_food = (Button) findViewById(R.id.protin_wise_food);
         Button ppm_formula= (Button) findViewById(R.id.ppm_formula);
-        TextView top_head_app_fish_farming_main = (TextView) findViewById(R.id.top_head_app_fish_farming_main);
-        TextView top_head_fish_farming_main = (TextView) findViewById(R.id.top_head_fish_farming_main);
-        TextView top_farming_banner = (TextView) findViewById(R.id.top_farming_banner);
         TextView fertilizer_formula = (TextView) findViewById(R.id.fertilizer_formula);
 
         TextView khetrofol_formula = (TextView) findViewById(R.id.khetrofol_formula);
@@ -38,9 +35,6 @@ public class fishFarming extends AppCompatActivity {
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
-        top_head_app_fish_farming_main.setTypeface(tf);
-        top_head_fish_farming_main.setTypeface(tf);
-        top_farming_banner.setTypeface(tf);
 
         pona_mojud_formula.setTypeface(tf);
         khaddo_prooig_formula.setTypeface(tf);

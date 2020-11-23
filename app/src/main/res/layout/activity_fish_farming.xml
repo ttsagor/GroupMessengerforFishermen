@@ -1,102 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <include layout="@layout/row_slim_header" />
+
     <LinearLayout
+        android:background="#ffffff"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.1"
-        android:background="@drawable/top_banner"
-        android:id="@+id/view"
-        android:orientation="horizontal">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pona_mojud_formula"
+            app:cardCornerRadius="12dp"
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:cardElevation="16dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+
+            >
+
             <LinearLayout
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".05"
-                    android:gravity="right"
-                    android:layout_gravity="right">
+                android:orientation="vertical"
+                android:weightSum="1"
+                >
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".9"
-                    android:orientation="horizontal"
-                    android:gravity="center_horizontal">
-                    <ImageView
-                        android:layout_width="49dp"
-                        android:layout_height="45dp"
-                        android:background="@drawable/dof"
-                        android:layout_gravity="center_vertical"/>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:paddingRight="10dp"
-                        android:paddingLeft="10dp">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="মৎস্য অধিদপ্তর"
-                            android:textColor="@android:color/white"
-                            android:gravity="center_horizontal"
-                            android:textSize="25dp"
-                            android:id="@+id/top_head_fish_farming_main"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="চাষি বার্তা"
-                            android:textColor="@android:color/white"
-                            android:gravity="center_horizontal"
-                            android:textSize="20dp"
-                            android:id="@+id/top_head_app_fish_farming_main"/>
-                    </LinearLayout>
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/logo1"
-                        android:layout_gravity="center_vertical"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".05"
-                    android:layout_gravity="left"
-                    >
 
-                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="পোনা মজুদের সূত্র"
 
+                    android:textColor="@color/textColorPrimary"
+                    android:gravity="center"
+                    android:textSize="22sp"
+                    android:paddingTop="8dp" />
             </LinearLayout>
-        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+               android:id="@+id/khaddo_prooig_formula"
+            android:padding="10dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="16dp"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            android:layout_marginEnd="15dp"
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.15"
-        android:background="@drawable/farming"
-        android:id="@+id/view2"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="মৎস্য চাষ"
-            android:textColor="@android:color/black"
-            android:textSize="30dp"
-            android:gravity="center_vertical"
-            android:paddingLeft="25dp"
-            android:id="@+id/top_farming_banner"/>
+            >
+
+            <LinearLayout
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1"
+                >
+
+              
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                  android:text="মাছের খাদ্য \nপ্রয়োগের সূত্র"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
     </LinearLayout>
 
     <LinearLayout
@@ -107,45 +99,32 @@
         android:gravity="center"
         android:paddingLeft="20dp"
         android:paddingRight="20dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".17"
-                android:orientation="horizontal">
-            </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:background="@android:color/transparent">
-                </View>
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="পোনা মজুদের সূত্র"
-                    android:id="@+id/pona_mojud_formula"
-                    android:orientation="horizontal"
-                    android:background="@drawable/listbaruser">
-                </Button>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".05"
-                    android:background="@android:color/transparent">
-                </View>
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="মাছের খাদ্য প্রয়োগের সূত্র"
-                    android:id="@+id/khaddo_prooig_formula"
-                    android:orientation="horizontal"
-                    android:background="@drawable/farming_bar">
-                </Button>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".05"
-                    android:background="@android:color/transparent">
-                </View>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -232,11 +211,4 @@
             </LinearLayout>
         </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.02"
-        android:background="@drawable/lower"
-        >
-    </View>
 </LinearLayout>
