@@ -1836,7 +1836,6 @@ id foodPercent
 id foodPercentButton
 id footer
 id forever
-id frame_layout
 id ftype
 id ghost_view
 id ghost_view_holder
@@ -1907,6 +1906,9 @@ id list_iteam_name
 id list_iteam_phone
 id list_iteam_union
 id list_item
+id ll_desease
+id ll_invention
+id ll_mosso_sutro
 id masked
 id maze
 id media_actions
@@ -2271,7 +2273,6 @@ layout dialog_header
 layout dialog_main
 layout diseaselist
 layout farmer_list_iteam
-layout fragment_home
 layout header_timeline
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions

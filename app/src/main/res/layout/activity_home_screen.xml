@@ -6,13 +6,266 @@
     android:layout_height="match_parent"
     tools:context=".NewDesign.HomeScreenActivity">
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="56dp"
-        android:id="@+id/frame_layout"
-        />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+        <include
+            android:id="@+id/header"
+            layout="@layout/new_header_layout" />
+
+        <include layout="@layout/new_row_article" />
+        <!--- there will be the banner part -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:orientation="vertical"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_weight=".5"
+
+                    android:src="@drawable/new_fish_icon"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="মৎস্য চাষ"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_mosso_sutro"
+                android:layout_width="0dp"
+                android:layout_height="115dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:orientation="vertical"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_weight=".5"
+
+                    android:src="@drawable/new_mosso_icon2"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="মৎস্য চাষ সূএ"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="2"
+
+            >
+
+
+            <LinearLayout
+                android:id="@+id/ll_desease"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:orientation="vertical"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_weight=".5"
+
+                    android:src="@drawable/new_rog_chikisha"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="রোগ ও চিকিৎসা"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="115dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:orientation="vertical"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_weight=".5"
+
+                    android:src="@drawable/new_prosno_bank"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="প্রশ্ন ব্যাংক"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:orientation="vertical"
+
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_weight=".5"
+
+                    android:src="@drawable/new_tothokos"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="তথ্য কোষ"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_invention"
+                android:layout_width="0dp"
+                android:layout_height="115dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:orientation="vertical"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_weight=".5"
+
+                    android:src="@drawable/new_udvabon_porikolpona"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="উদ্ভাবন ও পরিকল্পনায়"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <include layout="@layout/new_footer_layout" />
 
