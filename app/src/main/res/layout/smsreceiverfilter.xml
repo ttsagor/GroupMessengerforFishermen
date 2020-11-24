@@ -5,107 +5,9 @@
     android:layout_height="match_parent"
     android:background="@drawable/smsbg">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.1"
-        android:background="@drawable/top_banner"
-        android:id="@+id/view"
-        android:orientation="horizontal">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".05"
-                    android:gravity="right"
-                    android:layout_gravity="right">
+    <include layout="@layout/row_slim_header" />
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".9"
-                    android:orientation="horizontal"
-                    android:gravity="center_horizontal">
-                    <ImageView
-                        android:layout_width="49dp"
-                        android:layout_height="45dp"
-                        android:background="@drawable/dof"
-                        android:layout_gravity="center_vertical"/>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:paddingRight="10dp"
-                        android:paddingLeft="10dp">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="মৎস্য অধিদপ্তর"
-                            android:textColor="@android:color/white"
-                            android:gravity="center_horizontal"
-                            android:textSize="25dp"
-                            android:id="@+id/top_head_groupsmsfilter"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="চাষি বার্তা"
-                            android:textColor="@android:color/white"
-                            android:gravity="center_horizontal"
-                            android:textSize="20dp"
-                            android:id="@+id/top_head_app_groupsmsfilter"/>
-                    </LinearLayout>
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/logo1"
-                        android:layout_gravity="center_vertical"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".05"
-                    android:layout_gravity="left"
-                    >
-
-                </LinearLayout>
-
-            </LinearLayout>
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight=".15"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:paddingBottom="5dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/sms"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="খুদেবার্তা প্রেরণ"
-                android:id="@+id/smsMainText"
-                android:gravity="center_vertical"
-                android:textSize="30dp"
-                android:paddingLeft="25dp"/>
-        </LinearLayout>
-    </LinearLayout>
+    <include layout="@layout/header_timeline" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -116,7 +18,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".35"
+            android:layout_weight=".1"
             android:orientation="vertical"
             android:gravity="center"
             android:paddingLeft="30dp"
@@ -124,97 +26,113 @@
             android:paddingBottom="5dp"
             android:paddingTop="5dp">
 
+          <LinearLayout
+              android:id="@+id/allfarmerrdo"
+              android:layout_marginBottom="8dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:weightSum="2"
+
+              >
+
+
+              <LinearLayout
+                  android:layout_marginEnd="15dp"
+                  android:layout_width="0dp"
+                  android:layout_height="40dp"
+                  android:layout_weight="1"
+                  android:orientation="horizontal"
+                  android:gravity="center"
+                  android:padding="6dp"
+                  android:background="@drawable/button_background"
+                  android:weightSum="1"
+                  android:paddingLeft="10dp">
+
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.8"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+                      android:text="সকল চাষি"
+                      android:textSize="16sp"
+                      android:textColor="@color/textColorPrimary"
+                      android:id="@+id/smsMainAllFarmerText"
+                      />
+                  <RadioButton
+                      android:buttonTint="@color/textColorPrimary"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.2"
+                      android:text=""
+                      android:id="@+id/allarea" />
+              </LinearLayout>
+              <LinearLayout
+                  android:padding="6dp"
+                  android:id="@+id/areawiserdo"
+                  android:layout_width="0dp"
+                  android:layout_height="40dp"
+                  android:layout_weight="1"
+                  android:orientation="horizontal"
+                  android:gravity="center"
+                  android:background="@drawable/button_background"
+                  android:paddingLeft="10dp">
+
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.8"
+                      android:textSize="16sp"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+                      android:text="এলাকা ভিত্তিক"
+                      android:textColor="@color/textColorPrimary"
+                      android:id="@+id/smsMainAreaWiseText"/>
+                  <RadioButton
+                      android:buttonTint="@color/textColorPrimary"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.2"
+                      android:text=""
+                      android:id="@+id/areawise"
+                      android:layout_gravity="right" />
+              </LinearLayout>
+
+          </LinearLayout>
+
+
+
             <LinearLayout
+                android:layout_marginBottom="8dp"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".25"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:id="@+id/allfarmerrdo">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+
+                >
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:padding="6dp"
+                    android:id="@+id/catwiserdo"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="15dp"
                     android:layout_weight="1"
                     android:orientation="horizontal"
                     android:gravity="center"
-                    android:background="@drawable/rdolist"
-                    android:weightSum="1"
-                    android:paddingLeft="10dp">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.8"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="সকল চাষি"
-                        android:id="@+id/smsMainAllFarmerText"
-                         />
-                    <RadioButton
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.2"
-                        android:text=""
-                        android:id="@+id/allarea" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".25"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:id="@+id/areawiserdo">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:gravity="center"
-                    android:background="@drawable/rdolist"
-                    android:paddingLeft="10dp">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.8"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="এলাকা ভিত্তিক"
-                        android:id="@+id/smsMainAreaWiseText"/>
-                    <RadioButton
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.2"
-                        android:text=""
-                        android:id="@+id/areawise"
-                        android:layout_gravity="right" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".25"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:id="@+id/catwiserdo">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:gravity="center"
-                    android:background="@drawable/rdolist"
+                    android:background="@drawable/button_background"
                     android:paddingLeft="10dp">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight=".8"
+
+                        android:textColor="@color/textColorPrimary"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="মাছ চাষের ধরন ভিত্তিক"
+                        android:text="চাষের ধরন ভিত্তিক"
+                        android:textSize="13sp"
                         android:id="@+id/smsMainFarmingWiseText"/>
                     <RadioButton
+                        android:buttonTint="@color/textColorPrimary"
                         android:layout_width="0dp"
                         android:layout_weight=".2"
                         android:layout_height="wrap_content"
@@ -222,33 +140,31 @@
                         android:id="@+id/catwise"
                         android:layout_gravity="right" />
                 </LinearLayout>
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".25"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:id="@+id/operatorwiserdo">
+
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:padding="6dp"
+                    android:id="@+id/operatorwiserdo"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
                     android:layout_weight="1"
                     android:orientation="horizontal"
                     android:gravity="center"
-                    android:background="@drawable/rdolist"
+                    android:background="@drawable/button_background"
                     android:paddingLeft="10dp">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight=".8"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorPrimary"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="অপারেটর ভিত্তিক"
                         android:id="@+id/smsMainOperatorWiseText"
                         />
                     <RadioButton
+                        android:buttonTint="@color/textColorPrimary"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight=".2"
@@ -257,6 +173,9 @@
                         android:layout_gravity="right" />
                 </LinearLayout>
             </LinearLayout>
+
+
+
 
 
 
@@ -276,9 +195,10 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:background="@drawable/textbar"
+                android:background="@drawable/white_bg"
                 android:paddingLeft="20dp">
                 <LinearLayout
+                    android:layout_marginTop="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".25"
@@ -402,51 +322,54 @@
                             android:text=":0"/>
                     </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".2"
-            android:orientation="vertical"
-            android:gravity="center">
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:background="@android:color/transparent">
-            </View>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".45"
-                android:orientation="vertical">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="34dp"
-                    android:id="@+id/buttonsend"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@drawable/button"
-                    android:textColor="@color/textColorPrimary"
-                    android:textSize="21dp"
-                    android:text="বার্তা পাঠান"/>
-            </LinearLayout>
+                <LinearLayout
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".45"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="28dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/buttontemplate"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@drawable/smstemplet"/>
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="8dp"
+
+                    >
+                    <Button
+
+                        android:text="বার্তা টেমপ্লেট"
+                        android:textAllCaps="false"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/buttontemplate"
+                        android:textColor="@android:color/black"
+                        android:backgroundTint="@android:color/darker_gray"
+                        />
+
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/buttonsend"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/button_background"
+                       android:layout_marginEnd="15dp"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="18dp"
+                        android:text="বার্তা পাঠান"/>
+
+
+
+
+
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
+
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -461,12 +384,7 @@
                 android:src="@android:drawable/ic_menu_rotate"
                 android:background="@null"/>
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.05"
-            android:background="@drawable/lower">
-        </View>
+
 
     </LinearLayout>
 

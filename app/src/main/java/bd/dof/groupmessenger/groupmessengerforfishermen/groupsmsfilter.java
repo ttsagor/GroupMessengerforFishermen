@@ -72,24 +72,12 @@ public class groupsmsfilter extends AppCompatActivity {
         TextView smsMainFarmingCategoryText = (TextView) findViewById(R.id.smsMainFarmingCategoryText);
         TextView smsMainOperatorListText = (TextView) findViewById(R.id.smsMainOperatorListText);
         TextView smsMainTotalFarmerText = (TextView) findViewById(R.id.smsMainTotalFarmerText);
-        TextView top_head_groupsmsfilter = (TextView) findViewById(R.id.top_head_groupsmsfilter);
-        TextView top_head_app_groupsmsfilter = (TextView) findViewById(R.id.top_head_app_groupsmsfilter);
+
         areaTotalcounTxt = (TextView) findViewById(R.id.areaTotalcounTxt);
         catagoryTotalcountTxt = (TextView) findViewById(R.id.catagoryTotalcountTxt);
         operatorTotalcountTxt = (TextView) findViewById(R.id.operatorTotalcountTxt);
         sumTotalcountTxt = (TextView) findViewById(R.id.sumTotalcountTxt);
-        smsMainText.setTypeface(tf);
-        smsMainAllFarmerText.setTypeface(tf);
-        smsMainAllFarmerText.setTypeface(tf);
-        smsMainAreaWiseText.setTypeface(tf);
-        smsMainFarmingWiseText.setTypeface(tf);
-        smsMainOperatorWiseText.setTypeface(tf);
-        smsMainAreaInforamtionText.setTypeface(tf);
-        smsMainFarmingCategoryText.setTypeface(tf);
-        smsMainOperatorListText.setTypeface(tf);
-        smsMainTotalFarmerText.setTypeface(tf);
-        top_head_groupsmsfilter.setTypeface(tf);
-        top_head_app_groupsmsfilter.setTypeface(tf);
+
 
         areaTotalcounTxt.setTypeface(tf);
         catagoryTotalcountTxt.setTypeface(tf);
@@ -120,7 +108,7 @@ public class groupsmsfilter extends AppCompatActivity {
 
         filtereset = (ImageButton) findViewById(R.id.filtereset);
         Button buttonsend = (Button) findViewById(R.id.buttonsend);
-        ImageButton buttontemplate = (ImageButton) findViewById(R.id.buttontemplate);
+        Button buttontemplate =  findViewById(R.id.buttontemplate);
         buttonsend.setTypeface(tf);
 
 
