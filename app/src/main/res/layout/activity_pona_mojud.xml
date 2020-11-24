@@ -396,7 +396,7 @@
         </LinearLayout>
 
 
-
+        <include layout="@layout/new_footer_layout" />
 
 
     </LinearLayout>

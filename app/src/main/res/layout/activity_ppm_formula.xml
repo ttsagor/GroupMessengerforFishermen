@@ -259,8 +259,8 @@
 
 
 
-
-</LinearLayout>>           </LinearLayout>
+                <include layout="@layout/new_footer_layout" />
+</LinearLayout>           </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
