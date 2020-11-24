@@ -1,220 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/smsbg"
     android:orientation="vertical">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
     <include layout="@layout/row_slim_header" />
 
     <include layout="@layout/header_timeline" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight=".75"
+        android:layout_height="wrap_content"
+
         android:gravity="center"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".35"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingLeft="30dp"
-            android:paddingTop="5dp"
-            android:paddingRight="30dp">
+
 
             <LinearLayout
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
+
                 android:orientation="vertical"
 
                 >
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.05"></View>
 
                 <LinearLayout
+                    android:layout_marginTop="8dp"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".2"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
-                    <LinearLayout
+
+                    <TextView
+                        android:id="@+id/age_wise_week"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".5">
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:height="50dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="সপ্তাহ"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
 
-                        <TextView
-                            android:id="@+id/age_wise_week"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="সপ্তাহ"
-                            android:textAppearance="?android:attr/textAppearanceMedium" />
-                    </LinearLayout>
 
-                    <LinearLayout
+                    <Spinner
+                        android:id="@+id/ageWeek"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".5">
-
-                        <Spinner
-
-                            android:padding="12dp"
-                            android:id="@+id/ageWeek"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/background_border"
-                            android:inputType="number"
-                            android:minWidth="100dp"
-                            android:textAppearance="?android:attr/textAppearanceMedium" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".2"
-                    android:orientation="horizontal">
-
-
-                    <EditText
-                        android:id="@+id/agePona"
-                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_weight="1"
                         android:background="@drawable/background_border"
-                        android:hint="মাছের সংখ্যা"
                         android:inputType="number"
-                        android:minWidth="80dp"
-                        android:padding="10dp"
-                        android:paddingLeft="2dp"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/areaTotalcountHolder"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".2"
-                    android:orientation="horizontal">
-
-
-                    <EditText
-                        android:id="@+id/ageWeight"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:background="@drawable/background_border"
-                        android:hint="গড় ওজন (গ্রাম)"
-                        android:inputType="number"
-                        android:minWidth="80dp"
-                        android:padding="10dp"
-                        android:paddingLeft="2dp"
+                        android:padding="12dp"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/catagoryTotalcountHolder"
+
+                <EditText
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/agePona"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".2"
-                    android:orientation="horizontal">
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/background_border"
+                    android:hint="মাছের সংখ্যা"
+                    android:inputType="number"
+                    android:minWidth="80dp"
+                    android:padding="10dp"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
 
-                    <EditText
-                        android:id="@+id/agePer"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:background="@drawable/background_border"
-                        android:hint="খাদ্য হার (%)"
-                        android:inputType="number"
-                        android:minWidth="80dp"
-                        android:padding="10dp"
-                        android:paddingLeft="2dp"
-                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                <EditText
+                    android:id="@+id/ageWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/background_border"
+                    android:hint="গড় ওজন (গ্রাম)"
+                    android:inputType="number"
+                    android:minWidth="80dp"
+                    android:padding="10dp"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
-                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/agePer"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/background_border"
+                    android:hint="খাদ্য হার (%)"
+                    android:inputType="number"
+                    android:minWidth="80dp"
+                    android:padding="10dp"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
 
                 <Button
                     android:id="@+id/agePonaSubmit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
                     android:background="@drawable/button_background"
                     android:text="নির্ণয় করুন"
                     android:textColor="@color/windowBackground"
                     android:textSize="15dp" />
 
+                <ListView
+                    android:id="@+id/scrolAgeList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                   />
 
             </LinearLayout>
-        </LinearLayout>
 
 
 
-        <LinearLayout
-            android:id="@+id/countShowlayout"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginBottom="50dp"
-            android:layout_weight=".4"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingLeft="30dp"
-            android:paddingTop="5dp"
-            android:paddingRight="30dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/white_bg"
-                android:orientation="vertical"
-                android:paddingLeft="20dp">
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.05"></View>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".9"
-                    android:orientation="horizontal">
 
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.05"></View>
 
-                    <ListView
-                        android:id="@+id/scrolAgeList"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight=".9"></ListView>
 
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.05"></View>
-                </LinearLayout>
+
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="15dp"
                     android:layout_weight=".2"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
@@ -223,26 +157,27 @@
                         android:id="@+id/ageWiseFoodSaveImg"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/saveicon"
                         android:backgroundTint="@color/colorPrimaryDark"
-                        android:background="@drawable/saveicon" />
+                        tools:ignore="UnusedAttribute" />
 
                     <View
                         android:layout_width="20dp"
-                        android:layout_height="match_parent"></View>
+                        android:layout_height="match_parent" />
 
                     <ImageView
                         android:id="@+id/ageWiseFoodShareImg"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="@color/colorPrimaryDark"
-                        android:background="@drawable/shareicon" />
+                        android:background="@drawable/shareicon"
+                        android:backgroundTint="@color/colorPrimaryDark" />
 
                 </LinearLayout>
 
             </LinearLayout>
-        </LinearLayout>
-
-        <include layout="@layout/new_footer_layout" />
-    </LinearLayout>
 
 </LinearLayout>
+        <include layout="@layout/new_footer_layout" />
+    </RelativeLayout>
+
+
