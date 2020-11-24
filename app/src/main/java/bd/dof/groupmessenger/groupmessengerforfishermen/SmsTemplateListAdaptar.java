@@ -80,7 +80,7 @@ public class SmsTemplateListAdaptar extends BaseAdapter implements ListAdapter {
             tf = Typeface.createFromAsset(context.getAssets(), fontPath);
             holder.SmsText.setTypeface(tf);
 
-            holder.textHolderLayout  = (LinearLayout) view.findViewById(R.id.groupsmstextviewholderlayout);
+
             holder.sendButton  = (Button) view.findViewById(R.id.templateselectionsend);
            // holder.detailsButton  = (ImageButton) view.findViewById(R.id.templateselectiondetails);
             holder.sendButton.setTypeface(tf);
@@ -101,40 +101,24 @@ public class SmsTemplateListAdaptar extends BaseAdapter implements ListAdapter {
         }
 
         final TextView tv = holder.SmsText;
-        final LinearLayout ll = holder.textHolderLayout;
-        ll.setMinimumHeight(0);
+
         holder.SmsText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 if(text.get(position).length()>70) {
-                    ll.setMinimumHeight((text.get(position).length() / 30) * 80);
                     tv.setText(text.get(position));
                 }
-                //tv.setTextColor(Color.RED);
-                //GroupSmsTemplateSelection.nxtActivity(text.get(position));
+
             }
         });
 
-       /* holder.detailsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(text.get(position).length()>70) {
-                    ll.setMinimumHeight((text.get(position).length() / 30) * 80);
-                    tv.setText(text.get(position));
-                }
-                //tv.setTextColor(Color.RED);
-                //GroupSmsTemplateSelection.nxtActivity(text.get(position));
-            }
-        });*/
+
 
         holder.sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                //ll.setMinimumHeight((text.get(position).length()/30)*80);
-                //tv.setText(text.get(position));
-                //tv.setTextColor(Color.RED);
                 GroupSmsTemplateSelection.nxtActivity(text.get(position));
             }
         });

@@ -64,7 +64,8 @@
                         android:layout_weight=".5">
 
                         <Spinner
-                            android:padding="8dp"
+
+                            android:padding="12dp"
                             android:id="@+id/ageWeek"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -149,7 +150,7 @@
                 <Button
                     android:id="@+id/agePonaSubmit"
                     android:layout_width="match_parent"
-                    android:layout_height="38dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/button_background"
                     android:text="নির্ণয় করুন"
                     android:textColor="@color/windowBackground"
@@ -159,10 +160,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.0"></View>
+
 
         <LinearLayout
             android:id="@+id/countShowlayout"

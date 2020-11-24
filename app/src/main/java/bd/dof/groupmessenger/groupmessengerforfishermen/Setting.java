@@ -68,9 +68,10 @@ public class Setting extends AppCompatActivity {
     Button upload_excel;
     Context mContex;
     SystemInformationModel nSystemInfo = new SystemInformationModel();
-    DbHandler db = new DbHandler(this,null,null,1);
-    int uploadCount=0;
+    DbHandler db = new DbHandler(this, null, null, 1);
+    int uploadCount = 0;
     ArrayList<FarmerInfoModel> cAllFarmer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -78,12 +79,9 @@ public class Setting extends AppCompatActivity {
 
         setContentView(R.layout.activity_setting);
         mContex = this;
-        final DbHandler db = new DbHandler(this,null,null,1);
+        final DbHandler db = new DbHandler(this, null, null, 1);
         nSystemInfo = db.getSystemInfo();
         cAllFarmer = db.getFarmerInfoPendingUpdate();
-        top_head_setting = (TextView) findViewById(R.id.top_head_setting);
-        top_head_app_setting = (TextView) findViewById(R.id.top_head_app_setting);
-        top_farming_banner_setting = (TextView) findViewById(R.id.top_farming_banner_setting);
 
         upload_setting = (Button) findViewById(R.id.upload_setting);
         download_setting = (Button) findViewById(R.id.download_setting);
@@ -91,12 +89,7 @@ public class Setting extends AppCompatActivity {
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
-        top_head_setting.setTypeface(tf);
-        top_head_app_setting.setTypeface(tf);
-        top_farming_banner_setting.setTypeface(tf);
-        upload_setting.setTypeface(tf);
-        download_setting.setTypeface(tf);
-        upload_excel.setTypeface(tf);
+
 
         System.out.println(nSystemInfo.getUserID());
         System.out.println(nSystemInfo.getUserName());
@@ -104,7 +97,6 @@ public class Setting extends AppCompatActivity {
         System.out.println(nSystemInfo.getUserDivisionID());
         System.out.println(nSystemInfo.getUserDistrictID());
         System.out.println(nSystemInfo.getUserUpazillaID());
-
 
 
         download_setting.setOnClickListener(new View.OnClickListener() {
@@ -119,14 +111,15 @@ public class Setting extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(mContex, "Upload Started", Toast.LENGTH_LONG).show();
+                try {
+                    Toast.makeText(mContex, "Upload Started", Toast.LENGTH_LONG).show();
+                    System.out.println("size: " + cAllFarmer.size());
+                    uploadData(cAllFarmer.get(uploadCount));
+                    Toast.makeText(mContex, "Upload Complete", Toast.LENGTH_LONG).show();
+                } catch (Exception ex) {
+                    Log.d("ex", String.valueOf(ex));
+                }
 
-
-                System.out.println("size: "+cAllFarmer.size());
-                uploadData(cAllFarmer.get(uploadCount));
-
-
-                Toast.makeText(mContex, "Upload Complete", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -141,18 +134,17 @@ public class Setting extends AppCompatActivity {
                 properties.error_dir = new File(DialogConfigs.DEFAULT_DIR);
                 properties.offset = new File(DialogConfigs.DEFAULT_DIR);
                 properties.extensions = null;
-                FilePickerDialog dialog = new FilePickerDialog(mContex,properties);
+                FilePickerDialog dialog = new FilePickerDialog(mContex, properties);
                 dialog.setTitle("Select Your Excel File");
 
                 dialog.setDialogSelectionListener(new DialogSelectionListener() {
                     @Override
                     public void onSelectedFilePaths(String[] files) {
-                       for(int i=0;i<files.length;i++)
-                       {
-                           System.out.println("sagor "+files[i]);
-                           readExcelData(files[i]);
+                        for (int i = 0; i < files.length; i++) {
+                            System.out.println("sagor " + files[i]);
+                            readExcelData(files[i]);
 
-                       }
+                        }
                     }
                 });
 
@@ -164,7 +156,7 @@ public class Setting extends AppCompatActivity {
     }
 
     private void readExcelData(String filePath) {
-       // Log.d(TAG, "readExcelData: Reading Excel File.");
+        // Log.d(TAG, "readExcelData: Reading Excel File.");
 
         //decarle input file
         File inputFile = new File(filePath);
@@ -190,65 +182,48 @@ public class Setting extends AppCompatActivity {
                 cFarmer.setUpazillaID(nSystemInfo.getUserUpazillaID());
                 cFarmer.setActiveStatus("1");
                 cFarmer.setUploadStatus("0");
-                String phoneNumber="";
+                String phoneNumber = "";
                 for (int c = 0; c < cellsCount; c++) {
-                        String value = getCellAsString(row, c, formulaEvaluator);
-                        if(c==1)
-                        {
-                            cFarmer.setFarmerName(value);
+                    String value = getCellAsString(row, c, formulaEvaluator);
+                    if (c == 1) {
+                        cFarmer.setFarmerName(value);
+                    } else if (c == 2) {
+                        cFarmer.setFarmerFatherHusbandName(value);
+                    } else if (c == 3) {
+                        cFarmer.setFarmingCategory(value);
+                    } else if (c == 4) {
+                        if (value.length() == 10 && value.substring(0, 1) != "0") {
+                            cFarmer.setPhoneNumber("0" + value);
+                        } else {
+                            cFarmer.setPhoneNumber(value);
                         }
-                        else if(c==2)
-                        {
-                            cFarmer.setFarmerFatherHusbandName(value);
-                        }
-                        else if(c==3)
-                        {
-                            cFarmer.setFarmingCategory(value);
-                        }
-                        else if(c==4)
-                        {
-                            if(value.length()==10 && value.substring(0,1)!="0")
-                            {
-                                cFarmer.setPhoneNumber("0"+value);
-                            }
-                            else
-                            {
-                                cFarmer.setPhoneNumber(value);
-                            }
 
-                        }
-                        else if(c==5)
-                        {
-                            cFarmer.setUnionID(value);
-                        }
-                        //System.out.println(cellInfo);
+                    } else if (c == 5) {
+                        cFarmer.setUnionID(value);
+                    }
+                    //System.out.println(cellInfo);
 
 
                 }
 
-                if(cFarmer.getPhoneNumber().length()==11 && !db.getFarmerInfoByExists(cFarmer.getPhoneNumber()))
-                {
-                    System.out.println(cFarmer.getFarmerName()+" "+ cFarmer.getFarmingCategory()+" "+cFarmer.getDivisionID()+cFarmer.getDistrictID()+cFarmer.getUpazillaID()+cFarmer.getUnionID()+" "+cFarmer.getPhoneNumber());
-                    ArrayList<UnionModel> allUnionExcel = db.getAllUnion(nSystemInfo.getUserDivisionID(),nSystemInfo.getUserDistrictID(),nSystemInfo.getUserUpazillaID());
+                if (cFarmer.getPhoneNumber().length() == 11 && !db.getFarmerInfoByExists(cFarmer.getPhoneNumber())) {
+                    System.out.println(cFarmer.getFarmerName() + " " + cFarmer.getFarmingCategory() + " " + cFarmer.getDivisionID() + cFarmer.getDistrictID() + cFarmer.getUpazillaID() + cFarmer.getUnionID() + " " + cFarmer.getPhoneNumber());
+                    ArrayList<UnionModel> allUnionExcel = db.getAllUnion(nSystemInfo.getUserDivisionID(), nSystemInfo.getUserDistrictID(), nSystemInfo.getUserUpazillaID());
                     boolean unionPresentFlag = false;
-                    int maxUnionId=0;
-                    for(UnionModel u : allUnionExcel)
-                    {
+                    int maxUnionId = 0;
+                    for (UnionModel u : allUnionExcel) {
 
-                        if(Integer.parseInt(u.getUnionID())>maxUnionId)
-                        {
+                        if (Integer.parseInt(u.getUnionID()) > maxUnionId) {
                             maxUnionId = Integer.parseInt(u.getUnionID());
                         }
-                        if(u.getUnionName().contains(cFarmer.getUnionID()) && (u.getUnionName().length()==cFarmer.getUnionID().length()))
-                        {
+                        if (u.getUnionName().contains(cFarmer.getUnionID()) && (u.getUnionName().length() == cFarmer.getUnionID().length())) {
                             unionPresentFlag = true;
                             cFarmer.setUnionID(u.getUnionID());
                             break;
                         }
                     }
 
-                    if(!unionPresentFlag)
-                    {
+                    if (!unionPresentFlag) {
                         maxUnionId++;
                         UnionModel u = new UnionModel();
                         u.setDivisionID(nSystemInfo.getUserDivisionID());
@@ -268,16 +243,16 @@ public class Setting extends AppCompatActivity {
                 }
             }
 
-            MainActivity.allUnion = db.getAllUnion(nSystemInfo.getUserDivisionID(),nSystemInfo.getUserDistrictID(),nSystemInfo.getUserUpazillaID());
+            MainActivity.allUnion = db.getAllUnion(nSystemInfo.getUserDivisionID(), nSystemInfo.getUserDistrictID(), nSystemInfo.getUserUpazillaID());
             MainActivity.allFarmerInfo = db.getAllFarmerInfoBy();
             //Log.d(TAG, "readExcelData: STRINGBUILDER: " + sb.toString());
 
-           // parseStringBuilder(sb);
+            // parseStringBuilder(sb);
 
-        }catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             //Log.e(TAG, "readExcelData: FileNotFoundException. " + e.getMessage() );
         } catch (IOException e) {
-           // Log.e(TAG, "readExcelData: Error reading inputstream. " + e.getMessage() );
+            // Log.e(TAG, "readExcelData: Error reading inputstream. " + e.getMessage() );
         }
     }
 
@@ -290,14 +265,14 @@ public class Setting extends AppCompatActivity {
 
             switch (cellValue.getCellType()) {
                 case Cell.CELL_TYPE_BOOLEAN:
-                    value = ""+cellValue.getBooleanValue();
+                    value = "" + cellValue.getBooleanValue();
                     break;
                 case Cell.CELL_TYPE_NUMERIC:
                     double numericValue = cellValue.getNumberValue();
-                        value = ""+numericValue;
+                    value = "" + numericValue;
                     break;
                 case Cell.CELL_TYPE_STRING:
-                    value = ""+cellValue.getStringValue();
+                    value = "" + cellValue.getStringValue();
                     break;
 
                 default:
@@ -308,76 +283,70 @@ public class Setting extends AppCompatActivity {
 
             //Log.e(TAG, "getCellAsString: NullPointerException: " + e.getMessage() );
         }
-        if (!(value != null && !value.isEmpty()))
-        {
-            value="";
+        if (!(value != null && !value.isEmpty())) {
+            value = "";
         }
         return value;
     }
 
 
-    String getUnionName(String unionID)
-    {
-        ArrayList<UnionModel> allUnionExcel = db.getAllUnion(nSystemInfo.getUserDivisionID(),nSystemInfo.getUserDistrictID(),nSystemInfo.getUserUpazillaID());
-        for(UnionModel u : allUnionExcel)
-        {
-            if(u.getUnionID().contains(unionID) && (u.getUnionID().length()==unionID.length()))
-            {
+    String getUnionName(String unionID) {
+        ArrayList<UnionModel> allUnionExcel = db.getAllUnion(nSystemInfo.getUserDivisionID(), nSystemInfo.getUserDistrictID(), nSystemInfo.getUserUpazillaID());
+        for (UnionModel u : allUnionExcel) {
+            if (u.getUnionID().contains(unionID) && (u.getUnionID().length() == unionID.length())) {
                 return u.getUnionName();
             }
         }
         return "";
     }
+
     boolean requestFlag = true;
-    void uploadData(final FarmerInfoModel cFarmer)
-    {
+
+    void uploadData(final FarmerInfoModel cFarmer) {
         requestFlag = true;
-        String para = "name="+Uri.encode(cFarmer.getFarmerName())+"&&";
-        para += "fathers_name="+Uri.encode(cFarmer.getFarmerFatherHusbandName())+"&&";
-        para += "phone_number="+(cFarmer.getPhoneNumber())+"&&";
-        para += "farming_category="+Uri.encode(cFarmer.getFarmingCategory())+"&&";
-        para += "division_id="+(cFarmer.getDivisionID())+"&&";
-        para += "district_id="+(cFarmer.getDistrictID())+"&&";
-        para += "upazilla_id="+cFarmer.getUpazillaID()+"&&";
-        para += "union_id="+(cFarmer.getUnionID())+"&&";
-        para += "union_name="+Uri.encode(getUnionName(cFarmer.getUnionID()))+"&&";
-        para += "user_id="+nSystemInfo.getUserID();
+        String para = "name=" + Uri.encode(cFarmer.getFarmerName()) + "&&";
+        para += "fathers_name=" + Uri.encode(cFarmer.getFarmerFatherHusbandName()) + "&&";
+        para += "phone_number=" + (cFarmer.getPhoneNumber()) + "&&";
+        para += "farming_category=" + Uri.encode(cFarmer.getFarmingCategory()) + "&&";
+        para += "division_id=" + (cFarmer.getDivisionID()) + "&&";
+        para += "district_id=" + (cFarmer.getDistrictID()) + "&&";
+        para += "upazilla_id=" + cFarmer.getUpazillaID() + "&&";
+        para += "union_id=" + (cFarmer.getUnionID()) + "&&";
+        para += "union_name=" + Uri.encode(getUnionName(cFarmer.getUnionID())) + "&&";
+        para += "user_id=" + nSystemInfo.getUserID();
 
         RequestQueue queue = Volley.newRequestQueue(this);
-        final String url ="http://digital-phonebook.com/groupmessenger/insert_farmer_info.php?"+para;
+        final String url = "http://digital-phonebook.com/groupmessenger/insert_farmer_info.php?" + para;
         JsonObjectRequest jsObjRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
 
                 System.out.println("done");
                 try {
-                    JSONArray jr = new JSONArray("["+response.toString()+"]");
-                    JSONObject jb = (JSONObject)jr.getJSONObject(0);
+                    JSONArray jr = new JSONArray("[" + response.toString() + "]");
+                    JSONObject jb = (JSONObject) jr.getJSONObject(0);
                     String status = jb.get("status").toString();
-                    if(Integer.parseInt(status)==1 || Integer.parseInt(status)==2)
-                    {
+                    if (Integer.parseInt(status) == 1 || Integer.parseInt(status) == 2) {
                         cFarmer.setUploadStatus("1");
                         db.updateData(cFarmer);
                     }
 
-                }
-                catch (Exception e) {
+                } catch (Exception e) {
                     System.out.println("eroor done");
                     Toast.makeText(mContex, e.toString(), Toast.LENGTH_LONG).show();
                 }
                 requestFlag = false;
-                            System.out.println("Response => "+response.toString());
-                            if(cAllFarmer.size()>uploadCount)
-                            {
-                                uploadCount++;
-                                uploadData(cAllFarmer.get(uploadCount));
-                            }
-                        }
-                    }, new Response.ErrorListener() {
-                        @Override
-                        public void onErrorResponse(VolleyError error) {
-                        }
-                    });
+                System.out.println("Response => " + response.toString());
+                if (cAllFarmer.size() > uploadCount) {
+                    uploadCount++;
+                    uploadData(cAllFarmer.get(uploadCount));
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+            }
+        });
         queue.add(jsObjRequest);
 
     }

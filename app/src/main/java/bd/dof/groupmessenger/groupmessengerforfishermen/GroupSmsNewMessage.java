@@ -38,22 +38,19 @@ public class GroupSmsNewMessage extends AppCompatActivity {
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
-        TextView top_head_new_sms = (TextView) findViewById(R.id.top_head_new_sms);
-        TextView smsMainNewSMSText = (TextView) findViewById(R.id.smsMainNewSMSText);
         TextView GroupSmsNewMessageTotalFarmer = (TextView) findViewById(R.id.GroupSmsNewMessageTotalFarmer);
-        TextView top_head_app_new_sms = (TextView) findViewById(R.id.top_head_app_new_sms);
 
 
-        top_head_new_sms.setTypeface(tf);
-        smsMainNewSMSText.setTypeface(tf);
+
+
         GroupSmsNewMessageTotalFarmer.setTypeface(tf);
-        top_head_app_new_sms.setTypeface(tf);
+
 
         final DbHandler db = new DbHandler(this,null,null,1);
         dbc = db;
         GroupSmsNewMessageTotalFarme=(TextView)findViewById(R.id.GroupSmsNewMessageTotalFarmer);
         final Button GroupSmsNewMessageSend = (Button) findViewById(R.id.GroupSmsNewMessageSend);
-        final ImageButton GroupSmsNewMessageSave = (ImageButton) findViewById(R.id.GroupSmsNewMessageSave);
+        final Button GroupSmsNewMessageSave = findViewById(R.id.GroupSmsNewMessageSave);
         final EditText GroupSmsNewMessageText = (EditText) findViewById(R.id.GroupSmsNewMessageText);
         GroupSmsNewMessageTotalFarme.setText(GroupSmsNewMessageTotalFarme.getText()+" "+pona_mojud.engToBng(String.valueOf(groupsmsfilter.finalRecipient.size())));
         Intent iin= getIntent();

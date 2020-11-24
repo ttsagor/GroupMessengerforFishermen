@@ -54,7 +54,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight=".2"
+                    android:layout_weight=".15"
                     android:orientation="horizontal"
                     android:id="@+id/catagoryTotalcountHolder">
 
@@ -84,7 +84,7 @@
 
                         <Button
                             android:layout_width="170dp"
-                            android:layout_height="38dp"
+                            android:layout_height="wrap_content"
                             android:textSize="14dp"
                             android:layout_gravity="center"
                             android:gravity="center"
@@ -123,6 +123,7 @@
 
                 </View>
                 <LinearLayout
+                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".13"
@@ -366,12 +367,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:padding="6dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight=".2"
                     android:orientation="horizontal"
                     android:gravity="center_horizontal">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+
+                        android:backgroundTint="@color/colorPrimaryDark"
                            android:tint="@color/colorPrimaryDark"
                         android:background="@drawable/saveicon"
                         android:id="@+id/pona_mojud_save"/>
@@ -380,6 +384,7 @@
                         android:layout_height="match_parent">
                     </View>
                     <ImageView
+                        android:backgroundTint="@color/colorPrimaryDark"
                         android:tint="@color/colorPrimaryDark"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

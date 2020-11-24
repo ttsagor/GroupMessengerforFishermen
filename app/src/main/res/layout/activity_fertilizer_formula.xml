@@ -116,7 +116,7 @@
                     <Button
                         android:id="@+id/fertilizer_agePonaSubmit"
                         android:layout_width="match_parent"
-                        android:layout_height="38dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/button_background"
                         android:text="নির্ণয় করুন"
                         android:textColor="@color/windowBackground"

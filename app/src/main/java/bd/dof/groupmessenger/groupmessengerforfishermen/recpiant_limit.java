@@ -66,10 +66,9 @@ public class recpiant_limit extends AppCompatActivity {
         final EditText limit_end_point = (EditText) findViewById(R.id.limit_end_point);
         final Button limit_button_start_activity = (Button) findViewById(R.id.limit_button_start_activity);
         final TextView limit_title_sms_text = (TextView) findViewById(R.id.limit_title_sms_text);
-        final TextView smsMainReceptLimitText = (TextView) findViewById(R.id.smsMainReceptLimitText);
+
         final TextView limit_title_total_count = (TextView) findViewById(R.id.limit_title_total_count);
-        final TextView top_head_recept_limit = (TextView) findViewById(R.id.top_head_recept_limit);
-        final TextView top_head_app_recept_limit = (TextView) findViewById(R.id.top_head_app_recept_limit);
+
         final CheckBox smsreceptlimitaddremindercheck = (CheckBox) findViewById(R.id.smsreceptlimitaddremindercheck);
         final TextView recpiant_limit_to_txt = (TextView) findViewById(R.id.recpiant_limit_to_txt);
         final TextView recpiant_limit_from_txt = (TextView) findViewById(R.id.recpiant_limit_from_txt);
@@ -79,11 +78,9 @@ public class recpiant_limit extends AppCompatActivity {
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
         limit_title_sms_text.setTypeface(tf);
-        smsMainReceptLimitText.setTypeface(tf);
+
         limit_title_total_count.setTypeface(tf);
-        top_head_recept_limit.setTypeface(tf);
-        smsMainReceptLimitText.setTypeface(tf);
-        top_head_app_recept_limit.setTypeface(tf);
+
         limit_button_start_activity.setTypeface(tf);
         recpiant_limit_to_txt.setTypeface(tf);
         recpiant_limit_from_txt.setTypeface(tf);

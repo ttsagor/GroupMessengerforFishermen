@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -22,19 +23,15 @@ public class AddTemplate extends AppCompatActivity {
         setContentView(R.layout.activity_add_template);
 
         final DbHandler db = new DbHandler(this,null,null,1);
-        final ImageButton addtemplateMsgBoxMessageSave = (ImageButton) findViewById(R.id.addtemplateMsgBoxMessageSave);
+        final Button addtemplateMsgBoxMessageSave = findViewById(R.id.addtemplateMsgBoxMessageSave);
         final EditText addtemplateMsgBox = (EditText) findViewById(R.id.addtemplateMsgBox);
-        final TextView top_head_add_template = (TextView) findViewById(R.id.top_head_add_template);
-        final TextView top_head_app_add_template = (TextView) findViewById(R.id.top_head_app_add_template);
-        final TextView add_template_title_Text = (TextView) findViewById(R.id.add_template_title_Text);
+
 
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
-        top_head_add_template.setTypeface(tf);
-        top_head_app_add_template.setTypeface(tf);
-        add_template_title_Text.setTypeface(tf);
+
         addtemplateMsgBoxMessageSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

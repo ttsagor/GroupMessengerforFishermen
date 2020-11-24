@@ -34,15 +34,11 @@ public class GroupSmsTemplateSelection extends AppCompatActivity {
 
         setContentView(R.layout.activity_group_sms_template_selection);
 
-        TextView smsMainTemplateSelectionText = (TextView) findViewById(R.id.smsMainTemplateSelectionText);
-        TextView top_head_smstemplete = (TextView) findViewById(R.id.top_head_smstemplete);
-        TextView top_head_app_smstemplete = (TextView) findViewById(R.id.top_head_app_smstemplete);
+
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
-        smsMainTemplateSelectionText.setTypeface(tf);
-        top_head_smstemplete.setTypeface(tf);
-        top_head_app_smstemplete.setTypeface(tf);
+
 
         final DbHandler db = new DbHandler(this,null,null,1);
         //GroupSmsTemplateSelectionTotalFarmer=(TextView)findViewById(R.id.GroupSmsTemplateSelectionTotalFarmer);
