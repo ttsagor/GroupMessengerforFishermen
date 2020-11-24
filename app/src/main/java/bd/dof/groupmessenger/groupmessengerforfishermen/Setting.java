@@ -59,9 +59,7 @@ import static bd.dof.groupmessenger.groupmessengerforfishermen.R.styleable.Alert
 
 public class Setting extends AppCompatActivity {
 
-    TextView top_head_setting;
-    TextView top_head_app_setting;
-    TextView top_farming_banner_setting;
+
 
     Button upload_setting;
     Button download_setting;
