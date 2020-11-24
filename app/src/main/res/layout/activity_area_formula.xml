@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/smsbg">
+    android:background="@drawable/smsbg"
+    android:orientation="vertical">
 
     <include layout="@layout/row_slim_header" />
 
@@ -13,133 +13,113 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight=".75"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:orientation="vertical"
             android:gravity="center"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:paddingTop="5dp">
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-                android:orientation="vertical"
-               >
+                android:orientation="vertical">
 
 
+                <EditText
+                    android:id="@+id/area_formula_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/background_border"
+                    android:hint="পুকুরের দৈর্ঘ্য(ফুট)"
+                    android:inputType="number"
+                    android:minWidth="80dp"
+                    android:padding="10dp"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
 
-                        <EditText
-                            android:layout_marginBottom="8dp"
-                            android:hint="পুকুরের দৈর্ঘ্য(ফুট)"
-                            android:padding="10dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="number"
-                            android:minWidth="80dp"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:id="@+id/area_formula_length"
-                            android:background="@drawable/background_border"
-                            android:paddingLeft="2dp"/>
+                <EditText
+                    android:id="@+id/area_formula_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/background_border"
+                    android:hint="পুকুরের উচ্চতা(ফুট)"
+                    android:inputType="number"
+                    android:minWidth="80dp"
+                    android:padding="10dp"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
 
+                <EditText
+                    android:id="@+id/area_formula_width"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/background_border"
+                    android:hint="পুকুরের প্রস্থ(ফুট)"
+                    android:inputType="number"
+                    android:minWidth="80dp"
+                    android:padding="10dp"
+                    android:paddingLeft="2dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
 
-
-
-
-                        <EditText
-                            android:layout_marginBottom="8dp"
-                            android:hint="পুকুরের উচ্চতা(ফুট)"
-                            android:padding="10dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="number"
-                            android:minWidth="80dp"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:id="@+id/area_formula_height"
-                            android:background="@drawable/background_border"
-                            android:paddingLeft="2dp"/>
-
-
-
-
-
-
-                        <EditText
-                            android:layout_marginBottom="8dp"
-                            android:hint="পুকুরের প্রস্থ(ফুট)"
-                            android:padding="10dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="number"
-                            android:minWidth="80dp"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:id="@+id/area_formula_width"
-                            android:background="@drawable/background_border"
-                            android:paddingLeft="2dp"/>
-
-
-
-
-
-
-                        <Button
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/button_background"
-                            android:textColor="@color/windowBackground"
-                            android:textSize="15dp"
-                            android:text="নির্ণয় করুন"
-                            android:id="@+id/area_formula_agePonaSubmit"/>
-
+                <Button
+                    android:id="@+id/area_formula_agePonaSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/button_background"
+                    android:text="নির্ণয় করুন"
+                    android:textColor="@color/windowBackground"
+                    android:textSize="15dp" />
 
 
             </LinearLayout>
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.0">
-        </View>
+
         <LinearLayout
+            android:id="@+id/countShowlayout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight=".4"
-            android:orientation="vertical"
             android:gravity="center"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
             android:paddingTop="5dp"
-            android:id="@+id/countShowlayout">
+            android:paddingRight="20dp">
 
             <LinearLayout
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="50sp"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50sp"
                 android:layout_weight="1"
-                android:orientation="vertical"
                 android:background="@drawable/white_bg"
+                android:orientation="vertical"
                 android:paddingLeft="20dp">
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="0.05">
-                </View>
+                    android:layout_weight="0.05"></View>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight=".2"
+                    android:layout_weight=".1"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -148,103 +128,115 @@
                         android:layout_weight=".9"
                         android:orientation="vertical"
                         android:paddingLeft="20dp">
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight=".13"
+                            android:layout_weight=".05"
+
                             android:orientation="horizontal"
                             android:paddingTop="10dp">
+
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight=".7">
+
                                 <TextView
+                                    android:id="@+id/area_formula_sotangso_text"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:textAppearance="?android:attr/textAppearanceMedium"
                                     android:text="পুকুরের আয়তন (ঘনফুট)"
-                                    android:id="@+id/area_formula_sotangso_text"/>
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight=".3">
+
                                 <TextView
+                                    android:id="@+id/area_formula_sotangso"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/area_formula_sotangso"
-                                    android:textAppearance="?android:attr/textAppearanceMedium"
-                                    android:text=":০"/>
+                                    android:text=":০"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
                             </LinearLayout>
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight=".13"
+                            android:layout_weight=".05"
                             android:orientation="horizontal">
+
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight=".7">
+
                                 <TextView
+                                    android:id="@+id/area_formula_hector_text"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:textAppearance="?android:attr/textAppearanceMedium"
                                     android:text="পুকুরের আয়তন (লিটার)"
-                                    android:id="@+id/area_formula_hector_text"/>
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
                             </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight=".3">
+
                                 <TextView
+                                    android:id="@+id/area_formula_hector"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/area_formula_hector"
-                                    android:textAppearance="?android:attr/textAppearanceMedium"
-                                    android:text=":০"/>
+                                    android:text=":০"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
                             </LinearLayout>
 
                         </LinearLayout>
 
                     </LinearLayout>
+
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="0.05">
-                    </View>
+                        android:layout_weight="0.05"></View>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".1"
-                    android:orientation="horizontal"
-                    android:gravity="center_horizontal">
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
                     <ImageView
+                        android:id="@+id/area_formula_SaveImg"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/ic_round_save_24"
-                        android:id="@+id/area_formula_SaveImg"/>
+                        android:background="@drawable/saveicon"
+                        android:backgroundTint="@color/colorPrimaryDark" />
+
                     <View
                         android:layout_width="20dp"
-                        android:layout_height="match_parent">
-                    </View>
+                        android:layout_height="match_parent"></View>
+
                     <ImageView
+                        android:id="@+id/area_formula_ShareImg"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/ic_round_share_24"
-                        android:id="@+id/area_formula_ShareImg"/>
+                        android:background="@drawable/shareicon"
+                        android:backgroundTint="@color/colorPrimaryDark" />
 
                 </LinearLayout>
 
 
             </LinearLayout>
         </LinearLayout>
-
-
 
 
     </LinearLayout>

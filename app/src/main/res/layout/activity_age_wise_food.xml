@@ -223,7 +223,8 @@
                         android:id="@+id/ageWiseFoodSaveImg"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/ic_round_save_24" />
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:background="@drawable/saveicon" />
 
                     <View
                         android:layout_width="20dp"
@@ -233,7 +234,8 @@
                         android:id="@+id/ageWiseFoodShareImg"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/ic_round_share_24" />
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:background="@drawable/shareicon" />
 
                 </LinearLayout>
 

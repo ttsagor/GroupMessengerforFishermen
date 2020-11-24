@@ -26,8 +26,8 @@
             android:gravity="right"
             android:paddingRight="10dp">
             <Button
-                android:backgroundTint="@android:color/darker_gray"
-                android:textColor="@android:color/black"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
                 android:layout_width="130dp"
                 android:text="টেমপ্লেট"
                 android:layout_height="wrap_content"
@@ -42,6 +42,7 @@
             android:layout_weight=".7">
 
             <EditText
+                android:padding="8dp"
                 android:layout_marginBottom="25dp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
