@@ -21,8 +21,6 @@ public class InventorInformation extends AppCompatActivity {
 
         setContentView(R.layout.activity_inventor_information);
 
-        TextView top_head_inova = (TextView) findViewById(R.id.top_head_inova);
-        TextView smsMainInovationText = (TextView) findViewById(R.id.smsMainInovationText);
         TextView invotech = (TextView) findViewById(R.id.invotech);
         TextView invoname = (TextView) findViewById(R.id.invoname);
         TextView invobsc = (TextView) findViewById(R.id.invobsc);
@@ -31,13 +29,12 @@ public class InventorInformation extends AppCompatActivity {
         TextView invonarea = (TextView) findViewById(R.id.invonarea);
         TextView invophone = (TextView) findViewById(R.id.invophone);
         TextView invoemail = (TextView) findViewById(R.id.invoemail);
-        TextView top_head_app_inova = (TextView) findViewById(R.id.top_head_app_inova);
+
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
-        top_head_inova.setTypeface(tf);
-        smsMainInovationText.setTypeface(tf);
+
         invotech.setTypeface(tf);
         invoname.setTypeface(tf);
         invobsc.setTypeface(tf);
@@ -46,7 +43,7 @@ public class InventorInformation extends AppCompatActivity {
         invonarea.setTypeface(tf);
         invophone.setTypeface(tf);
         invoemail.setTypeface(tf);
-        top_head_app_inova.setTypeface(tf);
+
     }
 
     @Override

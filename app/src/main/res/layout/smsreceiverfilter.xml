@@ -44,15 +44,18 @@
                   android:layout_weight="1"
                   android:orientation="horizontal"
                   android:gravity="center"
-                  android:padding="6dp"
+
+                  android:padding="8dp"
                   android:background="@drawable/button_background"
                   android:weightSum="1"
                   android:paddingLeft="10dp">
 
                   <TextView
+                      android:layout_gravity="center"
+                      android:gravity="center"
                       android:layout_width="0dp"
                       android:layout_height="wrap_content"
-                      android:layout_weight="0.8"
+                      android:layout_weight="1"
                       android:textAppearance="?android:attr/textAppearanceMedium"
                       android:text="সকল চাষি"
                       android:textSize="16sp"
@@ -60,6 +63,7 @@
                       android:id="@+id/smsMainAllFarmerText"
                       />
                   <RadioButton
+                      android:visibility="gone"
                       android:buttonTint="@color/textColorPrimary"
                       android:layout_width="0dp"
                       android:layout_height="wrap_content"
@@ -68,7 +72,7 @@
                       android:id="@+id/allarea" />
               </LinearLayout>
               <LinearLayout
-                  android:padding="6dp"
+                  android:padding="8dp"
                   android:id="@+id/areawiserdo"
                   android:layout_width="0dp"
                   android:layout_height="40dp"
@@ -85,9 +89,11 @@
                       android:textSize="16sp"
                       android:textAppearance="?android:attr/textAppearanceMedium"
                       android:text="এলাকা ভিত্তিক"
+                      android:gravity="center"
                       android:textColor="@color/textColorPrimary"
                       android:id="@+id/smsMainAreaWiseText"/>
                   <RadioButton
+                      android:visibility="gone"
                       android:buttonTint="@color/textColorPrimary"
                       android:layout_width="0dp"
                       android:layout_height="wrap_content"
@@ -110,7 +116,7 @@
 
                 >
                 <LinearLayout
-                    android:padding="6dp"
+                    android:padding="8dp"
                     android:id="@+id/catwiserdo"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
@@ -130,8 +136,10 @@
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="চাষের ধরন ভিত্তিক"
                         android:textSize="13sp"
+                        android:gravity="center"
                         android:id="@+id/smsMainFarmingWiseText"/>
                     <RadioButton
+                        android:visibility="gone"
                         android:buttonTint="@color/textColorPrimary"
                         android:layout_width="0dp"
                         android:layout_weight=".2"
@@ -143,7 +151,7 @@
 
 
                 <LinearLayout
-                    android:padding="6dp"
+                    android:padding="8dp"
                     android:id="@+id/operatorwiserdo"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
@@ -161,9 +169,11 @@
                         android:textColor="@color/textColorPrimary"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="অপারেটর ভিত্তিক"
+                        android:gravity="center"
                         android:id="@+id/smsMainOperatorWiseText"
                         />
                     <RadioButton
+                        android:visibility="gone"
                         android:buttonTint="@color/textColorPrimary"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -183,17 +193,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".3"
+            android:layout_weight=".2"
             android:orientation="vertical"
             android:gravity="center"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
             android:paddingTop="5dp"
             android:id="@+id/countShowlayout">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_weight=".05"
+
                 android:orientation="vertical"
                 android:background="@drawable/white_bg"
                 android:paddingLeft="20dp">
@@ -201,7 +212,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight=".25"
+                    android:layout_weight=".10"
                     android:orientation="horizontal"
                     android:id="@+id/areaTotalcountHolder">
                     <LinearLayout
@@ -233,7 +244,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight=".25"
+                    android:layout_weight=".10"
                     android:orientation="horizontal"
                     android:id="@+id/catagoryTotalcountHolder">
                     <LinearLayout
@@ -264,7 +275,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight=".25"
+                    android:layout_weight=".10"
                     android:orientation="horizontal"
                     android:id="@+id/operatorTotalcountHolder">
                     <LinearLayout
@@ -295,7 +306,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight=".25"
+                    android:layout_weight=".10"
                     android:orientation="horizontal"
                     android:id="@+id/sumTotalcountHolder">
                     <LinearLayout
@@ -354,6 +365,7 @@
                         android:layout_gravity="center_horizontal"
                         android:background="@drawable/button_background"
                        android:layout_marginEnd="15dp"
+
                         android:layout_marginStart="15dp"
                         android:textColor="@color/textColorPrimary"
                         android:textSize="18dp"

@@ -12,27 +12,27 @@
     <LinearLayout
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight=".75"
+        android:layout_height="wrap_content"
+
         android:orientation="vertical"
         android:gravity="center">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".8"
+            android:layout_height="wrap_content"
+
             android:orientation="vertical"
-            android:gravity="center"
+
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:paddingTop="5dp">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
+
                 android:orientation="vertical"
                 android:background="@drawable/white_bg"
-                android:paddingLeft="20dp">
+               >
 
               <LinearLayout
                   android:layout_width="match_parent"
@@ -45,7 +45,7 @@
                       android:layout_weight="1"
                       android:orientation="vertical"
                       android:paddingTop="10dp"
-                      android:paddingRight="20dp"
+                          android:paddingRight="10dp"
                       android:paddingLeft="10dp">
                       <com.google.android.material.textfield.TextInputLayout
                           android:layout_width="match_parent"
@@ -120,11 +120,13 @@
                           android:id="@+id/top_head_app_fish_farming_add_farmer_union_name"/>
 
                       <Spinner
-
+android:padding="6dp"
                           android:layout_width="match_parent"
-                          android:layout_height="30dp"
+                          android:layout_height="wrap_content"
                           android:id="@+id/adduserunionlist" />
                       <LinearLayout
+                          android:layout_marginBottom="15dp"
+                          android:layout_marginTop="8dp"
                           android:layout_width="match_parent"
                           android:layout_height="wrap_content"
 

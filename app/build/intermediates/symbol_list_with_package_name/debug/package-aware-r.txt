@@ -2068,7 +2068,6 @@ id smsMainAreaInforamtionText
 id smsMainAreaWiseText
 id smsMainFarmingCategoryText
 id smsMainFarmingWiseText
-id smsMainInovationText
 id smsMainOperatorListText
 id smsMainOperatorWiseText
 id smsMainText
@@ -2131,8 +2130,6 @@ id topPanel
 id top_head
 id top_head_app
 id top_head_app_fish_farming_add_farmer_union_name
-id top_head_app_inova
-id top_head_inova
 id totalFish
 id totalPona
 id totalWeigt
