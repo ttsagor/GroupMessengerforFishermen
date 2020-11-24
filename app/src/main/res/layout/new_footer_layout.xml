@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_alignParentBottom="true"
+<androidx.cardview.widget.CardView android:layout_alignParentBottom="true"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="56dp"
+    app:cardElevation="50dp"
+    app:cardBackgroundColor="@android:color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
+        android:elevation="16dp"
         android:background="@color/textColorPrimary"
         android:layout_height="60dp"
         app:menu="@menu/new_bottom_menu_home"
@@ -17,4 +20,4 @@
         app:itemRippleColor="#FFEB3B"
         android:id="@+id/bottom_navigation_view" />
 
-</RelativeLayout>
+</androidx.cardview.widget.CardView>

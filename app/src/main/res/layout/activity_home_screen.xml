@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    android:weightSum="1"
     tools:context=".NewDesign.HomeScreenActivity">
 
+
+    <include
+
+        android:id="@+id/header"
+        layout="@layout/new_header_layout" />
+
+    <include layout="@layout/new_row_article" />
+    <!--- there will be the banner part -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="vertical">
-
-        <include
-            android:id="@+id/header"
-            layout="@layout/new_header_layout" />
-
-        <include layout="@layout/new_row_article" />
-        <!--- there will be the banner part -->
 
         <LinearLayout
             android:layout_width="match_parent"
-
-            android:layout_height="wrap_content"
+            android:layout_height="115dp"
             android:orientation="horizontal"
-            android:padding="8dp"
+            android:paddingBottom="8dp"
             android:weightSum="2">
 
 
@@ -31,7 +35,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
+                android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_background"
                 android:orientation="vertical"
@@ -65,7 +69,7 @@
             <LinearLayout
                 android:id="@+id/ll_mosso_sutro"
                 android:layout_width="0dp"
-                android:layout_height="115dp"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="15dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_background"
@@ -101,11 +105,11 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="115dp"
 
-            android:background="#ffffff"
+
             android:orientation="horizontal"
-            android:padding="8dp"
+            android:paddingBottom="8dp"
             android:weightSum="2"
 
             >
@@ -114,9 +118,9 @@
             <LinearLayout
                 android:id="@+id/ll_desease"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
+                android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_background"
                 android:orientation="vertical"
@@ -148,7 +152,7 @@
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="115dp"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="15dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_background"
@@ -184,19 +188,17 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:background="#ffffff"
+            android:layout_height="115dp"
             android:orientation="horizontal"
-            android:padding="8dp"
+            android:paddingBottom="8dp"
             android:weightSum="2">
 
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
+                android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_background"
                 android:orientation="vertical"
@@ -231,7 +233,7 @@
             <LinearLayout
                 android:id="@+id/ll_invention"
                 android:layout_width="0dp"
-                android:layout_height="115dp"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="15dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_background"
@@ -259,14 +261,15 @@
                     android:paddingTop="8dp"
                     android:text="উদ্ভাবন ও পরিকল্পনায়"
                     android:textColor="@color/textColorPrimary"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
             </LinearLayout>
 
 
         </LinearLayout>
-
     </LinearLayout>
 
     <include layout="@layout/new_footer_layout" />
+</LinearLayout>
 
-</RelativeLayout>
+
+

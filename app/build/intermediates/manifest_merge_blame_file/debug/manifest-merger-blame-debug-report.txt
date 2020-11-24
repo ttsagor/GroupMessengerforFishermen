@@ -64,9 +64,9 @@
 32        android:testOnly="true"
 33        android:theme="@style/AppTheme" >
 33-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:22:9-40
-34        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity" />
-34-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:23:9-66
-34-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:23:19-63
+34        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.PhoneNumberValidation" />
+34-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:23:9-59
+34-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:23:19-56
 35        <activity
 35-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:24:9-27:52
 36            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.MainActivity"
@@ -191,9 +191,9 @@
 94-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:83:13-40
 95            android:windowSoftInputMode="stateHidden|adjustPan" />
 95-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:84:13-64
-96        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.PhoneNumberValidation" >
+96        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity" >
 96-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:85:9-91:20
-96-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:85:19-56
+96-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:85:19-63
 97            <intent-filter>
 97-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:86:13-90:29
 98                <action android:name="android.intent.action.MAIN" />

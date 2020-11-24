@@ -140,10 +140,10 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/admi
 		ADDED from /Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:18:9-35
 	android:theme
 		ADDED from /Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:22:9-40
-activity#bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity
-ADDED from /Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:23:9-66
+activity#bd.dof.groupmessenger.groupmessengerforfishermen.PhoneNumberValidation
+ADDED from /Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:23:9-59
 	android:name
-		ADDED from /Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:23:19-63
+		ADDED from /Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:23:19-56
 activity#bd.dof.groupmessenger.groupmessengerforfishermen.MainActivity
 ADDED from /Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:24:9-27:52
 	android:screenOrientation
@@ -270,10 +270,10 @@ ADDED from /Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/s
 		ADDED from /Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:84:13-64
 	android:name
 		ADDED from /Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:83:13-40
-activity#bd.dof.groupmessenger.groupmessengerforfishermen.PhoneNumberValidation
+activity#bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity
 ADDED from /Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:85:9-91:20
 	android:name
-		ADDED from /Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:85:19-56
+		ADDED from /Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:85:19-63
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:86:13-90:29
 action#android.intent.action.MAIN
