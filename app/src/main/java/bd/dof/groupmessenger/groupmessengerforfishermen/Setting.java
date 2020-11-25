@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -61,9 +62,7 @@ public class Setting extends AppCompatActivity {
 
 
 
-    Button upload_setting;
-    Button download_setting;
-    Button upload_excel;
+    AppCompatButton upload_setting,download_setting, upload_excel;
     Context mContex;
     SystemInformationModel nSystemInfo = new SystemInformationModel();
     DbHandler db = new DbHandler(this, null, null, 1);
@@ -81,22 +80,9 @@ public class Setting extends AppCompatActivity {
         nSystemInfo = db.getSystemInfo();
         cAllFarmer = db.getFarmerInfoPendingUpdate();
 
-        upload_setting = (Button) findViewById(R.id.upload_setting);
-        download_setting = (Button) findViewById(R.id.download_setting);
-        upload_excel = (Button) findViewById(R.id.upload_excel);
-        String fontPath = "fonts/SolaimanLipi.ttf";
-        Typeface tf;
-        tf = Typeface.createFromAsset(this.getAssets(), fontPath);
-
-
-        System.out.println(nSystemInfo.getUserID());
-        System.out.println(nSystemInfo.getUserName());
-        System.out.println(nSystemInfo.getUserPhoneNumber());
-        System.out.println(nSystemInfo.getUserDivisionID());
-        System.out.println(nSystemInfo.getUserDistrictID());
-        System.out.println(nSystemInfo.getUserUpazillaID());
-
-
+        upload_setting =  findViewById(R.id.upload_setting);
+        download_setting =  findViewById(R.id.download_setting);
+        upload_excel =  findViewById(R.id.upload_excel);
         download_setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

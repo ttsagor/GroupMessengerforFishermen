@@ -95,7 +95,7 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/ppm_agePonaSubmit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:layout_marginStart="6dp"
                     android:layout_marginEnd="6dp"
                     android:background="@drawable/button_background"

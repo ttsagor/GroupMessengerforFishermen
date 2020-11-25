@@ -183,14 +183,16 @@
                 android:layout_height="0dp"
                 android:layout_weight=".2"
                 android:gravity="center">
-                <Button
-                    android:layout_width="190dp"
-                    android:layout_height="wrap_content"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
                     android:id="@+id/limit_button_start_activity"
                     android:layout_gravity="center"
                     android:background="@drawable/button_background"
                     android:text="বার্তা পাঠান"
-                    android:textSize="20dp"
+                    android:textSize="18sp"
                     android:textColor="@color/textColorPrimary"/>
             </LinearLayout>
 

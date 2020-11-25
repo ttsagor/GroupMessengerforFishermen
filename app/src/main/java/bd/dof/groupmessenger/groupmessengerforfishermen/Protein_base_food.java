@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Font;
@@ -83,7 +84,7 @@ public class Protein_base_food extends AppCompatActivity {
         TextView protein_base_food_maze = (TextView) findViewById(R.id.protein_base_food_maze);
         TextView protein_base_food_rice = (TextView) findViewById(R.id.protein_base_food_rice);
         TextView protein_base_food_total = (TextView) findViewById(R.id.protein_base_food_total);
-        Button proteinAmountButton = (Button) findViewById(R.id.proteinAmountButton);
+        AppCompatButton proteinAmountButton =  findViewById(R.id.proteinAmountButton);
         protein_base_share = (ImageView) findViewById(R.id.protein_base_share);
         protein_base_save = (ImageView) findViewById(R.id.protein_base_save);
         String fontPath = "fonts/SolaimanLipi.ttf";

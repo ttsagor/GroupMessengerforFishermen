@@ -24,6 +24,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -64,7 +65,7 @@ public class recpiant_limit extends AppCompatActivity {
         final TextView title = (TextView) findViewById(R.id.limit_title_total_count);
         final EditText limit_start_point = (EditText) findViewById(R.id.limit_start_point);
         final EditText limit_end_point = (EditText) findViewById(R.id.limit_end_point);
-        final Button limit_button_start_activity = (Button) findViewById(R.id.limit_button_start_activity);
+        final AppCompatButton limit_button_start_activity =  findViewById(R.id.limit_button_start_activity);
         final TextView limit_title_sms_text = (TextView) findViewById(R.id.limit_title_sms_text);
 
         final TextView limit_title_total_count = (TextView) findViewById(R.id.limit_title_total_count);
