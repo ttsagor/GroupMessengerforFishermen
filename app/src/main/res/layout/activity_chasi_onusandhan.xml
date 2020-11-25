@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewDesign.ChasiOnusandhanActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/row_slim_header" />
+
+        <include layout="@layout/header_timeline" />
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:id="@+id/logged_id"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:onClick="chashionusandhanSystem"
+                android:id="@+id/ll_khude_barta_peron"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:orientation="vertical"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_weight=".5"
+
+                    android:src="@drawable/khudebarta"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="চাষি অনুসন্ধান"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:onClick="chasisongjojonSystem"
+                android:id="@+id/ll_chasi_onusandhan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:orientation="vertical"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_weight=".5"
+
+                    android:src="@drawable/khudebarta"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="চাষি সংযোজন"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:orientation="vertical"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_weight=".5"
+
+                    android:src="@drawable/khudebarta"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="চাষি আপডট"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/new_footer_layout" />
+</RelativeLayout>

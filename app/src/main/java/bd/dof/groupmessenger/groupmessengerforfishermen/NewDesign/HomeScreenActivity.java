@@ -26,6 +26,7 @@ public class HomeScreenActivity extends AppCompatActivity implements View.OnClic
         findViewById(R.id.ll_invention).setOnClickListener(this);
         findViewById(R.id.ll_desease).setOnClickListener(this);
         findViewById(R.id.ll_khude_barta_peron).setOnClickListener(this);
+        findViewById(R.id.ll_chasi_onusandhan).setOnClickListener(this);
 
 
     }
@@ -46,6 +47,9 @@ public class HomeScreenActivity extends AppCompatActivity implements View.OnClic
                 break;
             case R.id.ll_khude_barta_peron:
                 startActivity(new Intent( HomeScreenActivity.this , KhudebartaActivity.class));
+                break;
+            case R.id.ll_chasi_onusandhan:
+                startActivity(new Intent( HomeScreenActivity.this , ChasiOnusandhanActivity.class));
                 break;
         }
     }
