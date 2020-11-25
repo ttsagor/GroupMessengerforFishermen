@@ -17,7 +17,7 @@
         app:elevation="12dp"
         app:labelVisibilityMode="labeled"
         app:itemTextColor="@color/colorPrimaryDark"
-        app:itemRippleColor="#FFEB3B"
+        app:itemRippleColor="#3F51B5"
         android:id="@+id/bottom_navigation_view" />
 
 </androidx.cardview.widget.CardView>

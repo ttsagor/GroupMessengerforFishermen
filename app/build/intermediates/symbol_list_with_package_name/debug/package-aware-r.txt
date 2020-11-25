@@ -2463,6 +2463,7 @@ layout activity_ppm_formula
 layout activity_protein_base_food2
 layout activity_recpiant_limit
 layout activity_setting
+layout activity_splash_screen
 layout age_wise_row
 layout custom_dialog
 layout design_bottom_navigation_item

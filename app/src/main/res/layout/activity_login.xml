@@ -66,6 +66,7 @@
             android:gravity="center"
             android:onClick="submitNow"
             android:padding="8dp"
+
             android:text="সাবমিট"
             android:textAlignment="center"
             android:textColor="@android:color/white"
@@ -74,6 +75,7 @@
     </LinearLayout>
 
     <ImageView
+
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="55dp"

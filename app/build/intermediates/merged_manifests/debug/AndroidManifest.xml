@@ -31,6 +31,7 @@
         android:largeHeap="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity" />
         <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity" />
         <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ChasiOnusandhanActivity" />
         <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.KhudebartaActivity" />
@@ -97,7 +98,7 @@
         <activity
             android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AgeWiseFood"
             android:windowSoftInputMode="stateHidden|adjustPan" />
-        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity" >
+        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SplashScreenActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
