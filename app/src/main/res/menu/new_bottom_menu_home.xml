@@ -6,6 +6,13 @@
         android:id="@+id/menu_sotorkota"
 
         />
+    <item
+        android:visible="false"
+        android:title="প্রোফাইল"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:id="@+id/menu_profile"
+
+        />
     <item android:title="ব্যবহারবিধি"
         android:icon="@drawable/new_baboharbidi"
         android:id="@+id/menu_beboharbidi"

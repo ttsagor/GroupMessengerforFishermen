@@ -24,6 +24,89 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/logged_id"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:id="@+id/ll_khude_barta_peron"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:orientation="vertical"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_weight=".5"
+
+                    android:src="@drawable/khudebarta"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="খুদেবার্তা প্রেরণ"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_chasi_onusandhan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:orientation="vertical"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_weight=".5"
+
+                    android:src="@drawable/onusandhan"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="চাষি অনুসন্ধান"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="115dp"
             android:orientation="horizontal"
@@ -104,19 +187,18 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/logged_out"
             android:layout_width="match_parent"
             android:layout_height="115dp"
 
-
+android:visibility="gone"
             android:orientation="horizontal"
             android:paddingBottom="8dp"
             android:weightSum="2"
 
             >
-
-
             <LinearLayout
-                android:id="@+id/ll_desease"
+
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -124,6 +206,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_background"
                 android:orientation="vertical"
+
                 android:paddingTop="6dp"
                 android:paddingBottom="6dp"
                 android:weightSum="1">
@@ -135,7 +218,7 @@
 
                     android:layout_weight=".5"
 
-                    android:src="@drawable/new_rog_chikisha"
+                    android:src="@drawable/new_tothokos"
 
                     />
 
@@ -145,10 +228,12 @@
                     android:layout_weight=".5"
                     android:gravity="center"
                     android:paddingTop="8dp"
-                    android:text="রোগ ও চিকিৎসা"
+                    android:text="তথ্য কোষ"
                     android:textColor="@color/textColorPrimary"
-                    android:textSize="18sp" />
+                    android:textSize="22sp" />
             </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -194,7 +279,9 @@
             android:weightSum="2">
 
 
+
             <LinearLayout
+                android:id="@+id/ll_desease"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -202,7 +289,6 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_background"
                 android:orientation="vertical"
-
                 android:paddingTop="6dp"
                 android:paddingBottom="6dp"
                 android:weightSum="1">
@@ -214,7 +300,7 @@
 
                     android:layout_weight=".5"
 
-                    android:src="@drawable/new_tothokos"
+                    android:src="@drawable/new_rog_chikisha"
 
                     />
 
@@ -224,11 +310,10 @@
                     android:layout_weight=".5"
                     android:gravity="center"
                     android:paddingTop="8dp"
-                    android:text="তথ্য কোষ"
+                    android:text="রোগ ও চিকিৎসা"
                     android:textColor="@color/textColorPrimary"
-                    android:textSize="22sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
-
 
             <LinearLayout
                 android:id="@+id/ll_invention"

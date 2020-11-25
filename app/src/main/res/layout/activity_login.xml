@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+
     tools:context=".NewDesign.LoginActivity">
 
 
@@ -16,7 +16,6 @@
         android:layout_marginEnd="15dp"
         android:gravity="center"
         android:orientation="vertical"
-
         android:padding="16sp">
 
 
@@ -27,9 +26,8 @@
             android:gravity="center"
             android:paddingBottom="18dp"
             android:text="লগইন"
-            android:textColor="@color/textColorPrimary"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp" />
 
         <EditText
             android:id="@+id/mobile_number"
@@ -64,7 +62,7 @@
             android:layout_gravity="center"
             android:layout_marginStart="6dp"
             android:layout_marginEnd="6dp"
-            android:background="@drawable/blue_button"
+            android:background="@drawable/button_background"
             android:gravity="center"
             android:onClick="submitNow"
             android:padding="8dp"
@@ -78,12 +76,10 @@
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginTop="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:src="@drawable/icon" />
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:src="@drawable/icon" />
+
 </RelativeLayout>
