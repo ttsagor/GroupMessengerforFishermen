@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import java.util.List;
 
@@ -49,8 +50,8 @@ public class GroupSmsNewMessage extends AppCompatActivity {
         final DbHandler db = new DbHandler(this,null,null,1);
         dbc = db;
         GroupSmsNewMessageTotalFarme=(TextView)findViewById(R.id.GroupSmsNewMessageTotalFarmer);
-        final Button GroupSmsNewMessageSend = (Button) findViewById(R.id.GroupSmsNewMessageSend);
-        final Button GroupSmsNewMessageSave = findViewById(R.id.GroupSmsNewMessageSave);
+        final AppCompatButton GroupSmsNewMessageSend =  findViewById(R.id.GroupSmsNewMessageSend);
+        final AppCompatButton GroupSmsNewMessageSave = findViewById(R.id.GroupSmsNewMessageSave);
         final EditText GroupSmsNewMessageText = (EditText) findViewById(R.id.GroupSmsNewMessageText);
         GroupSmsNewMessageTotalFarme.setText(GroupSmsNewMessageTotalFarme.getText()+" "+pona_mojud.engToBng(String.valueOf(groupsmsfilter.finalRecipient.size())));
         Intent iin= getIntent();

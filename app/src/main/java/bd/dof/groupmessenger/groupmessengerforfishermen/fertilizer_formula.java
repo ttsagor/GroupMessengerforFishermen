@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 public class fertilizer_formula extends AppCompatActivity {
 
@@ -27,7 +28,7 @@ public class fertilizer_formula extends AppCompatActivity {
     EditText fertilizer_width;
     EditText fertilizer_qunatity;
 
-    Button fertilizer_agePonaSubmit;
+    AppCompatButton fertilizer_agePonaSubmit;
 
     ImageView fertilizer_SaveImg;
     ImageView fertilizer_ShareImg;
@@ -50,7 +51,7 @@ public class fertilizer_formula extends AppCompatActivity {
         fertilizer_width = (EditText) findViewById(R.id.fertilizer_width);
         fertilizer_qunatity = (EditText) findViewById(R.id.fertilizer_qunatity);
 
-        fertilizer_agePonaSubmit = (Button) findViewById(R.id.fertilizer_agePonaSubmit);
+        fertilizer_agePonaSubmit =  findViewById(R.id.fertilizer_agePonaSubmit);
 
         fertilizer_SaveImg = (ImageView) findViewById(R.id.fertilizer_SaveImg);
         fertilizer_ShareImg = (ImageView) findViewById(R.id.fertilizer_ShareImg);

@@ -52,7 +52,7 @@
                     android:textColor="@color/textColorPrimary"
 
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="ক্ষুদেবার্তা প্রেরন প্রক্রিয়াধীন"
                     android:id="@+id/textView2"

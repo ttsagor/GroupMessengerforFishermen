@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 public class AreaFormula extends AppCompatActivity {
 
@@ -29,7 +30,7 @@ public class AreaFormula extends AppCompatActivity {
     EditText area_formula_height;
     EditText area_formula_width;
 
-    Button area_formula_agePonaSubmit;
+    AppCompatButton area_formula_agePonaSubmit;
 
     ImageView area_formula_SaveImg;
     ImageView area_formula_ShareImg;
@@ -56,7 +57,7 @@ public class AreaFormula extends AppCompatActivity {
 
         area_formula_ShareImg = (ImageView) findViewById(R.id.area_formula_ShareImg);
 
-        area_formula_agePonaSubmit = (Button) findViewById(R.id.area_formula_agePonaSubmit);
+        area_formula_agePonaSubmit =  findViewById(R.id.area_formula_agePonaSubmit);
 
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;

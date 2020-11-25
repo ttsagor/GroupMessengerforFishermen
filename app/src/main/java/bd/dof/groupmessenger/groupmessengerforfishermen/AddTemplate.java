@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 public class AddTemplate extends AppCompatActivity {
 
@@ -23,7 +24,7 @@ public class AddTemplate extends AppCompatActivity {
         setContentView(R.layout.activity_add_template);
 
         final DbHandler db = new DbHandler(this,null,null,1);
-        final Button addtemplateMsgBoxMessageSave = findViewById(R.id.addtemplateMsgBoxMessageSave);
+        final AppCompatButton addtemplateMsgBoxMessageSave = findViewById(R.id.addtemplateMsgBoxMessageSave);
         final EditText addtemplateMsgBox = (EditText) findViewById(R.id.addtemplateMsgBox);
 
 

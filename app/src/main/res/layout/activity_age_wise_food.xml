@@ -114,7 +114,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/agePonaSubmit"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -122,6 +122,8 @@
                     android:layout_marginEnd="6dp"
                     android:background="@drawable/button_background"
                     android:text="নির্ণয় করুন"
+
+                    android:layout_marginBottom="8dp"
                     android:textColor="@color/windowBackground"
                     android:textSize="15dp" />
 

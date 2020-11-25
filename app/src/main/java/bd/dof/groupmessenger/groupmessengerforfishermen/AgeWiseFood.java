@@ -28,6 +28,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Font;
@@ -87,7 +88,7 @@ public class AgeWiseFood extends AppCompatActivity {
         ageWeight = (EditText) findViewById(R.id.ageWeight);
         agePer = (EditText) findViewById(R.id.agePer);
         list = (ListView) findViewById(R.id.scrolAgeList);
-        Button agePonaSubmit = (Button) findViewById(R.id.agePonaSubmit);
+        AppCompatButton agePonaSubmit =  findViewById(R.id.agePonaSubmit);
         week.add("মাছের বয়স");
         fishweight.add("মাছের মোট ওজন (কেজি)");
         foodweight.add("খাদ্যের পরিমান (কেজি)");

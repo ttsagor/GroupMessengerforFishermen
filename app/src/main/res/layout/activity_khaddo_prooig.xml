@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/smsbg"
     android:orientation="vertical">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
     <include layout="@layout/row_slim_header" />
 
     <include layout="@layout/header_timeline" />
@@ -17,14 +21,15 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
             android:gravity="center"
             android:orientation="vertical"
-            android:paddingLeft="30dp"
+            android:paddingLeft="20dp"
             android:paddingTop="5dp"
-            android:paddingRight="30dp">
+            android:paddingRight="20dp">
 
 
             <EditText
@@ -69,7 +74,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/foodPercentButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -79,35 +84,39 @@
                 android:background="@drawable/button_background"
                 android:minWidth="90dp"
                 android:text="নির্ণয় করুন"
+                android:textSize="18sp"
                 android:textColor="@color/windowBackground" />
 
 
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginTop="15dp"
             android:id="@+id/countShowlayout"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="100dp"
-            android:layout_weight=".2"
+
             android:gravity="center"
             android:orientation="vertical"
-            android:paddingLeft="30dp"
+            android:paddingLeft="20dp"
             android:paddingTop="5dp"
-            android:paddingRight="30dp">
+            android:paddingRight="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".1"
+                android:layout_height="wrap_content"
+             android:padding="15dp"
                 android:background="@drawable/white_bg"
                 android:orientation="vertical"
                 android:paddingLeft="20dp">
 
                 <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".1"
+
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:paddingTop="10dp">
 
@@ -141,8 +150,9 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".1"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -174,17 +184,20 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight=".15"
+                    android:layout_weight=".05"
+                    android:layout_marginBottom="10dp"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
                     <ImageView
+                        android:backgroundTint="@color/colorPrimaryDark"
                         android:id="@+id/khaddo_prooig_save_img"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/ic_round_save_24" />
+                        android:background="@drawable/saveicon" />
 
                     <View
                         android:layout_width="20dp"
@@ -194,14 +207,15 @@
                         android:id="@+id/khaddo_prooig_share_img"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/ic_round_share_24" />
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:background="@drawable/shareicon" />
 
                 </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
-
-
     </LinearLayout>
 
-</LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/new_footer_layout" />
+</RelativeLayout>

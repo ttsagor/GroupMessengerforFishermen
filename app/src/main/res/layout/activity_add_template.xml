@@ -25,8 +25,8 @@
             android:layout_weight=".1"
             android:gravity="right"
             android:paddingRight="10dp">
-            <Button
-                android:backgroundTint="@color/colorPrimaryDark"
+            <androidx.appcompat.widget.AppCompatButton
+               android:background="@drawable/button_background"
                 android:textColor="@android:color/white"
                 android:layout_width="130dp"
                 android:text="টেমপ্লেট"

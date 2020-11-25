@@ -19,7 +19,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".25"
+            android:layout_weight=".28"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingLeft="20dp"
@@ -91,9 +91,10 @@
 
 
 
-                    <Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:layout_marginStart="6dp"
                         android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="6dp"
                         android:padding="10dp"
                         android:id="@+id/fertilizer_agePonaSubmit"
                         android:layout_width="match_parent"
@@ -132,10 +133,7 @@
                 android:orientation="vertical"
                 android:paddingLeft="20dp">
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.05"></View>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
