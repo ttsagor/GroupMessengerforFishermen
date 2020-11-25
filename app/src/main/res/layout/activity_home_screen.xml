@@ -25,15 +25,16 @@
 
         <LinearLayout
             android:id="@+id/logged_id"
-            android:visibility="visible"
             android:layout_width="match_parent"
             android:layout_height="115dp"
             android:orientation="horizontal"
             android:paddingBottom="8dp"
+            android:visibility="visible"
             android:weightSum="2">
 
 
             <LinearLayout
+
                 android:id="@+id/ll_khude_barta_peron"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -94,7 +95,7 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="28dp"
+                    android:layout_height="0dp"
                     android:layout_weight=".5"
                     android:gravity="center"
                     android:paddingTop="8dp"
@@ -191,12 +192,13 @@
             android:layout_width="match_parent"
             android:layout_height="115dp"
 
-android:visibility="gone"
             android:orientation="horizontal"
             android:paddingBottom="8dp"
+            android:visibility="gone"
             android:weightSum="2"
 
             >
+
             <LinearLayout
 
                 android:layout_width="0dp"
@@ -232,7 +234,6 @@ android:visibility="gone"
                     android:textColor="@color/textColorPrimary"
                     android:textSize="22sp" />
             </LinearLayout>
-
 
 
             <LinearLayout
@@ -277,7 +278,6 @@ android:visibility="gone"
             android:orientation="horizontal"
             android:paddingBottom="8dp"
             android:weightSum="2">
-
 
 
             <LinearLayout
