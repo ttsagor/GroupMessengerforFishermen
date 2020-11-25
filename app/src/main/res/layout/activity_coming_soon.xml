@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".NewDesign.ComingSoonActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <include layout="@layout/row_slim_header" />
+
+    <include layout="@layout/header_timeline" />
+    </LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/disease_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:paddingLeft="10dp"
+        android:text="পরবর্তি আপডেট এর জন্য অপেক্ষা করুন"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="30sp" />
+    <include layout="@layout/new_footer_layout" />
+</RelativeLayout>

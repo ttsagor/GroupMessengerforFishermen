@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
+    tools:context=".NewDesign.SotorkotaActivity">
     <include layout="@layout/row_slim_header" />
 
     <include layout="@layout/header_timeline" />
@@ -36,49 +37,10 @@
 
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:paddingTop="6dp"
 
-                    android:paddingBottom="6dp">
-
-                    <TextView
-                        android:id="@+id/disease_name"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:paddingLeft="10dp"
-                        android:text="মাছের রোগের নামঃ"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="18sp" />
-
-                    <ImageView
-                        android:id="@+id/diseaseEditIcon"
-                        android:layout_width="38dp"
-                        android:layout_height="38dp"
-                        android:layout_marginEnd="8dp"
-                        app:tint="@color/colorPrimaryDark"
-                        android:src="@drawable/editicon"
-                      />
-
-
-                    <ImageView
-                        app:tint="@color/colorPrimaryDark"
-                        android:id="@+id/disease_details_share"
-                        android:layout_width="38dp"
-                        android:layout_height="38dp"
-                        android:layout_marginEnd="8dp"
-                        android:src="@drawable/shareicon"
-                         />
-
-
-                </LinearLayout>
 
                 <LinearLayout
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center">
@@ -117,8 +79,8 @@
                         android:id="@+id/disease_reason"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
-                        android:text="রোগের কারন" />
+                        android:padding="10dp"
+                        android:text="মাছের গুণাগুণ ও সুষ্ঠু পরিকল্পনা" />
                 </LinearLayout>
 
                 <androidx.cardview.widget.CardView
@@ -149,7 +111,8 @@
                         android:id="@+id/disease_sym"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="রোগের কারন" />
+                        android:padding="10dp"
+                        android:text="আমাদের দেশের স্বাদু পানিতে ২৬০টিরও বেশি প্রজাতির মাছ আছে। এছাড়া খাঁড়ি অঞ্চলে ও লোনা পানিতে কয়েকশ‘ প্রজাতির মাছ আছে। তবে চাষযোগ্য মাছগুলো হলো রুই, কাতলা, মৃগেল, কালিবাউস, সিলভারকার্প, মিররকার্প, গ্রাসকার্প, কমনকার্প, বিগহেড, রাজপুঁটি, নাইলোটিকা, তেলাপিয়া, বিদেশি মাগুর, থাই পাঙ্গাশ এসব। এসব মাছের কিছু বিশেষ গুণাগুণ আছে। এসব মাছ খুব দ্রুত বাড়ে; খাদ্য ও জায়গার জন্য একে অন্যের সঙ্গে প্রতিযোগিতা করে না; পুকুরে  বেশি সংখ্যায় চাষ করা যায়; পানির সব স্তর থেকে খাবার গ্রহণ করে, পুকুরের পরিবেশ ভালো থাকে; খেতে খুব সুস্বাদু; বাজারে এসব মাছের প্রচুর চাহিদা আছে; সহজে রোগাক্রান্ত হয় না, চাষে লাভ বেশি হয়।" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -199,15 +162,11 @@
                         android:id="@+id/disease_cure"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="রোগের কারন" />
+                        android:text="যেখানে পুকুর খনন করা হবে সেখানকার অবকাঠামো, পরিবেশ, পানির গভীরতা, বর্ষায় বন্যার হুমকি, পুকুর পাড়ের ঢাল, বকচর, শুষ্ক মৌসুমে পানি কতটা থাকে, পানি কমে গেলে বাইরে থেকে পানি দেয়ার ব্যবস্থা আছে কিনা এসব বিষয়ে সঠিক ধারণা নিয়ে শুরু করতে হবে। এজন্য প্রথমেই অভিজ্ঞ মৎস্য চাষি বা মৎস্য কর্মকর্তার পরামর্শ নেয়া  প্রয়োজন। মাছ চাষ শুরু করার আগে বা মাছের পোনা ছাড়ার আগে সঠিক নিয়মে পুকুর তৈরি করা অত্যাবশ্যক।" />
                 </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".05"
-                android:orientation="horizontal"></LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 
