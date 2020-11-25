@@ -1647,6 +1647,7 @@ drawable inovation_top1
 drawable inovation_top3
 drawable inovation_top4
 drawable inventor
+drawable khudebarta
 drawable listbaruser
 drawable logo1
 drawable lower
@@ -1687,6 +1688,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable onusandhan
 drawable phone_call
 drawable pp
 drawable prpnticon
@@ -2084,14 +2086,19 @@ id list_iteam_name
 id list_iteam_phone
 id list_iteam_union
 id list_item
+id ll_chasi_onusandhan
 id ll_desease
 id ll_invention
+id ll_khude_barta_peron
 id ll_mosso_sutro
+id logged_id
+id logged_out
 id masked
 id maze
 id media_actions
 id menu_beboharbidi
 id menu_login
+id menu_profile
 id menu_somoshajomadin
 id menu_sotorkota
 id message
@@ -2431,8 +2438,10 @@ layout activity_add_template
 layout activity_add_update_user
 layout activity_age_wise_food
 layout activity_area_formula
+layout activity_chasi_onusandhan
 layout activity_disease
 layout activity_disease_details
+layout activity_edit_user
 layout activity_farmer_search
 layout activity_fertilizer_formula
 layout activity_fish_farming
@@ -2445,6 +2454,7 @@ layout activity_home_screen
 layout activity_inventor_information
 layout activity_khaddo_prooig
 layout activity_khetrofol_formula
+layout activity_khudebarta
 layout activity_login
 layout activity_main
 layout activity_phone_number_validation

@@ -18,6 +18,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity;
+
 import static bd.dof.groupmessenger.groupmessengerforfishermen.R.id.view;
 
 public class farmerSearchActivity extends AppCompatActivity {
@@ -40,9 +42,7 @@ public class farmerSearchActivity extends AppCompatActivity {
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
         searcheditbox.setTypeface(tf);
-
-        System.out.println("size : "+MainActivity.allFarmerInfo.size());
-        MyCustomAdapter adapter = new MyCustomAdapter(this, MainActivity.allFarmerInfo);
+        MyCustomAdapter adapter = new MyCustomAdapter(this, HomeScreenActivity.allFarmerInfo);
         farmerinfolistview.setAdapter(adapter);
 
         searcheditbox.addTextChangedListener(new TextWatcher() {
@@ -73,7 +73,7 @@ public class farmerSearchActivity extends AppCompatActivity {
     void change(String cond)
     {
         ArrayList<FarmerInfoModel> users = new ArrayList<FarmerInfoModel>();
-        for(FarmerInfoModel u : MainActivity.allFarmerInfo)
+        for(FarmerInfoModel u : HomeScreenActivity.allFarmerInfo)
         {
             if(u.getFarmerName().contains(cond) || u.getFarmerFatherHusbandName().contains(cond) || u.getPhoneNumber().contains(cond))
             {

@@ -25,6 +25,8 @@ import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
 
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity;
+
 public class AddUpdateUser extends AppCompatActivity {
 
     int userID = -1;
@@ -40,7 +42,7 @@ public class AddUpdateUser extends AppCompatActivity {
         final DbHandler db = new DbHandler(this, null, null, 1);
         ArrayList<String> list = new ArrayList<String>();
 
-        for (UnionModel u : MainActivity.allUnion) {
+        for (UnionModel u : HomeScreenActivity.allUnion) {
             list.add(u.getUnionName());
         }
 
@@ -136,7 +138,7 @@ public class AddUpdateUser extends AppCompatActivity {
                     if (userID > -1) {
                         cFarmer.setFarmerID(userID);
                     } else {
-                        cFarmer.setFarmerID(MainActivity.allFarmerInfo.size() + 1);
+                        cFarmer.setFarmerID(HomeScreenActivity.allFarmerInfo.size() + 1);
                     }
                     cFarmer.setFarmerName(addusername.getText().toString());
                     cFarmer.setFarmerFatherHusbandName(adduserfathersname.getText().toString());
@@ -150,15 +152,15 @@ public class AddUpdateUser extends AppCompatActivity {
                     cFarmer.setVillageID("");
                     cFarmer.setWardID("");
                     cFarmer.setUnionID(getUnionIDByName(adduserunionlist.getSelectedItem().toString()));
-                    cFarmer.setUpazillaID(MainActivity.upazillaID);
-                    cFarmer.setDistrictID(MainActivity.districtID);
-                    cFarmer.setDivisionID(MainActivity.divisionID);
+                    cFarmer.setUpazillaID(HomeScreenActivity.upazillaID);
+                    cFarmer.setDistrictID(HomeScreenActivity.districtID);
+                    cFarmer.setDivisionID(HomeScreenActivity.divisionID);
                     cFarmer.setActiveStatus(String.valueOf(1));
                     cFarmer.setUploadStatus(String.valueOf(0));
                     try {
                         if (userID > -1) {
                             db.updateData(cFarmer);
-                            MainActivity.allFarmerInfo = db.getAllFarmerInfoBy();
+                            HomeScreenActivity.allFarmerInfo = db.getAllFarmerInfoBy();
                             sendToBack();
                         } else {
                             db.insertData(cFarmer);
@@ -169,7 +171,7 @@ public class AddUpdateUser extends AppCompatActivity {
                             t.setGravity(Gravity.CENTER);
                         }
                         toast.show();
-                        MainActivity.allFarmerInfo.add(cFarmer);
+                        HomeScreenActivity.allFarmerInfo.add(cFarmer);
                     } catch (Exception e) {
                         Toast toast = Toast.makeText(mContext, "তথ্য সংরক্ষন বার্থ", Toast.LENGTH_SHORT);
                         TextView t = (TextView) toast.getView().findViewById(android.R.id.message);
@@ -203,7 +205,7 @@ public class AddUpdateUser extends AppCompatActivity {
     }
 
     String getUnionIDByName(String name) {
-        for (UnionModel u : MainActivity.allUnion) {
+        for (UnionModel u : HomeScreenActivity.allUnion) {
             if (u.getUnionName() == name)
                 return u.getUnionID();
         }
@@ -211,7 +213,7 @@ public class AddUpdateUser extends AppCompatActivity {
     }
 
     FarmerInfoModel getFarmerInfoByID(int ID) {
-        for (FarmerInfoModel u : MainActivity.allFarmerInfo) {
+        for (FarmerInfoModel u : HomeScreenActivity.allFarmerInfo) {
             if (u.getFarmerID() == ID)
                 return u;
         }
@@ -238,7 +240,7 @@ public class AddUpdateUser extends AppCompatActivity {
     }
 
     String getUnionNameByID(String unionID) {
-        for (UnionModel u : MainActivity.allUnion) {
+        for (UnionModel u : HomeScreenActivity.allUnion) {
             if (u.getUnionID().contains(unionID) && (u.getUnionID().length() == unionID.length())) {
                 return u.getUnionName();
             }
