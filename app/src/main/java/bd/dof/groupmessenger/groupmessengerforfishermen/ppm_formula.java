@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 public class ppm_formula extends AppCompatActivity {
 
@@ -29,7 +30,7 @@ public class ppm_formula extends AppCompatActivity {
     EditText ppm_height;
     EditText ppm_width;
     EditText ppm_density;
-    Button ppm_agePonaSubmit;
+    AppCompatButton ppm_agePonaSubmit;
     ImageView ppm_SaveImg;
     ImageView ppm_ShareImg;
     TextView top_farming_banner_ppm;
@@ -53,17 +54,10 @@ public class ppm_formula extends AppCompatActivity {
         ppm_width = (EditText) findViewById(R.id.ppm_width);
         ppm_density = (EditText) findViewById(R.id.ppm_density);
 
-        ppm_agePonaSubmit = (Button) findViewById(R.id.ppm_agePonaSubmit);
+        ppm_agePonaSubmit =  findViewById(R.id.ppm_agePonaSubmit);
 
         ppm_SaveImg = (ImageView) findViewById(R.id.ppm_SaveImg);
         ppm_ShareImg = (ImageView) findViewById(R.id.ppm_ShareImg);
-
-        String fontPath = "fonts/SolaimanLipi.ttf";
-        Typeface tf;
-        tf = Typeface.createFromAsset(this.getAssets(), fontPath);
-
-
-
         ppm_agePonaSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

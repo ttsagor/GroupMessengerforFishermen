@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 public class KhetrofolFormula extends AppCompatActivity {
 
@@ -27,7 +28,7 @@ public class KhetrofolFormula extends AppCompatActivity {
     EditText khetrofol_length;
     EditText khetrofol_width;
 
-    Button khetrofol_agePonaSubmit;
+    AppCompatButton khetrofol_agePonaSubmit;
 
     ImageView khetrofol_SaveImg;
     ImageView khetrofol_ShareImg;
@@ -51,7 +52,7 @@ public class KhetrofolFormula extends AppCompatActivity {
 
 
 
-        khetrofol_agePonaSubmit = (Button) findViewById(R.id.khetrofol_agePonaSubmit);
+        khetrofol_agePonaSubmit =  findViewById(R.id.khetrofol_agePonaSubmit);
 
         khetrofol_length = (EditText) findViewById(R.id.khetrofol_length);
         khetrofol_width = (EditText) findViewById(R.id.khetrofol_width);

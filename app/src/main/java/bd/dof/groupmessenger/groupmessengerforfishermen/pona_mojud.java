@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Font;
@@ -94,7 +95,7 @@ public class pona_mojud extends AppCompatActivity {
         pona_mojud_save = (ImageView) findViewById(R.id.pona_mojud_save);
 
 
-        Button ponaAreaSubmit = (Button) findViewById(R.id.ponaAreaSubmit);
+        AppCompatButton ponaAreaSubmit =  findViewById(R.id.ponaAreaSubmit);
 
         TextView pona_mojud_katla = (TextView) findViewById(R.id.pona_mojud_katla);
         TextView pona_mojud_silva = (TextView) findViewById(R.id.pona_mojud_silva);

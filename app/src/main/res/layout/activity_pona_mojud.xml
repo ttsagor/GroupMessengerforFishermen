@@ -18,6 +18,7 @@
         android:gravity="center">
 
         <LinearLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight=".2"
@@ -28,20 +29,13 @@
             android:paddingTop="5dp">
 
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".2"
-                    android:orientation="horizontal"
-                    android:id="@+id/areaTotalcountHolder">
-
-
                         <EditText
+                            android:layout_marginBottom="8dp"
                             android:hint="আয়তন(শতাংশ)"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="15dp"
-                            android:layout_marginTop="6dp"
+
+
                             android:padding="10dp"
                             android:inputType="number"
                             android:id="@+id/ponaArea"
@@ -50,51 +44,43 @@
                         />
 
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".15"
-                    android:orientation="horizontal"
-                    android:id="@+id/catagoryTotalcountHolder">
+
+
 
 
 
                         <EditText
+                            android:layout_marginBottom="8dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="number"
-                            android:minWidth="80dp"
-                            android:layout_marginEnd="15dp"
+
                             android:padding="10dp"
                             android:hint="পোনা/শতাংশ"
                             android:background="@drawable/background_border"
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:id="@+id/ponaAmount"
-                            android:paddingLeft="2dp"/>
+                           />
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".15"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="horizontal">
 
-                        <Button
-                            android:layout_width="170dp"
+
+                        <androidx.appcompat.widget.AppCompatButton
+
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="14dp"
+                            android:textSize="18dp"
+                            android:layout_marginBottom="8dp"
                             android:layout_gravity="center"
                             android:gravity="center"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
                             android:id="@+id/ponaAreaSubmit"
                             android:background="@drawable/button_background"
                             android:textColor="@color/textColorPrimary"
                             android:text="নির্ণয় করুন"/>
 
 
-                </LinearLayout>
+
 
         </LinearLayout>
 
@@ -116,12 +102,7 @@
                 android:orientation="vertical"
                 android:background="@drawable/white_bg"
                 android:paddingLeft="20dp">
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".05">
 
-                </View>
                 <LinearLayout
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
@@ -368,7 +349,7 @@
                     android:layout_height="0dp"
                     android:padding="6dp"
                     android:layout_marginBottom="10dp"
-                    android:layout_weight=".2"
+                    android:layout_weight=".25"
                     android:orientation="horizontal"
                     android:gravity="center_horizontal">
                     <ImageView
