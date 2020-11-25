@@ -7,7 +7,6 @@
     android:background="@color/colorPrimaryDark"
     tools:context=".NewDesign.LoginActivity">
 
-    <include layout="@layout/new_header_layout" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,6 +19,7 @@
 
         android:padding="16sp">
 
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,7 +28,8 @@
             android:paddingBottom="18dp"
             android:text="লগইন"
             android:textColor="@color/textColorPrimary"
-            android:textSize="38sp" />
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/mobile_number"
@@ -57,17 +58,32 @@
 
 
         <TextView
-            android:onClick="submitNow"
             android:id="@+id/submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/blue_button"
             android:gravity="center"
-            android:text="সাবমিট করুন"
-
+            android:onClick="submitNow"
+            android:padding="8dp"
+            android:text="সাবমিট"
             android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:textSize="26sp" />
+            android:textSize="20sp" />
+
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/icon" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/icon" />
 </RelativeLayout>
