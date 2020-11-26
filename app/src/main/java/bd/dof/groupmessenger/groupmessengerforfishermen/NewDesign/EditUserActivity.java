@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -197,6 +198,16 @@ public class EditUserActivity extends AppCompatActivity {
                 }
             }
         });
+
+        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(EditUserActivity.this, HomeScreenActivity.class));
+            }
+        });
+
+        EditText title = findViewById(R.id.title);
+        title.setText("চাষি আপডেট ");
     }
 
     @Override

@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -27,6 +28,7 @@ import java.util.List;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.LoginActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity;
@@ -39,6 +41,15 @@ public class disease extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_disease);
+        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(disease.this, HomeScreenActivity.class));
+            }
+        });
+
+        EditText title = findViewById(R.id.title);
+        title.setText("রোগসমূহ");
         bottomNavigationHandler();
         final DbHandler db = new DbHandler(this, null, null, 1);
 

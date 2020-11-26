@@ -53,6 +53,7 @@ import java.util.List;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.LoginActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity;
@@ -214,6 +215,16 @@ bottomNavigationHandler();
                 }*/
             }
         });
+
+        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Protein_base_food.this, HomeScreenActivity.class));
+            }
+        });
+
+        EditText title = findViewById(R.id.title);
+        title.setText("প্রোটিনের জন্য খাদ্য প্রস্তুত");
     }
 
     void calculate()

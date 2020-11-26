@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
@@ -35,6 +36,7 @@ import java.util.List;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.LoginActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity;
@@ -73,6 +75,15 @@ public class groupsmsfilter extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.smsreceiverfilter);
+        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(groupsmsfilter.this, HomeScreenActivity.class));
+            }
+        });
+
+        EditText title = findViewById(R.id.title);
+        title.setText("ম্যাসেজ");
         bottomNavigationHandler();
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;

@@ -25,6 +25,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.LoginActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity;
@@ -125,6 +126,16 @@ public class AreaFormula extends AppCompatActivity {
                 }
             }
         });
+
+        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AreaFormula.this, HomeScreenActivity.class));
+            }
+        });
+
+        EditText title = findViewById(R.id.title);
+        title.setText("পুকুরের আয়তন নির্নয়");
     }
 
     private void bottomNavigationHandler() {

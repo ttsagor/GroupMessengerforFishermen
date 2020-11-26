@@ -68,6 +68,7 @@ import java.util.List;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.LoginActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity;
@@ -124,7 +125,15 @@ bottomNavigationHandler();
         foodPercentButton.setTypeface(tf);
         totalWeigt.setTypeface(tf);
         foodAmount.setTypeface(tf);
+        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(khaddo_prooig.this, HomeScreenActivity.class));
+            }
+        });
 
+        EditText title = findViewById(R.id.title);
+        title.setText("খাদ্য প্রয়োগের সূত্র");
         foodPercentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

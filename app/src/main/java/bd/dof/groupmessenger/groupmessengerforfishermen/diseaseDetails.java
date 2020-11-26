@@ -41,14 +41,14 @@ public class diseaseDetails extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
-bottomNavigationHandler();
+
         setContentView(R.layout.activity_disease_details);
         Intent iin = getIntent();
         Bundle b = iin.getExtras();
         final DbHandler db = new DbHandler(this, null, null, 1);
         final Context mContext = this;
 
-
+        bottomNavigationHandler();
         TextView disease_name = (TextView) findViewById(R.id.disease_name);
         TextView disease_reason_text = (TextView) findViewById(R.id.disease_reason_text);
         TextView disease_reason = (TextView) findViewById(R.id.disease_reason);

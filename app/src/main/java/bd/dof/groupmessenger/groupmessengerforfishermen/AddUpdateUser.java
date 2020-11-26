@@ -48,7 +48,15 @@ public class AddUpdateUser extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_add_update_user);
+        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AddUpdateUser.this, HomeScreenActivity.class));
+            }
+        });
 
+        EditText title = findViewById(R.id.title);
+        title.setText("চাষি সংযোগ");
         final Context mContext = this;
         final DbHandler db = new DbHandler(this, null, null, 1);
         ArrayList<String> list = new ArrayList<String>();

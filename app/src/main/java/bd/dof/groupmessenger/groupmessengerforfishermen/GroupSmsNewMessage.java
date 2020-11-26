@@ -28,26 +28,36 @@ import java.util.List;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.LoginActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SplashScreenActivity;
 
 public class GroupSmsNewMessage extends AppCompatActivity {
-    String message="";
-    String unionID="";
-    String villageID="";
-    String wardID="";
+    String message = "";
+    String unionID = "";
+    String villageID = "";
+    String wardID = "";
     DbHandler dbc;
     TextView GroupSmsNewMessageTotalFarme;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_group_sms_new_message);
+        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(GroupSmsNewMessage.this, HomeScreenActivity.class));
+            }
+        });
 
-bottomNavigationHandler();
+        EditText title = findViewById(R.id.title);
+        title.setText("ম্যাসেজ");
+        bottomNavigationHandler();
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
@@ -55,25 +65,22 @@ bottomNavigationHandler();
         TextView GroupSmsNewMessageTotalFarmer = (TextView) findViewById(R.id.GroupSmsNewMessageTotalFarmer);
 
 
-
-
         GroupSmsNewMessageTotalFarmer.setTypeface(tf);
 
 
-        final DbHandler db = new DbHandler(this,null,null,1);
+        final DbHandler db = new DbHandler(this, null, null, 1);
         dbc = db;
-        GroupSmsNewMessageTotalFarme=(TextView)findViewById(R.id.GroupSmsNewMessageTotalFarmer);
-        final AppCompatButton GroupSmsNewMessageSend =  findViewById(R.id.GroupSmsNewMessageSend);
+        GroupSmsNewMessageTotalFarme = (TextView) findViewById(R.id.GroupSmsNewMessageTotalFarmer);
+        final AppCompatButton GroupSmsNewMessageSend = findViewById(R.id.GroupSmsNewMessageSend);
         final AppCompatButton GroupSmsNewMessageSave = findViewById(R.id.GroupSmsNewMessageSave);
         final EditText GroupSmsNewMessageText = (EditText) findViewById(R.id.GroupSmsNewMessageText);
-        GroupSmsNewMessageTotalFarme.setText(GroupSmsNewMessageTotalFarme.getText()+" "+pona_mojud.engToBng(String.valueOf(groupsmsfilter.finalRecipient.size())));
-        Intent iin= getIntent();
+        GroupSmsNewMessageTotalFarme.setText(GroupSmsNewMessageTotalFarme.getText() + " " + pona_mojud.engToBng(String.valueOf(groupsmsfilter.finalRecipient.size())));
+        Intent iin = getIntent();
         Bundle b = iin.getExtras();
         GroupSmsNewMessageSend.setTypeface(tf);
         GroupSmsNewMessageText.setTypeface(tf);
-        if(b!=null)
-        {
-            message =(String) b.get("message");
+        if (b != null) {
+            message = (String) b.get("message");
         }
         GroupSmsNewMessageText.setText(message);
 
@@ -87,8 +94,8 @@ bottomNavigationHandler();
                     Toast.makeText(getBaseContext(), "Maximum Character Limit 160.Your Text has "+GroupSmsNewMessageText.getText().length()+" Character", Toast.LENGTH_LONG).show();
                 }
                 else*/
-                if(farmerInfoList.size()>0 && GroupSmsNewMessageText.getText().length()>0){
-                    Intent i = new Intent( GroupSmsNewMessage.this ,recpiant_limit.class);
+                if (farmerInfoList.size() > 0 && GroupSmsNewMessageText.getText().length() > 0) {
+                    Intent i = new Intent(GroupSmsNewMessage.this, recpiant_limit.class);
                     i.putExtra("message", GroupSmsNewMessageText.getText().toString());
                     startActivity(i);
                 }
@@ -97,7 +104,7 @@ bottomNavigationHandler();
         GroupSmsNewMessageSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(GroupSmsNewMessageText.getText().length()>0) {
+                if (GroupSmsNewMessageText.getText().length() > 0) {
                     SmsTemplateModel smsTemplateModel = new SmsTemplateModel();
                     smsTemplateModel.setSmsTemplateText(GroupSmsNewMessageText.getText().toString());
                     db.insertData(smsTemplateModel);
@@ -128,11 +135,12 @@ bottomNavigationHandler();
 
         return super.onOptionsItemSelected(item);
     }
+
     private void bottomNavigationHandler() {
 
         SharedPreferences pref = this.getApplicationContext().getSharedPreferences("MyPref", 0);
-        final String  log = pref.getString("log", "");
-        final SharedPreferences.Editor editor   = pref.edit();
+        final String log = pref.getString("log", "");
+        final SharedPreferences.Editor editor = pref.edit();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         bottomNavigationView.getMenu().clear();
         bottomNavigationView.inflateMenu(R.menu.new_bottom_menu_home);
@@ -143,7 +151,6 @@ bottomNavigationHandler();
             bottomNavigationView.getMenu().getItem(3).setTitle("লগআউট");
         } else {
             bottomNavigationView.getMenu().removeItem(R.id.menu_profile);
-
 
 
         }

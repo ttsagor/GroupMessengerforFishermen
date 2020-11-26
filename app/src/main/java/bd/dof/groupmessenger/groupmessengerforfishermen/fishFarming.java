@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -23,6 +25,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.LoginActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity;
@@ -35,57 +38,54 @@ public class fishFarming extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fish_farming);
-bottomNavigationHandler();
-        CardView pona_mojud_formula =  findViewById(R.id.pona_mojud_formula);
+        bottomNavigationHandler();
+        CardView pona_mojud_formula = findViewById(R.id.pona_mojud_formula);
         CardView khaddo_prooig_formula = findViewById(R.id.khaddo_prooig_formula);
-        CardView age_wise_food_formula =  findViewById(R.id.age_wise_food_formula);
+        CardView age_wise_food_formula = findViewById(R.id.age_wise_food_formula);
         CardView protin_wise_food = findViewById(R.id.protin_wise_food);
-        CardView ppm_formula=  findViewById(R.id.ppm_formula);
-        CardView fertilizer_formula =  findViewById(R.id.fertilizer_formula);
+        CardView ppm_formula = findViewById(R.id.ppm_formula);
+        CardView fertilizer_formula = findViewById(R.id.fertilizer_formula);
 
-        CardView khetrofol_formula =  findViewById(R.id.khetrofol_formula);
-        CardView area_formula =  findViewById(R.id.area_formula);
+        CardView khetrofol_formula = findViewById(R.id.khetrofol_formula);
+        CardView area_formula = findViewById(R.id.area_formula);
 
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
 
-
-
-
         pona_mojud_formula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent( fishFarming.this ,pona_mojud.class);
+                Intent i = new Intent(fishFarming.this, pona_mojud.class);
                 startActivity(i);
             }
         });
         khaddo_prooig_formula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent( fishFarming.this ,khaddo_prooig.class);
+                Intent i = new Intent(fishFarming.this, khaddo_prooig.class);
                 startActivity(i);
             }
         });
         age_wise_food_formula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent( fishFarming.this ,AgeWiseFood.class);
+                Intent i = new Intent(fishFarming.this, AgeWiseFood.class);
                 startActivity(i);
             }
         });
         protin_wise_food.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent( fishFarming.this ,Protein_base_food.class);
+                Intent i = new Intent(fishFarming.this, Protein_base_food.class);
                 startActivity(i);
             }
         });
         ppm_formula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent( fishFarming.this ,ppm_formula.class);
+                Intent i = new Intent(fishFarming.this, ppm_formula.class);
                 startActivity(i);
             }
         });
@@ -93,7 +93,7 @@ bottomNavigationHandler();
         fertilizer_formula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent( fishFarming.this ,fertilizer_formula.class);
+                Intent i = new Intent(fishFarming.this, fertilizer_formula.class);
                 startActivity(i);
             }
         });
@@ -101,7 +101,7 @@ bottomNavigationHandler();
         khetrofol_formula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent( fishFarming.this ,KhetrofolFormula.class);
+                Intent i = new Intent(fishFarming.this, KhetrofolFormula.class);
                 startActivity(i);
             }
         });
@@ -109,16 +109,27 @@ bottomNavigationHandler();
         area_formula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent( fishFarming.this ,AreaFormula.class);
+                Intent i = new Intent(fishFarming.this, AreaFormula.class);
                 startActivity(i);
             }
         });
+
+        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(fishFarming.this, HomeScreenActivity.class));
+            }
+        });
+
+        EditText title = findViewById(R.id.title);
+        title.setText("মৎস্য চাষ সূএ");
     }
+
     private void bottomNavigationHandler() {
 
         SharedPreferences pref = this.getApplicationContext().getSharedPreferences("MyPref", 0);
-        final String  log = pref.getString("log", "");
-        final SharedPreferences.Editor editor   = pref.edit();
+        final String log = pref.getString("log", "");
+        final SharedPreferences.Editor editor = pref.edit();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         bottomNavigationView.getMenu().clear();
         bottomNavigationView.inflateMenu(R.menu.new_bottom_menu_home);
@@ -129,7 +140,6 @@ bottomNavigationHandler();
             bottomNavigationView.getMenu().getItem(3).setTitle("লগআউট");
         } else {
             bottomNavigationView.getMenu().removeItem(R.id.menu_profile);
-
 
 
         }

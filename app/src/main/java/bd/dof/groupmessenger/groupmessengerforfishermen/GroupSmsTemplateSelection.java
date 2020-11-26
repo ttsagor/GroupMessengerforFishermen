@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -28,53 +29,62 @@ import java.util.List;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.LoginActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SplashScreenActivity;
 
 public class GroupSmsTemplateSelection extends AppCompatActivity {
-    public static String unionID="";
-    public static String villageID="";
-    public static String wardID="";
+    public static String unionID = "";
+    public static String villageID = "";
+    public static String wardID = "";
     public static DbHandler dbc;
     public static Context mContext;
     TextView GroupSmsTemplateSelectionTotalFarmer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_group_sms_template_selection);
+        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(GroupSmsTemplateSelection.this, HomeScreenActivity.class));
+            }
+        });
 
-bottomNavigationHandler();
+        EditText title = findViewById(R.id.title);
+        title.setText("টেমপ্লেট");
+        bottomNavigationHandler();
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
 
-        final DbHandler db = new DbHandler(this,null,null,1);
+        final DbHandler db = new DbHandler(this, null, null, 1);
         //GroupSmsTemplateSelectionTotalFarmer=(TextView)findViewById(R.id.GroupSmsTemplateSelectionTotalFarmer);
         //final Button GroupSmsTemplateSelectionNext = (Button) findViewById(R.id.GroupSmsTemplateSelectionNext);
-        mContext=this;
-        Intent iin= getIntent();
+        mContext = this;
+        Intent iin = getIntent();
         Bundle b = iin.getExtras();
-        if(b!=null)
-        {
-            unionID =(String) b.get("unionID");
-            villageID =(String) b.get("villageID");
-            wardID =(String) b.get("wardID");
+        if (b != null) {
+            unionID = (String) b.get("unionID");
+            villageID = (String) b.get("villageID");
+            wardID = (String) b.get("wardID");
         }
-        dbc=db;
+        dbc = db;
         //totalUserCount();
 
-        List<SmsTemplateModel> smsTemplateModels=db.getAllSmsTemplate();
-        ArrayList<String> text = new  ArrayList<String>();
+        List<SmsTemplateModel> smsTemplateModels = db.getAllSmsTemplate();
+        ArrayList<String> text = new ArrayList<String>();
 
         for (SmsTemplateModel cSmsTemplateModels : smsTemplateModels) {
             text.add(cSmsTemplateModels.getSmsTemplateText());
         }
-        ListView GroupSmsTemplateSelectionListView=(ListView)findViewById(R.id.GroupSmsTemplateSelectionListView);
+        ListView GroupSmsTemplateSelectionListView = (ListView) findViewById(R.id.GroupSmsTemplateSelectionListView);
         SmsTemplateListAdaptar adapter = new SmsTemplateListAdaptar(text, this);
         GroupSmsTemplateSelectionListView.setAdapter(null);
         GroupSmsTemplateSelectionListView.setAdapter(adapter);
@@ -92,8 +102,7 @@ bottomNavigationHandler();
         });*/
     }
 
-    public void totalUserCount()
-    {
+    public void totalUserCount() {
 
         GroupSmsTemplateSelectionTotalFarmer.setText("মোট চাষি সংখাঃ  " + dbc.getFarmerInfoByAreaFarmingCategoryMobileOperator(MainActivity.divisionID, MainActivity.districtID, MainActivity.upazillaID, unionID, villageID, wardID, GroupSmsFarmingCategory.farmingCategoryList, GroupSmsFarmingCategory.phoneCompanyList).size());
     }
@@ -146,11 +155,12 @@ bottomNavigationHandler();
 
 
     }
+
     private void bottomNavigationHandler() {
 
         SharedPreferences pref = this.getApplicationContext().getSharedPreferences("MyPref", 0);
-        final String  log = pref.getString("log", "");
-        final SharedPreferences.Editor editor   = pref.edit();
+        final String log = pref.getString("log", "");
+        final SharedPreferences.Editor editor = pref.edit();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         bottomNavigationView.getMenu().clear();
         bottomNavigationView.inflateMenu(R.menu.new_bottom_menu_home);
@@ -161,7 +171,6 @@ bottomNavigationHandler();
             bottomNavigationView.getMenu().getItem(3).setTitle("লগআউট");
         } else {
             bottomNavigationView.getMenu().removeItem(R.id.menu_profile);
-
 
 
         }
