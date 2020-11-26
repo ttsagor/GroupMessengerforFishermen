@@ -2438,7 +2438,9 @@ layout activity_add_template
 layout activity_add_update_user
 layout activity_age_wise_food
 layout activity_area_formula
+layout activity_baboharbidi
 layout activity_chasi_onusandhan
+layout activity_coming_soon
 layout activity_disease
 layout activity_disease_details
 layout activity_edit_user
@@ -2463,6 +2465,7 @@ layout activity_ppm_formula
 layout activity_protein_base_food2
 layout activity_recpiant_limit
 layout activity_setting
+layout activity_sotorkota
 layout activity_splash_screen
 layout age_wise_row
 layout custom_dialog

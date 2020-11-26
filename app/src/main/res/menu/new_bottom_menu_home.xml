@@ -7,7 +7,7 @@
 
         />
     <item
-        android:visible="false"
+
         android:title="প্রোফাইল"
         android:icon="@drawable/ic_baseline_account_circle_24"
         android:id="@+id/menu_profile"
@@ -29,4 +29,10 @@
         android:id="@+id/menu_login"
 
         />
+<!--    <item android:title="লগআউট"-->
+
+<!--        android:icon="@drawable/new_login"-->
+<!--        android:id="@+id/menu_logout"-->
+
+<!--        />-->
 </menu>
