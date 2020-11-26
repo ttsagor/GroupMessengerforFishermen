@@ -20,7 +20,8 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewDesign.ComingSoonActivity"></activity>
+        <activity android:name=".NewDesign.ProfileActivity"></activity>
+        <activity android:name=".NewDesign.ComingSoonActivity" />
         <activity android:name=".NewDesign.BaboharbidiActivity" />
         <activity android:name=".NewDesign.SotorkotaActivity" />
         <activity android:name=".NewDesign.HomeScreenActivity" />

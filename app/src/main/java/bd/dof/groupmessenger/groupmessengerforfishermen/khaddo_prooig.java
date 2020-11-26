@@ -1,6 +1,8 @@
 package bd.dof.groupmessenger.groupmessengerforfishermen;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -17,6 +19,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -25,6 +28,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -32,6 +36,7 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Element;
@@ -59,6 +64,14 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.LoginActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SplashScreenActivity;
 
 public class khaddo_prooig extends AppCompatActivity {
 
@@ -95,7 +108,7 @@ public class khaddo_prooig extends AppCompatActivity {
 
         foodAmount = (TextView) findViewById(R.id.foodAmount);
         totalWeigt = (TextView) findViewById(R.id.totalWeigt);
-
+bottomNavigationHandler();
 
         TextView khaddo_prooig_result_food = (TextView) findViewById(R.id.khaddo_prooig_result_food);
         TextView khaddo_prooig_result_fish_weight = (TextView) findViewById(R.id.khaddo_prooig_result_fish_weight);
@@ -449,5 +462,59 @@ public class khaddo_prooig extends AppCompatActivity {
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         AppIndex.AppIndexApi.end(client, getIndexApiAction());
         client.disconnect();
+    }
+    private void bottomNavigationHandler() {
+
+        SharedPreferences pref = this.getApplicationContext().getSharedPreferences("MyPref", 0);
+        final String  log = pref.getString("log", "");
+        final SharedPreferences.Editor editor   = pref.edit();
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
+        bottomNavigationView.getMenu().clear();
+        bottomNavigationView.inflateMenu(R.menu.new_bottom_menu_home);
+        if (log.equals("true")) {
+
+            bottomNavigationView.getMenu().removeItem(R.id.menu_sotorkota);
+
+            bottomNavigationView.getMenu().getItem(3).setTitle("লগআউট");
+        } else {
+            bottomNavigationView.getMenu().removeItem(R.id.menu_profile);
+
+
+
+        }
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+
+                    case R.id.menu_login:
+                        if (log.equals("true")) {
+                            editor.putString("log", "false");
+                            editor.apply();
+                            startActivity(new Intent(khaddo_prooig.this, SplashScreenActivity.class));
+
+                        } else {
+                            startActivity(new Intent(khaddo_prooig.this, LoginActivity.class));
+                        }
+                        break;
+
+                    case R.id.menu_sotorkota:
+                        startActivity(new Intent(khaddo_prooig.this, SotorkotaActivity.class));
+                        break;
+                    case R.id.menu_profile:
+                        startActivity(new Intent(khaddo_prooig.this, ProfileActivity.class));
+                        break;
+                    case R.id.menu_beboharbidi:
+                        startActivity(new Intent(khaddo_prooig.this, BaboharbidiActivity.class));
+                        break;
+
+                    case R.id.menu_somoshajomadin:
+                        startActivity(new Intent(khaddo_prooig.this, ComingSoonActivity.class));
+                        break;
+                }
+                return false;
+            }
+        });
     }
 }

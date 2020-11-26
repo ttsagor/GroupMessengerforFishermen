@@ -111,6 +111,20 @@ public class HomeScreenActivity extends AppCompatActivity implements View.OnClic
                             startActivity(new Intent(HomeScreenActivity.this, LoginActivity.class));
                         }
                         break;
+
+                    case R.id.menu_sotorkota:
+                        startActivity(new Intent(HomeScreenActivity.this, SotorkotaActivity.class));
+                        break;
+                    case R.id.menu_profile:
+                        startActivity(new Intent(HomeScreenActivity.this, ProfileActivity.class));
+                        break;
+                    case R.id.menu_beboharbidi:
+                        startActivity(new Intent(HomeScreenActivity.this, BaboharbidiActivity.class));
+                        break;
+
+                    case R.id.menu_somoshajomadin:
+                        startActivity(new Intent(HomeScreenActivity.this, ComingSoonActivity.class));
+                        break;
                 }
                 return false;
             }

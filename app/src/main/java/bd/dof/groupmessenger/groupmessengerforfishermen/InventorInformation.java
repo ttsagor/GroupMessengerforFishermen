@@ -1,5 +1,8 @@
 package bd.dof.groupmessenger.groupmessengerforfishermen;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 
@@ -8,8 +11,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.LoginActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SplashScreenActivity;
 
 public class InventorInformation extends AppCompatActivity {
 
@@ -20,7 +34,7 @@ public class InventorInformation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_inventor_information);
-
+bottomNavigationHandler();
         TextView invotech = (TextView) findViewById(R.id.invotech);
         TextView invoname = (TextView) findViewById(R.id.invoname);
         TextView invobsc = (TextView) findViewById(R.id.invobsc);
@@ -66,5 +80,59 @@ public class InventorInformation extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    private void bottomNavigationHandler() {
+
+        SharedPreferences pref = this.getApplicationContext().getSharedPreferences("MyPref", 0);
+        final String  log = pref.getString("log", "");
+        final SharedPreferences.Editor editor   = pref.edit();
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
+        bottomNavigationView.getMenu().clear();
+        bottomNavigationView.inflateMenu(R.menu.new_bottom_menu_home);
+        if (log.equals("true")) {
+
+            bottomNavigationView.getMenu().removeItem(R.id.menu_sotorkota);
+
+            bottomNavigationView.getMenu().getItem(3).setTitle("লগআউট");
+        } else {
+            bottomNavigationView.getMenu().removeItem(R.id.menu_profile);
+
+
+
+        }
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+
+                    case R.id.menu_login:
+                        if (log.equals("true")) {
+                            editor.putString("log", "false");
+                            editor.apply();
+                            startActivity(new Intent(InventorInformation.this, SplashScreenActivity.class));
+
+                        } else {
+                            startActivity(new Intent(InventorInformation.this, LoginActivity.class));
+                        }
+                        break;
+
+                    case R.id.menu_sotorkota:
+                        startActivity(new Intent(InventorInformation.this, SotorkotaActivity.class));
+                        break;
+                    case R.id.menu_profile:
+                        startActivity(new Intent(InventorInformation.this, ProfileActivity.class));
+                        break;
+                    case R.id.menu_beboharbidi:
+                        startActivity(new Intent(InventorInformation.this, BaboharbidiActivity.class));
+                        break;
+
+                    case R.id.menu_somoshajomadin:
+                        startActivity(new Intent(InventorInformation.this, ComingSoonActivity.class));
+                        break;
+                }
+                return false;
+            }
+        });
     }
 }

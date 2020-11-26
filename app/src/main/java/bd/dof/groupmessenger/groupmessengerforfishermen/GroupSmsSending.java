@@ -1,8 +1,10 @@
 package bd.dof.groupmessenger.groupmessengerforfishermen;
+import android.annotation.SuppressLint;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.database.Cursor;
 import android.net.Uri;
@@ -10,6 +12,7 @@ import android.os.Handler;
 
 import android.os.Bundle;
 import android.telephony.SmsManager;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -18,11 +21,23 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.LoginActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SplashScreenActivity;
+
 public class GroupSmsSending extends AppCompatActivity {
 
     String messageInt="";
@@ -279,5 +294,6 @@ public class GroupSmsSending extends AppCompatActivity {
         }catch (Exception e){}
         searchInbox();
     }
+
 
 }

@@ -31,6 +31,7 @@
         android:largeHeap="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity" />
         <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity" />
         <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity" />
         <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity" />

@@ -1,6 +1,8 @@
 package bd.dof.groupmessenger.groupmessengerforfishermen;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 
 import android.os.Bundle;
@@ -13,11 +15,22 @@ import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.LoginActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SplashScreenActivity;
 
 public class GroupSmsFarmingCategory extends AppCompatActivity {
 
@@ -262,4 +275,5 @@ public class GroupSmsFarmingCategory extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

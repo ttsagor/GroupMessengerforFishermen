@@ -1,9 +1,12 @@
 package bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -17,6 +20,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
@@ -52,7 +56,7 @@ public class EditUserActivity extends AppCompatActivity {
         final com.google.android.material.textfield.TextInputEditText adduserfarmingcatagory = findViewById(R.id.adduserfarmingcatagory);
         final ImageView updateusereditbutton = (ImageView) findViewById(R.id.updateusereditbutton);
         final ImageView adduserimageview = (ImageView) findViewById(R.id.adduserimageview);
-
+         bottomNavigationHandler();
         TextView top_head_app_fish_farming_add_farmer_union_name = (TextView) findViewById(R.id.top_head_app_fish_farming_add_farmer_union_name);
 
 
@@ -244,5 +248,59 @@ public class EditUserActivity extends AppCompatActivity {
             }
         }
         return "";
+    }
+    private void bottomNavigationHandler() {
+
+        SharedPreferences pref = this.getApplicationContext().getSharedPreferences("MyPref", 0);
+        final String  log = pref.getString("log", "");
+        final SharedPreferences.Editor editor   = pref.edit();
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
+        bottomNavigationView.getMenu().clear();
+        bottomNavigationView.inflateMenu(R.menu.new_bottom_menu_home);
+        if (log.equals("true")) {
+
+            bottomNavigationView.getMenu().removeItem(R.id.menu_sotorkota);
+
+            bottomNavigationView.getMenu().getItem(3).setTitle("লগআউট");
+        } else {
+            bottomNavigationView.getMenu().removeItem(R.id.menu_profile);
+
+
+
+        }
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+
+                    case R.id.menu_login:
+                        if (log.equals("true")) {
+                            editor.putString("log", "false");
+                            editor.apply();
+                            startActivity(new Intent(EditUserActivity.this, SplashScreenActivity.class));
+
+                        } else {
+                            startActivity(new Intent(EditUserActivity.this, LoginActivity.class));
+                        }
+                        break;
+
+                    case R.id.menu_sotorkota:
+                        startActivity(new Intent(EditUserActivity.this, SotorkotaActivity.class));
+                        break;
+                    case R.id.menu_profile:
+                        startActivity(new Intent(EditUserActivity.this, ProfileActivity.class));
+                        break;
+                    case R.id.menu_beboharbidi:
+                        startActivity(new Intent(EditUserActivity.this, BaboharbidiActivity.class));
+                        break;
+
+                    case R.id.menu_somoshajomadin:
+                        startActivity(new Intent(EditUserActivity.this, ComingSoonActivity.class));
+                        break;
+                }
+                return false;
+            }
+        });
     }
 }
