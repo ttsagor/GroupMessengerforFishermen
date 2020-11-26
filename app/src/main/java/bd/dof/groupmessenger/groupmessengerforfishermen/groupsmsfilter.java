@@ -66,13 +66,14 @@ public class groupsmsfilter extends AppCompatActivity {
     TextView catagoryTotalcountTxt;
     TextView operatorTotalcountTxt;
     TextView sumTotalcountTxt;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.smsreceiverfilter);
-bottomNavigationHandler();
+        bottomNavigationHandler();
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
@@ -97,10 +98,10 @@ bottomNavigationHandler();
         catagoryTotalcountTxt.setTypeface(tf);
         operatorTotalcountTxt.setTypeface(tf);
         sumTotalcountTxt.setTypeface(tf);
-        final DbHandler db = new DbHandler(this,null,null,1);
+        final DbHandler db = new DbHandler(this, null, null, 1);
 
-        List<UnionModel> allUnionM = db.getUnionList(MainActivity.divisionID,MainActivity.districtID,MainActivity.upazillaID);
-        allCatagory =  db.getFarmingCategoryByArea(MainActivity.divisionID,MainActivity.districtID,MainActivity.upazillaID,"%","%","%");
+        List<UnionModel> allUnionM = db.getUnionList(MainActivity.divisionID, MainActivity.districtID, MainActivity.upazillaID);
+        allCatagory = db.getFarmingCategoryByArea(MainActivity.divisionID, MainActivity.districtID, MainActivity.upazillaID, "%", "%", "%");
         allOperator.add("গ্রামীন ফোন");
         allOperator.add("রবি");
         allOperator.add("টেলিটক");
@@ -108,8 +109,7 @@ bottomNavigationHandler();
         allOperator.add("বাংলালিংক");
         allOperator.add("সিটিসেল");
 
-        for(int i=0;i<allUnionM.size();i++)
-        {
+        for (int i = 0; i < allUnionM.size(); i++) {
             allUnion.add(allUnionM.get(i).getUnionName());
         }
 
@@ -122,7 +122,7 @@ bottomNavigationHandler();
 
         filtereset = (ImageButton) findViewById(R.id.filtereset);
         Button buttonsend = (Button) findViewById(R.id.buttonsend);
-        Button buttontemplate =  findViewById(R.id.buttontemplate);
+        Button buttontemplate = findViewById(R.id.buttontemplate);
         buttonsend.setTypeface(tf);
 
 
@@ -136,25 +136,23 @@ bottomNavigationHandler();
         buttontemplate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag)
-                {
+                if (!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag) {
                     Toast.makeText(getApplicationContext(), "অনুগ্রহক পূর্বক বার্তা প্রাপক নির্বাচন করুন", Toast.LENGTH_LONG).show();
-                }
-                else {
+                } else {
                     List<String> tempCheckedUnion = checkedUnion;
                     List<String> tempCheckedCatagory = checkedCatagory;
                     List<String> tempCheckedOperator = checkedOperator;
 
-                    if(checkedUnion.size()==0){
+                    if (checkedUnion.size() == 0) {
                         checkedUnion = allUnion;
                     }
-                    if(checkedCatagory.size()==0){
+                    if (checkedCatagory.size() == 0) {
                         checkedCatagory = allCatagory;
                     }
-                    if(checkedOperator.size()==0){
+                    if (checkedOperator.size() == 0) {
                         checkedOperator = allOperator;
                     }
-                    List<FarmerInfoModel> Recipients = db.getFarmerInfoByAreaFarmingCategoryMobileOperator(MainActivity.divisionID,MainActivity.districtID,MainActivity.upazillaID,unionIDMask(checkedUnion),"%","%",checkedCatagory,phoneNumberMask(checkedOperator));
+                    List<FarmerInfoModel> Recipients = db.getFarmerInfoByAreaFarmingCategoryMobileOperator(MainActivity.divisionID, MainActivity.districtID, MainActivity.upazillaID, unionIDMask(checkedUnion), "%", "%", checkedCatagory, phoneNumberMask(checkedOperator));
                     if (Recipients.size() > 0) {
                         finalRecipient = Recipients;
                         Intent i = new Intent(groupsmsfilter.this, GroupSmsTemplateSelection.class);
@@ -173,25 +171,23 @@ bottomNavigationHandler();
             @Override
             public void onClick(View v) {
 
-                if(!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag)
-                {
+                if (!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag) {
                     Toast.makeText(getApplicationContext(), "অনুগ্রহক পূর্বক বার্তা প্রাপক নির্বাচন করুন", Toast.LENGTH_LONG).show();
-                }
-                else {
+                } else {
                     List<String> tempCheckedUnion = checkedUnion;
                     List<String> tempCheckedCatagory = checkedCatagory;
                     List<String> tempCheckedOperator = checkedOperator;
 
-                    if(checkedUnion.size()==0){
-                    checkedUnion = allUnion;
+                    if (checkedUnion.size() == 0) {
+                        checkedUnion = allUnion;
                     }
-                    if(checkedCatagory.size()==0){
+                    if (checkedCatagory.size() == 0) {
                         checkedCatagory = allCatagory;
                     }
-                    if(checkedOperator.size()==0){
+                    if (checkedOperator.size() == 0) {
                         checkedOperator = allOperator;
                     }
-                    List<FarmerInfoModel> Recipients = db.getFarmerInfoByAreaFarmingCategoryMobileOperator(MainActivity.divisionID,MainActivity.districtID,MainActivity.upazillaID,unionIDMask(checkedUnion),"%","%",checkedCatagory,phoneNumberMask(checkedOperator));
+                    List<FarmerInfoModel> Recipients = db.getFarmerInfoByAreaFarmingCategoryMobileOperator(MainActivity.divisionID, MainActivity.districtID, MainActivity.upazillaID, unionIDMask(checkedUnion), "%", "%", checkedCatagory, phoneNumberMask(checkedOperator));
                     if (Recipients.size() > 0) {
                         finalRecipient = Recipients;
                         Intent i = new Intent(groupsmsfilter.this, GroupSmsNewMessage.class);
@@ -208,7 +204,6 @@ bottomNavigationHandler();
         });
 
 
-
         allarea = (RadioButton) findViewById(R.id.allarea);
         areawise = (RadioButton) findViewById(R.id.areawise);
         catwise = (RadioButton) findViewById(R.id.catwise);
@@ -218,7 +213,7 @@ bottomNavigationHandler();
         allarea.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!allAreaCheckFlag) {
+                if (!allAreaCheckFlag) {
                     allAreaCheckFlag = true;
                     allarea.setChecked(true);
                     countRecipients(allUnion, allCatagory, allOperator, "all");
@@ -237,9 +232,7 @@ bottomNavigationHandler();
                     areawise.setEnabled(false);
                     catwise.setEnabled(false);
                     operatorwise.setEnabled(false);
-                }
-                else
-                {
+                } else {
                     checkedUnion = new ArrayList<String>();
                     checkedCatagory = new ArrayList<String>();
                     checkedOperator = new ArrayList<String>();
@@ -259,56 +252,39 @@ bottomNavigationHandler();
             @Override
             public void onClick(View v) {
 
-                if(!unionWiseCheckFlag) {
+                if (!unionWiseCheckFlag) {
                     unionWiseCheckFlag = true;
                     areawise.setChecked(true);
                     showRadioButtonDialogUnion();
-                    if(checkedCatagory.size()==0 && checkedOperator.size()==0)
-                    {
-                        countRecipients(allUnion,allCatagory,allOperator,"union");
-                    }
-                    else if(checkedCatagory.size()==0)
-                    {
-                        countRecipients(allUnion,allCatagory,checkedOperator,"union");
-                    }
-                    else if(checkedOperator.size()==0)
-                    {
-                        countRecipients(allUnion,checkedCatagory,allOperator,"union");
-                    }
-                    else
-                    {
-                        countRecipients(allUnion,checkedCatagory,checkedOperator,"union");
+                    if (checkedCatagory.size() == 0 && checkedOperator.size() == 0) {
+                        countRecipients(allUnion, allCatagory, allOperator, "union");
+                    } else if (checkedCatagory.size() == 0) {
+                        countRecipients(allUnion, allCatagory, checkedOperator, "union");
+                    } else if (checkedOperator.size() == 0) {
+                        countRecipients(allUnion, checkedCatagory, allOperator, "union");
+                    } else {
+                        countRecipients(allUnion, checkedCatagory, checkedOperator, "union");
                     }
                     setCountTextLabel();
-                }
-                else
-                {
+                } else {
                     checkedUnion = new ArrayList<String>();
                     unionWiseCheckFlag = false;
                     areawise.setChecked(false);
 
                     areaTotalcounTxt.setText(": 0");
-                    if(checkedCatagory.size()==0 && checkedOperator.size()==0)
-                    {
-                        countRecipients(allUnion,allCatagory,allOperator,"union");
-                    }
-                    else if(checkedCatagory.size()==0)
-                    {
-                        countRecipients(allUnion,allCatagory,checkedOperator,"union");
-                    }
-                    else if(checkedOperator.size()==0)
-                    {
-                        countRecipients(allUnion,checkedCatagory,allOperator,"union");
-                    }
-                    else
-                    {
-                        countRecipients(allUnion,checkedCatagory,checkedOperator,"union");
+                    if (checkedCatagory.size() == 0 && checkedOperator.size() == 0) {
+                        countRecipients(allUnion, allCatagory, allOperator, "union");
+                    } else if (checkedCatagory.size() == 0) {
+                        countRecipients(allUnion, allCatagory, checkedOperator, "union");
+                    } else if (checkedOperator.size() == 0) {
+                        countRecipients(allUnion, checkedCatagory, allOperator, "union");
+                    } else {
+                        countRecipients(allUnion, checkedCatagory, checkedOperator, "union");
                     }
                     setCountTextLabel();
                 }
 
-                if(!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag)
-                {
+                if (!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag) {
                     resetAllFilter();
                 }
             }
@@ -318,57 +294,40 @@ bottomNavigationHandler();
             @Override
             public void onClick(View v) {
 
-                if(!fishingCatCheckFlag) {
+                if (!fishingCatCheckFlag) {
                     fishingCatCheckFlag = true;
                     catwise.setChecked(true);
                     showRadioButtonDialogFarmingCat();
 
-                    if(checkedUnion.size()==0 && checkedOperator.size()==0)
-                    {
-                        countRecipients(allUnion,allCatagory,allOperator,"catagory");
-                    }
-                    else if(checkedUnion.size()==0 )
-                    {
-                        countRecipients(allUnion,allCatagory,checkedOperator,"catagory");
-                    }
-                    else if(checkedOperator.size()==0)
-                    {
-                        countRecipients(checkedUnion,allCatagory,allOperator,"catagory");
-                    }
-                    else
-                    {
-                        countRecipients(checkedUnion,allCatagory,checkedOperator,"catagory");
+                    if (checkedUnion.size() == 0 && checkedOperator.size() == 0) {
+                        countRecipients(allUnion, allCatagory, allOperator, "catagory");
+                    } else if (checkedUnion.size() == 0) {
+                        countRecipients(allUnion, allCatagory, checkedOperator, "catagory");
+                    } else if (checkedOperator.size() == 0) {
+                        countRecipients(checkedUnion, allCatagory, allOperator, "catagory");
+                    } else {
+                        countRecipients(checkedUnion, allCatagory, checkedOperator, "catagory");
                     }
                     setCountTextLabel();
-                }
-                else
-                {
+                } else {
                     checkedCatagory = new ArrayList<String>();
                     fishingCatCheckFlag = false;
                     catwise.setChecked(false);
                     TextView catagoryTotalcountTxt = (TextView) findViewById(R.id.catagoryTotalcountTxt);
                     catagoryTotalcountTxt.setText(": 0");
-                    if(checkedUnion.size()==0 && checkedOperator.size()==0)
-                    {
-                        countRecipients(allUnion,allCatagory,allOperator,"catagory");
-                    }
-                    else if(checkedUnion.size()==0 )
-                    {
-                        countRecipients(allUnion,allCatagory,checkedOperator,"catagory");
-                    }
-                    else if(checkedOperator.size()==0)
-                    {
-                        countRecipients(checkedUnion,allCatagory,allOperator,"catagory");
-                    }
-                    else
-                    {
-                        countRecipients(checkedUnion,allCatagory,checkedOperator,"catagory");
+                    if (checkedUnion.size() == 0 && checkedOperator.size() == 0) {
+                        countRecipients(allUnion, allCatagory, allOperator, "catagory");
+                    } else if (checkedUnion.size() == 0) {
+                        countRecipients(allUnion, allCatagory, checkedOperator, "catagory");
+                    } else if (checkedOperator.size() == 0) {
+                        countRecipients(checkedUnion, allCatagory, allOperator, "catagory");
+                    } else {
+                        countRecipients(checkedUnion, allCatagory, checkedOperator, "catagory");
                     }
                     setCountTextLabel();
                 }
 
-                if(!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag)
-                {
+                if (!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag) {
                     resetAllFilter();
                 }
             }
@@ -377,56 +336,40 @@ bottomNavigationHandler();
         operatorwise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!operatorWiseFlag) {
+                if (!operatorWiseFlag) {
                     operatorWiseFlag = true;
                     operatorwise.setChecked(true);
                     showRadioButtonDialogOperator();
 
-                    if(checkedUnion.size()==0 && checkedCatagory.size()==0)
-                    {
+                    if (checkedUnion.size() == 0 && checkedCatagory.size() == 0) {
                         countRecipients(allUnion, allCatagory, allOperator, "operator");
-                    }
-                    else if(checkedUnion.size()==0)
-                    {
+                    } else if (checkedUnion.size() == 0) {
                         countRecipients(allUnion, checkedCatagory, allOperator, "operator");
-                    }
-                    else if(checkedCatagory.size()==0)
-                    {
+                    } else if (checkedCatagory.size() == 0) {
                         countRecipients(checkedUnion, allCatagory, allOperator, "operator");
-                    }
-                    else
-                    {
+                    } else {
                         countRecipients(checkedUnion, checkedCatagory, allOperator, "operator");
                     }
                     setCountTextLabel();
-                }
-                else {
+                } else {
                     checkedOperator = new ArrayList<String>();
                     operatorWiseFlag = false;
                     operatorwise.setChecked(false);
                     TextView operatorTotalcountTxt = (TextView) findViewById(R.id.operatorTotalcountTxt);
                     operatorTotalcountTxt.setText(": 0");
-                    if(checkedUnion.size()==0 && checkedCatagory.size()==0)
-                    {
+                    if (checkedUnion.size() == 0 && checkedCatagory.size() == 0) {
                         countRecipients(allUnion, allCatagory, allOperator, "operator");
-                    }
-                    else if(checkedUnion.size()==0)
-                    {
+                    } else if (checkedUnion.size() == 0) {
                         countRecipients(allUnion, checkedCatagory, allOperator, "operator");
-                    }
-                    else if(checkedCatagory.size()==0)
-                    {
+                    } else if (checkedCatagory.size() == 0) {
                         countRecipients(checkedUnion, allCatagory, allOperator, "operator");
-                    }
-                    else
-                    {
+                    } else {
                         countRecipients(checkedUnion, checkedCatagory, allOperator, "operator");
                     }
                     setCountTextLabel();
                 }
 
-                if(!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag)
-                {
+                if (!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag) {
                     resetAllFilter();
                 }
             }
@@ -437,7 +380,7 @@ bottomNavigationHandler();
             public void onClick(View v) {
 
 
-                if(!allAreaCheckFlag) {
+                if (!allAreaCheckFlag) {
                     allarea.setChecked(true);
                     allAreaCheckFlag = true;
                     checkedUnion = new ArrayList<String>();
@@ -456,9 +399,7 @@ bottomNavigationHandler();
                     areawise.setEnabled(false);
                     catwise.setEnabled(false);
                     operatorwise.setEnabled(false);
-                }
-                else
-                {
+                } else {
                     checkedUnion = new ArrayList<String>();
                     checkedCatagory = new ArrayList<String>();
                     checkedOperator = new ArrayList<String>();
@@ -502,8 +443,7 @@ bottomNavigationHandler();
                     }
                 }
 
-                if(!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag)
-                {
+                if (!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag) {
                     resetAllFilter();
                 }
             }
@@ -537,8 +477,7 @@ bottomNavigationHandler();
                     }
                 }
 
-                if(!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag)
-                {
+                if (!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag) {
                     resetAllFilter();
                 }
             }
@@ -573,8 +512,7 @@ bottomNavigationHandler();
                     }
                 }
 
-                if(!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag)
-                {
+                if (!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag) {
                     resetAllFilter();
                 }
             }
@@ -583,7 +521,7 @@ bottomNavigationHandler();
 
     private void showRadioButtonDialogUnion() {
         // custom dialog
-        DbHandler db = new DbHandler(this,null,null,1);
+        DbHandler db = new DbHandler(this, null, null, 1);
         List<UnionModel> unionList = db.getUnionList(MainActivity.divisionID, MainActivity.districtID, MainActivity.upazillaID);
         final Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -594,8 +532,7 @@ bottomNavigationHandler();
         LinearLayout holder = (LinearLayout) dialog.findViewById(R.id.groupDynamicCButtonHolder);
 
 
-
-        Button btnCancel= new Button(this);
+        Button btnCancel = new Button(this);
         btnCancel.setText("ওকে");
         btnCancel.setLayoutParams(new LinearLayoutCompat.LayoutParams(LinearLayoutCompat.LayoutParams.WRAP_CONTENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT));
@@ -605,13 +542,11 @@ bottomNavigationHandler();
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(checkedUnion.size()==0)
-                {
+                if (checkedUnion.size() == 0) {
                     unionWiseCheckFlag = false;
                     areawise.setChecked(false);
 
-                    if(!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag)
-                    {
+                    if (!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag) {
                         resetAllFilter();
                     }
                 }
@@ -619,12 +554,11 @@ bottomNavigationHandler();
             }
         });
 
-        for(int i=0;i<unionList.size();i++){
-            CheckBox rb=new CheckBox(this); // dynamically creating RadioButton and adding to RadioGroup.
+        for (int i = 0; i < unionList.size(); i++) {
+            CheckBox rb = new CheckBox(this); // dynamically creating RadioButton and adding to RadioGroup.
             final String unionName = unionList.get(i).getUnionName();
-            rb.setText( unionList.get(i).getUnionName());
-            if(checkedUnion.contains(unionName))
-            {
+            rb.setText(unionList.get(i).getUnionName());
+            if (checkedUnion.contains(unionName)) {
                 rb.setChecked(true);
             }
 
@@ -635,30 +569,20 @@ bottomNavigationHandler();
                 @Override
                 public void onClick(View v) {
 
-                    if(rbFinal.isChecked() && !checkedUnion.contains(unionName))
-                    {
+                    if (rbFinal.isChecked() && !checkedUnion.contains(unionName)) {
                         checkedUnion.add(unionName);
-                    }
-                    else if(!rbFinal.isChecked() && checkedUnion.contains(unionName))
-                    {
+                    } else if (!rbFinal.isChecked() && checkedUnion.contains(unionName)) {
                         checkedUnion.remove(unionName);
                     }
 
-                    if(checkedCatagory.size()==0 && checkedOperator.size()==0)
-                    {
-                        countRecipients(checkedUnion,allCatagory,allOperator,"union");
-                    }
-                    else if(checkedCatagory.size()==0)
-                    {
-                        countRecipients(checkedUnion,allCatagory,checkedOperator,"union");
-                    }
-                    else if(checkedOperator.size()==0)
-                    {
-                        countRecipients(checkedUnion,checkedCatagory,allOperator,"union");
-                    }
-                    else
-                    {
-                        countRecipients(checkedUnion,checkedCatagory,checkedOperator,"union");
+                    if (checkedCatagory.size() == 0 && checkedOperator.size() == 0) {
+                        countRecipients(checkedUnion, allCatagory, allOperator, "union");
+                    } else if (checkedCatagory.size() == 0) {
+                        countRecipients(checkedUnion, allCatagory, checkedOperator, "union");
+                    } else if (checkedOperator.size() == 0) {
+                        countRecipients(checkedUnion, checkedCatagory, allOperator, "union");
+                    } else {
+                        countRecipients(checkedUnion, checkedCatagory, checkedOperator, "union");
                     }
                 }
             });
@@ -669,7 +593,7 @@ bottomNavigationHandler();
 
     private void showRadioButtonDialogFarmingCat() {
         // custom dialog
-        DbHandler db = new DbHandler(this,null,null,1);
+        DbHandler db = new DbHandler(this, null, null, 1);
         List<String> farmingCat = db.getFarmingCategoryByArea(MainActivity.divisionID, MainActivity.districtID, MainActivity.upazillaID, "%", "%", "%");
         final Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -685,7 +609,7 @@ bottomNavigationHandler();
                 LinearLayout.LayoutParams.WRAP_CONTENT));
 
 
-        Button btnCancel= new Button(this);
+        Button btnCancel = new Button(this);
         btnCancel.setText("ওকে");
         btnCancel.setLayoutParams(new LinearLayoutCompat.LayoutParams(LinearLayoutCompat.LayoutParams.WRAP_CONTENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT));
@@ -704,13 +628,11 @@ bottomNavigationHandler();
             @Override
             public void onClick(View v) {
 
-                if(checkedCatagory.size()==0)
-                {
+                if (checkedCatagory.size() == 0) {
                     fishingCatCheckFlag = false;
                     catwise.setChecked(false);
 
-                    if(!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag)
-                    {
+                    if (!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag) {
                         resetAllFilter();
                     }
                 }
@@ -718,13 +640,12 @@ bottomNavigationHandler();
             }
         });
 
-        for(int i=0;i<farmingCat.size();i++){
-            CheckBox rb=new CheckBox(this);
+        for (int i = 0; i < farmingCat.size(); i++) {
+            CheckBox rb = new CheckBox(this);
             final String cataName = farmingCat.get(i);
-            rb.setText( cataName);
+            rb.setText(cataName);
 
-            if(checkedCatagory.contains(cataName))
-            {
+            if (checkedCatagory.contains(cataName)) {
                 rb.setChecked(true);
             }
 
@@ -734,30 +655,20 @@ bottomNavigationHandler();
             rb.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if(rbFinal.isChecked() && !checkedCatagory.contains(cataName))
-                    {
+                    if (rbFinal.isChecked() && !checkedCatagory.contains(cataName)) {
                         checkedCatagory.add(cataName);
-                    }
-                    else if(!rbFinal.isChecked() && checkedCatagory.contains(cataName))
-                    {
+                    } else if (!rbFinal.isChecked() && checkedCatagory.contains(cataName)) {
                         checkedCatagory.remove(cataName);
                     }
 
-                    if(checkedUnion.size()==0 && checkedOperator.size()==0)
-                    {
-                        countRecipients(allUnion,checkedCatagory,allOperator,"catagory");
-                    }
-                    else if(checkedUnion.size()==0 )
-                    {
-                        countRecipients(allUnion,checkedCatagory,checkedOperator,"catagory");
-                    }
-                    else if(checkedOperator.size()==0)
-                    {
-                        countRecipients(checkedUnion,checkedCatagory,allOperator,"catagory");
-                    }
-                    else
-                    {
-                        countRecipients(checkedUnion,checkedCatagory,checkedOperator,"catagory");
+                    if (checkedUnion.size() == 0 && checkedOperator.size() == 0) {
+                        countRecipients(allUnion, checkedCatagory, allOperator, "catagory");
+                    } else if (checkedUnion.size() == 0) {
+                        countRecipients(allUnion, checkedCatagory, checkedOperator, "catagory");
+                    } else if (checkedOperator.size() == 0) {
+                        countRecipients(checkedUnion, checkedCatagory, allOperator, "catagory");
+                    } else {
+                        countRecipients(checkedUnion, checkedCatagory, checkedOperator, "catagory");
                     }
                 }
             });
@@ -769,7 +680,7 @@ bottomNavigationHandler();
 
     private void showRadioButtonDialogOperator() {
         // custom dialog
-        DbHandler db = new DbHandler(this,null,null,1);
+        DbHandler db = new DbHandler(this, null, null, 1);
         List<String> operatorList = new ArrayList<String>();
 
         operatorList.add("গ্রামীন ফোন");
@@ -792,7 +703,7 @@ bottomNavigationHandler();
                 LinearLayout.LayoutParams.WRAP_CONTENT));
 
 
-        Button btnCancel= new Button(this);
+        Button btnCancel = new Button(this);
         btnCancel.setText("ওকে");
         btnCancel.setLayoutParams(new LinearLayoutCompat.LayoutParams(LinearLayoutCompat.LayoutParams.WRAP_CONTENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT));
@@ -811,13 +722,11 @@ bottomNavigationHandler();
             @Override
             public void onClick(View v) {
 
-                if(checkedOperator.size()==0)
-                {
+                if (checkedOperator.size() == 0) {
                     operatorWiseFlag = false;
                     operatorwise.setChecked(false);
 
-                    if(!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag)
-                    {
+                    if (!allAreaCheckFlag && !unionWiseCheckFlag && !fishingCatCheckFlag && !operatorWiseFlag) {
                         resetAllFilter();
                     }
                 }
@@ -825,13 +734,12 @@ bottomNavigationHandler();
                 dialog.dismiss();
             }
         });
-        for(int i=0;i<operatorList.size();i++){
-            CheckBox rb=new CheckBox(this);
+        for (int i = 0; i < operatorList.size(); i++) {
+            CheckBox rb = new CheckBox(this);
             final String operatorName = operatorList.get(i);
-            rb.setText( operatorName);
-            if(checkedOperator.contains(operatorName))
-            {
-               rb.setChecked(true);
+            rb.setText(operatorName);
+            if (checkedOperator.contains(operatorName)) {
+                rb.setChecked(true);
             }
             rg.addView(rb);
             final CheckBox rbFinal = rb;
@@ -840,29 +748,19 @@ bottomNavigationHandler();
                 @Override
                 public void onClick(View v) {
 
-                    if(rbFinal.isChecked() && !checkedOperator.contains(operatorName))
-                    {
+                    if (rbFinal.isChecked() && !checkedOperator.contains(operatorName)) {
                         checkedOperator.add(operatorName);
-                    }
-                    else if(!rbFinal.isChecked() && checkedOperator.contains(operatorName))
-                    {
+                    } else if (!rbFinal.isChecked() && checkedOperator.contains(operatorName)) {
                         checkedOperator.remove(operatorName);
                     }
 
-                    if(checkedUnion.size()==0 && checkedCatagory.size()==0)
-                    {
+                    if (checkedUnion.size() == 0 && checkedCatagory.size() == 0) {
                         countRecipients(allUnion, allCatagory, checkedOperator, "operator");
-                    }
-                    else if(checkedUnion.size()==0)
-                    {
+                    } else if (checkedUnion.size() == 0) {
                         countRecipients(allUnion, checkedCatagory, checkedOperator, "operator");
-                    }
-                    else if(checkedCatagory.size()==0)
-                    {
+                    } else if (checkedCatagory.size() == 0) {
                         countRecipients(checkedUnion, allCatagory, checkedOperator, "operator");
-                    }
-                    else
-                    {
+                    } else {
                         countRecipients(checkedUnion, checkedCatagory, checkedOperator, "operator");
                     }
                 }
@@ -872,12 +770,11 @@ bottomNavigationHandler();
         dialog.show();
     }
 
-    private void countRecipients(List<String> union,List<String> catagory,List<String> operator,String para)
-    {
-        DbHandler db = new DbHandler(this,null,null,1);
-        List<FarmerInfoModel> Recipients = db.getFarmerInfoByAreaFarmingCategoryMobileOperator(MainActivity.divisionID,MainActivity.districtID,MainActivity.upazillaID,unionIDMask(union),"%","%",catagory,phoneNumberMask(operator));
+    private void countRecipients(List<String> union, List<String> catagory, List<String> operator, String para) {
+        DbHandler db = new DbHandler(this, null, null, 1);
+        List<FarmerInfoModel> Recipients = db.getFarmerInfoByAreaFarmingCategoryMobileOperator(MainActivity.divisionID, MainActivity.districtID, MainActivity.upazillaID, unionIDMask(union), "%", "%", catagory, phoneNumberMask(operator));
 
-        if(para=="all") {
+        if (para == "all") {
 
             //TextView areaTotalcounTxt = (TextView) findViewById(R.id.areaTotalcounTxt);
             areaTotalcounTxt.setText(": " + pona_mojud.engToBng(String.valueOf(allUnion.size())));
@@ -888,99 +785,75 @@ bottomNavigationHandler();
             TextView operatorTotalcountTxt = (TextView) findViewById(R.id.operatorTotalcountTxt);
             operatorTotalcountTxt.setText(": " + pona_mojud.engToBng(String.valueOf(allOperator.size())));
         }
-        if(para=="union" && union.size()>0)
-        {
+        if (para == "union" && union.size() > 0) {
             //TextView areaTotalcounTxt = (TextView) findViewById(R.id.areaTotalcounTxt);
-            areaTotalcounTxt.setText(": "+ pona_mojud.engToBng(String.valueOf(union.size())));
+            areaTotalcounTxt.setText(": " + pona_mojud.engToBng(String.valueOf(union.size())));
 
-        }
+        } else if (para == "union" && union.size() == 0) {
 
-        else if(para=="union" && union.size()==0)
-        {
-
-            checkedUnion =new ArrayList<String>();
+            checkedUnion = new ArrayList<String>();
             allAreaCheckFlag = false;
             allarea.setChecked(false);
         }
 
 
-        if(para=="catagory" && catagory.size()>0)
-        {
+        if (para == "catagory" && catagory.size() > 0) {
             TextView catagoryTotalcountTxt = (TextView) findViewById(R.id.catagoryTotalcountTxt);
-            catagoryTotalcountTxt.setText(": "+ pona_mojud.engToBng(String.valueOf(catagory.size())));
+            catagoryTotalcountTxt.setText(": " + pona_mojud.engToBng(String.valueOf(catagory.size())));
 
-        }
-        else if(para=="catagory" && catagory.size()==0)
-        {
-            checkedCatagory =new ArrayList<String>();
+        } else if (para == "catagory" && catagory.size() == 0) {
+            checkedCatagory = new ArrayList<String>();
             fishingCatCheckFlag = false;
             catwise.setChecked(false);
         }
 
 
-        if(para=="operator" && operator.size()>0)
-        {
+        if (para == "operator" && operator.size() > 0) {
             TextView operatorTotalcountTxt = (TextView) findViewById(R.id.operatorTotalcountTxt);
-            operatorTotalcountTxt.setText(": "+ pona_mojud.engToBng(String.valueOf(operator.size())));
+            operatorTotalcountTxt.setText(": " + pona_mojud.engToBng(String.valueOf(operator.size())));
 
-        }
-        else if(para=="operator" && operator.size()==0)
-        {
+        } else if (para == "operator" && operator.size() == 0) {
             checkedOperator = new ArrayList<String>();
             operatorWiseFlag = false;
             operatorwise.setChecked(false);
         }
         TextView sumTotalcountTxt = (TextView) findViewById(R.id.sumTotalcountTxt);
-        sumTotalcountTxt.setText(": "+ pona_mojud.engToBng(String.valueOf(Recipients.size())));
+        sumTotalcountTxt.setText(": " + pona_mojud.engToBng(String.valueOf(Recipients.size())));
         recipient = Recipients;
         System.out.println(Recipients.size());
     }
 
-    private List<String> phoneNumberMask(List<String> opList)
-    {
+    private List<String> phoneNumberMask(List<String> opList) {
         List<String> phoneNumber = new ArrayList<String>();
-        for(int i=0;i<opList.size();i++) {
-            if(opList.get(i)=="গ্রামীন ফোন")
-            {
+        for (int i = 0; i < opList.size(); i++) {
+            if (opList.get(i) == "গ্রামীন ফোন") {
                 phoneNumber.add("017");
-            }
-            else if(opList.get(i)=="রবি")
-            {
+            } else if (opList.get(i) == "রবি") {
                 phoneNumber.add("018");
-            }
-            else if(opList.get(i)=="টেলিটক")
-            {
+            } else if (opList.get(i) == "টেলিটক") {
                 phoneNumber.add("015");
-            }
-            else if(opList.get(i)=="এয়ারটেল")
-            {
+            } else if (opList.get(i) == "এয়ারটেল") {
                 phoneNumber.add("016");
-            }
-            else if(opList.get(i)=="বাংলালিংক")
-            {
+            } else if (opList.get(i) == "বাংলালিংক") {
                 phoneNumber.add("019");
-            }
-            else if(opList.get(i)=="সিটিসেল")
-            {
+            } else if (opList.get(i) == "সিটিসেল") {
                 phoneNumber.add("011");
             }
         }
         return phoneNumber;
     }
 
-    private List<String> unionIDMask(List<String> unionBng)
-    {
-        DbHandler db = new DbHandler(this,null,null,1);
+    private List<String> unionIDMask(List<String> unionBng) {
+        DbHandler db = new DbHandler(this, null, null, 1);
         List<String> unionID = new ArrayList<String>();
-        for(int i=0;i<unionBng.size();i++) {
-            UnionModel union = db.getUnionIDByName(MainActivity.divisionID,MainActivity.districtID,MainActivity.upazillaID,unionBng.get(i));
+        for (int i = 0; i < unionBng.size(); i++) {
+            UnionModel union = db.getUnionIDByName(MainActivity.divisionID, MainActivity.districtID, MainActivity.upazillaID, unionBng.get(i));
             unionID.add(union.getUnionID());
         }
         return unionID;
     }
 
-    private void resetAllFilter()
-    {
+    private void resetAllFilter() {
         checkedUnion = new ArrayList<String>();
         checkedCatagory = new ArrayList<String>();
         checkedOperator = new ArrayList<String>();
@@ -1014,28 +887,34 @@ bottomNavigationHandler();
     }
 
 
-    private void setCountTextLabel()
-    {
+    private void setCountTextLabel() {
         //TextView areaTotalcounTxt = (TextView) findViewById(R.id.areaTotalcounTxt);
-        if(checkedUnion.size()>0) {
-            areaTotalcounTxt.setText(": "+pona_mojud.engToBng(String.valueOf(checkedUnion.size())));
-        }else{areaTotalcounTxt.setText(": "+pona_mojud.engToBng(String.valueOf(allUnion.size())));}
+        if (checkedUnion.size() > 0) {
+            areaTotalcounTxt.setText(": " + pona_mojud.engToBng(String.valueOf(checkedUnion.size())));
+        } else {
+            areaTotalcounTxt.setText(": " + pona_mojud.engToBng(String.valueOf(allUnion.size())));
+        }
 
         TextView catagoryTotalcountTxt = (TextView) findViewById(R.id.catagoryTotalcountTxt);
-        if(checkedCatagory.size()>0) {
-            catagoryTotalcountTxt.setText(": "+pona_mojud.engToBng(String.valueOf(checkedCatagory.size())));
-        }else {catagoryTotalcountTxt.setText(": "+pona_mojud.engToBng(String.valueOf(allCatagory.size())));}
+        if (checkedCatagory.size() > 0) {
+            catagoryTotalcountTxt.setText(": " + pona_mojud.engToBng(String.valueOf(checkedCatagory.size())));
+        } else {
+            catagoryTotalcountTxt.setText(": " + pona_mojud.engToBng(String.valueOf(allCatagory.size())));
+        }
 
         TextView operatorTotalcountTxt = (TextView) findViewById(R.id.operatorTotalcountTxt);
-        if(checkedOperator.size()>0) {
-            operatorTotalcountTxt.setText(": "+pona_mojud.engToBng(String.valueOf(checkedOperator.size())));
-        }else {operatorTotalcountTxt.setText(": "+pona_mojud.engToBng(String.valueOf(allOperator.size())));}
+        if (checkedOperator.size() > 0) {
+            operatorTotalcountTxt.setText(": " + pona_mojud.engToBng(String.valueOf(checkedOperator.size())));
+        } else {
+            operatorTotalcountTxt.setText(": " + pona_mojud.engToBng(String.valueOf(allOperator.size())));
+        }
     }
+
     private void bottomNavigationHandler() {
 
         SharedPreferences pref = this.getApplicationContext().getSharedPreferences("MyPref", 0);
-        final String  log = pref.getString("log", "");
-        final SharedPreferences.Editor editor   = pref.edit();
+        final String log = pref.getString("log", "");
+        final SharedPreferences.Editor editor = pref.edit();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         bottomNavigationView.getMenu().clear();
         bottomNavigationView.inflateMenu(R.menu.new_bottom_menu_home);
@@ -1046,7 +925,6 @@ bottomNavigationHandler();
             bottomNavigationView.getMenu().getItem(3).setTitle("লগআউট");
         } else {
             bottomNavigationView.getMenu().removeItem(R.id.menu_profile);
-
 
 
         }

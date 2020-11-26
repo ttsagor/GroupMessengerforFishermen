@@ -37,11 +37,11 @@ public class AddTemplate extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_template);
 
-        final DbHandler db = new DbHandler(this,null,null,1);
+        final DbHandler db = new DbHandler(this, null, null, 1);
         final AppCompatButton addtemplateMsgBoxMessageSave = findViewById(R.id.addtemplateMsgBoxMessageSave);
         final EditText addtemplateMsgBox = (EditText) findViewById(R.id.addtemplateMsgBox);
 
-bottomNavigationHandler();
+        bottomNavigationHandler();
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
@@ -50,14 +50,12 @@ bottomNavigationHandler();
         addtemplateMsgBoxMessageSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(addtemplateMsgBox.getText().length()>0) {
+                if (addtemplateMsgBox.getText().length() > 0) {
                     SmsTemplateModel smsTemplateModel = new SmsTemplateModel();
                     smsTemplateModel.setSmsTemplateText(addtemplateMsgBox.getText().toString());
                     db.insertData(smsTemplateModel);
                     Toast.makeText(getBaseContext(), "টেম্পটে সেভ করা সম্পূর্ণ", Toast.LENGTH_LONG).show();
-                }
-                else
-                {
+                } else {
                     Toast.makeText(getBaseContext(), "টেম্পটে তথ্য প্রদান করুন", Toast.LENGTH_LONG).show();
                 }
             }
@@ -90,8 +88,8 @@ bottomNavigationHandler();
     private void bottomNavigationHandler() {
 
         SharedPreferences pref = this.getApplicationContext().getSharedPreferences("MyPref", 0);
-        final String  log = pref.getString("log", "");
-        final SharedPreferences.Editor editor   = pref.edit();
+        final String log = pref.getString("log", "");
+        final SharedPreferences.Editor editor = pref.edit();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         bottomNavigationView.getMenu().clear();
         bottomNavigationView.inflateMenu(R.menu.new_bottom_menu_home);
@@ -102,7 +100,6 @@ bottomNavigationHandler();
             bottomNavigationView.getMenu().getItem(3).setTitle("লগআউট");
         } else {
             bottomNavigationView.getMenu().removeItem(R.id.menu_profile);
-
 
 
         }

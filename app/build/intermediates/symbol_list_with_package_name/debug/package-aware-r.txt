@@ -2090,7 +2090,10 @@ id ll_chasi_onusandhan
 id ll_desease
 id ll_invention
 id ll_khude_barta_peron
+id ll_mosso_chas
 id ll_mosso_sutro
+id ll_prosno_bank
+id ll_totto_kos
 id logged_id
 id logged_out
 id masked

@@ -59,7 +59,7 @@ public class AreaFormula extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_area_formula);
-bottomNavigationHandler();
+        bottomNavigationHandler();
         area_formula_sotangso_text = (TextView) findViewById(R.id.area_formula_sotangso_text);
         area_formula_sotangso = (TextView) findViewById(R.id.area_formula_sotangso);
         area_formula_hector_text = (TextView) findViewById(R.id.area_formula_hector_text);
@@ -71,7 +71,7 @@ bottomNavigationHandler();
 
         area_formula_ShareImg = (ImageView) findViewById(R.id.area_formula_ShareImg);
 
-        area_formula_agePonaSubmit =  findViewById(R.id.area_formula_agePonaSubmit);
+        area_formula_agePonaSubmit = findViewById(R.id.area_formula_agePonaSubmit);
 
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;
@@ -86,18 +86,19 @@ bottomNavigationHandler();
                     int area_formula_height_int = Integer.parseInt(area_formula_height.getText().toString());
                     int area_formula_width_int = Integer.parseInt(area_formula_width.getText().toString());
 
-                    double area_out = area_formula_length_int*area_formula_height_int*area_formula_width_int;
-                    double area_out1 = area_out*28.3;
+                    double area_out = area_formula_length_int * area_formula_height_int * area_formula_width_int;
+                    double area_out1 = area_out * 28.3;
 
                     area_formula_sotangso.setText(pona_mojud.engToBng(String.format("%.3f", area_out)));
                     area_formula_hector.setText(pona_mojud.engToBng(String.format("%.3f", area_out1)));
 
-                    if(getCurrentFocus()!=null) {
+                    if (getCurrentFocus() != null) {
                         InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
                         inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
                     }
 
-                }catch (Exception e){}
+                } catch (Exception e) {
+                }
             }
         });
 
@@ -109,14 +110,14 @@ bottomNavigationHandler();
                     Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                     sharingIntent.setType("text/plain");
 
-                    String des = "পুকুরের দৈর্ঘ্য: " +pona_mojud.engToBng(area_formula_length.getText().toString())+"\n"+
-                            "পুকুরের উচ্চতা: " +pona_mojud.engToBng(area_formula_height.getText().toString())+"\n"+
-                            "পুকুরের প্রস্থ: " + pona_mojud.engToBng(area_formula_width.getText().toString())+"\n"+
-                            "পুকুরের আয়তন (ঘনফুট): " + area_formula_sotangso.getText().toString()+"\n"+
+                    String des = "পুকুরের দৈর্ঘ্য: " + pona_mojud.engToBng(area_formula_length.getText().toString()) + "\n" +
+                            "পুকুরের উচ্চতা: " + pona_mojud.engToBng(area_formula_height.getText().toString()) + "\n" +
+                            "পুকুরের প্রস্থ: " + pona_mojud.engToBng(area_formula_width.getText().toString()) + "\n" +
+                            "পুকুরের আয়তন (ঘনফুট): " + area_formula_sotangso.getText().toString() + "\n" +
                             "পুকুরের আয়তন (লিটার): " + area_formula_hector.getText();
 
-                    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,"পুকুরের আয়তন নির্নয় ফরমুলা");
-                    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT,des);
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "পুকুরের আয়তন নির্নয় ফরমুলা");
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, des);
                     startActivity(Intent.createChooser(sharingIntent, "Share via"));
                 } catch (Exception e) {
                     //Toast.makeText(getApplicationContext(),e.toString(),Toast.LENGTH_LONG).show();
@@ -125,11 +126,12 @@ bottomNavigationHandler();
             }
         });
     }
+
     private void bottomNavigationHandler() {
 
         SharedPreferences pref = this.getApplicationContext().getSharedPreferences("MyPref", 0);
-        final String  log = pref.getString("log", "");
-        final SharedPreferences.Editor editor   = pref.edit();
+        final String log = pref.getString("log", "");
+        final SharedPreferences.Editor editor = pref.edit();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         bottomNavigationView.getMenu().clear();
         bottomNavigationView.inflateMenu(R.menu.new_bottom_menu_home);
@@ -140,7 +142,6 @@ bottomNavigationHandler();
             bottomNavigationView.getMenu().getItem(3).setTitle("লগআউট");
         } else {
             bottomNavigationView.getMenu().removeItem(R.id.menu_profile);
-
 
 
         }

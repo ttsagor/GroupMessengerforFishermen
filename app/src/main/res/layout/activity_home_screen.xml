@@ -116,6 +116,7 @@
 
 
             <LinearLayout
+                android:id="@+id/ll_mosso_chas"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="15dp"
@@ -200,7 +201,7 @@
             >
 
             <LinearLayout
-
+android:id="@+id/ll_totto_kos"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -237,6 +238,7 @@
 
 
             <LinearLayout
+                android:id="@+id/ll_prosno_bank"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="15dp"

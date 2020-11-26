@@ -79,11 +79,12 @@ public class AgeWiseFood extends AppCompatActivity {
     ArrayList<String> fishQuatity = new ArrayList<String>();
     ArrayList<String> avgWeight = new ArrayList<String>();
     ArrayList<String> foodPrecent = new ArrayList<String>();
-    boolean flag= true;
+    boolean flag = true;
     ImageView ageWiseFoodShareImg;
     ImageView ageWiseFoodSaveImg;
     private File pdfFile;
-    String[] allWeek = new String[] {"১ সপ্তাহ", "২য়-৪র্থ সপ্তাহ", "৫-৬ষ্ঠ সপ্তাহ", "৭-৯ম সপ্তাহ", "১০-১২ তম সপ্তাহ","১৩-১৫তম সপ্তাহ","১৬-১৯তম সপ্তাহ","২০-২৩তম সপ্তাহ","২৪-২৭ তম সপ্তাহ","২৮-৩০তম সপ্তাহ"};
+    String[] allWeek = new String[]{"১ সপ্তাহ", "২য়-৪র্থ সপ্তাহ", "৫-৬ষ্ঠ সপ্তাহ", "৭-৯ম সপ্তাহ", "১০-১২ তম সপ্তাহ", "১৩-১৫তম সপ্তাহ", "১৬-১৯তম সপ্তাহ", "২০-২৩তম সপ্তাহ", "২৪-২৭ তম সপ্তাহ", "২৮-৩০তম সপ্তাহ"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -92,7 +93,7 @@ public class AgeWiseFood extends AppCompatActivity {
         setContentView(R.layout.activity_age_wise_food);
 
         this.arraySpinner = allWeek;
-bottomNavigationHandler();
+        bottomNavigationHandler();
         s = (Spinner) findViewById(R.id.ageWeek);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, arraySpinner);
@@ -101,7 +102,7 @@ bottomNavigationHandler();
         ageWeight = (EditText) findViewById(R.id.ageWeight);
         agePer = (EditText) findViewById(R.id.agePer);
         list = (ListView) findViewById(R.id.scrolAgeList);
-        AppCompatButton agePonaSubmit =  findViewById(R.id.agePonaSubmit);
+        AppCompatButton agePonaSubmit = findViewById(R.id.agePonaSubmit);
         week.add("মাছের বয়স");
         fishweight.add("মাছের মোট ওজন (কেজি)");
         foodweight.add("খাদ্যের পরিমান (কেজি)");
@@ -121,60 +122,53 @@ bottomNavigationHandler();
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
 
-
         agePonaSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
 
-                    try {
-                        if(s.getSelectedItemPosition()<10 && flag) {
-                            if(s.getSelectedItemPosition()==9)
-                            {
-                                flag =false;
-                            }
-                            int ponaCount = Integer.parseInt(agePona.getText().toString());
-                            int ponaWeight = Integer.parseInt(ageWeight.getText().toString());
-                            int totalWeight = (ponaCount * ponaWeight) / 1000;
-                            int foodPer = Integer.parseInt(agePer.getText().toString());
-                            int foodWeight = (totalWeight * foodPer) / 100;
-
-                            fishQuatity.add(pona_mojud.engToBng(agePona.getText().toString()));
-                            avgWeight.add(pona_mojud.engToBng(ageWeight.getText().toString()));
-                            foodPrecent.add(pona_mojud.engToBng(agePer.getText().toString()));
-                            week.add(pona_mojud.engToBng(s.getSelectedItem().toString()));
-                            fishweight.add(pona_mojud.engToBng(String.valueOf(totalWeight)));
-                            foodweight.add(pona_mojud.engToBng(String.valueOf(foodWeight)));
-                            getList();
-                            if (flag)
-                            {
-                                s.setSelection(s.getSelectedItemPosition() + 1);
-                                ageWeight.setText("");
-                                agePer.setText("");
-                                ageWeight.requestFocus();
-
-                            }
-                            else
-                            {
-                                ageWeight.setText("");
-                                agePer.setText("");
-
-                                if(getCurrentFocus()!=null) {
-                                    InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
-                                    inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-                                }
-                            }
-
+                try {
+                    if (s.getSelectedItemPosition() < 10 && flag) {
+                        if (s.getSelectedItemPosition() == 9) {
+                            flag = false;
                         }
-                        else
-                        {
-                            if(getCurrentFocus()!=null) {
+                        int ponaCount = Integer.parseInt(agePona.getText().toString());
+                        int ponaWeight = Integer.parseInt(ageWeight.getText().toString());
+                        int totalWeight = (ponaCount * ponaWeight) / 1000;
+                        int foodPer = Integer.parseInt(agePer.getText().toString());
+                        int foodWeight = (totalWeight * foodPer) / 100;
+
+                        fishQuatity.add(pona_mojud.engToBng(agePona.getText().toString()));
+                        avgWeight.add(pona_mojud.engToBng(ageWeight.getText().toString()));
+                        foodPrecent.add(pona_mojud.engToBng(agePer.getText().toString()));
+                        week.add(pona_mojud.engToBng(s.getSelectedItem().toString()));
+                        fishweight.add(pona_mojud.engToBng(String.valueOf(totalWeight)));
+                        foodweight.add(pona_mojud.engToBng(String.valueOf(foodWeight)));
+                        getList();
+                        if (flag) {
+                            s.setSelection(s.getSelectedItemPosition() + 1);
+                            ageWeight.setText("");
+                            agePer.setText("");
+                            ageWeight.requestFocus();
+
+                        } else {
+                            ageWeight.setText("");
+                            agePer.setText("");
+
+                            if (getCurrentFocus() != null) {
                                 InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
                                 inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
                             }
                         }
-                    } catch (Exception e) {
+
+                    } else {
+                        if (getCurrentFocus() != null) {
+                            InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+                            inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+                        }
                     }
+                } catch (Exception e) {
+                }
 
             }
         });
@@ -185,9 +179,8 @@ bottomNavigationHandler();
 
                 try {
                     createPdf();
+                } catch (Exception e) {
                 }
-                catch (Exception e)
-                {}
             }
         });
         ageWiseFoodShareImg.setOnClickListener(new View.OnClickListener() {
@@ -199,18 +192,17 @@ bottomNavigationHandler();
                     sharingIntent.setType("text/plain");
 
                     String des = "";
-                    for(int i=1;i<fishQuatity.size();i++)
-                    {
-                        des +=  "মাছের বয়স " + week.get(i)+"\n"+
-                                "মাছের সংখ্যা " + fishQuatity.get(i)+"\n"+
-                                "গড় ওজন (গ্রাম) " + avgWeight.get(i)+"\n"+
-                                "খাদ্য হার (%) " + foodPrecent.get(i)+"\n"+
-                                "মাছের মোট ওজন (কেজি) " + fishweight.get(i)+"\n"+
-                                "খাদ্যের পরিমান (কেজি) " + foodweight.get(i)+"\n\n";
+                    for (int i = 1; i < fishQuatity.size(); i++) {
+                        des += "মাছের বয়স " + week.get(i) + "\n" +
+                                "মাছের সংখ্যা " + fishQuatity.get(i) + "\n" +
+                                "গড় ওজন (গ্রাম) " + avgWeight.get(i) + "\n" +
+                                "খাদ্য হার (%) " + foodPrecent.get(i) + "\n" +
+                                "মাছের মোট ওজন (কেজি) " + fishweight.get(i) + "\n" +
+                                "খাদ্যের পরিমান (কেজি) " + foodweight.get(i) + "\n\n";
                     }
 
-                    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,"বয়স অনুযায়ী মাছের খাদ্য প্রয়োগ");
-                    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT,des);
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "বয়স অনুযায়ী মাছের খাদ্য প্রয়োগ");
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, des);
                     startActivity(Intent.createChooser(sharingIntent, "Share via"));
                 } catch (Exception e) {
                     //Toast.makeText(getApplicationContext(),e.toString(),Toast.LENGTH_LONG).show();
@@ -232,11 +224,11 @@ bottomNavigationHandler();
 
         DateFormat df = new SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss Z");
         String date = df.format(Calendar.getInstance().getTime());
-        pdfFile = new File(docsFolder.getAbsolutePath(),date+"_week_wise_food.pdf");
+        pdfFile = new File(docsFolder.getAbsolutePath(), date + "_week_wise_food.pdf");
 
         OutputStream output = new FileOutputStream(pdfFile);
         Document document = new Document();
-        String FONT="assets/fonts/SolaimanLipi.ttf";
+        String FONT = "assets/fonts/SolaimanLipi.ttf";
 
         try {
             BaseFont bf = BaseFont.createFont(FONT, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
@@ -313,10 +305,9 @@ bottomNavigationHandler();
             cellOne.setBorder(Rectangle.BOTTOM | Rectangle.TOP);
             table.addCell(cellOne);
 
-            for(int i=1;i<fishQuatity.size();i++)
-            {
-                int index = Arrays.asList(allWeek).indexOf(week.get(i))+9;
-                String path = "3/"+index+".png";
+            for (int i = 1; i < fishQuatity.size(); i++) {
+                int index = Arrays.asList(allWeek).indexOf(week.get(i)) + 9;
+                String path = "3/" + index + ".png";
 
                 ims = getAssets().open(path);
                 bmp = BitmapFactory.decodeStream(ims);
@@ -329,20 +320,20 @@ bottomNavigationHandler();
                 cellOne.setBorder(Rectangle.BOTTOM);
                 table.addCell(cellOne);
 
-                cellOne = new PdfPCell(new Paragraph(fishweight.get(i),f));
+                cellOne = new PdfPCell(new Paragraph(fishweight.get(i), f));
                 cellOne.setBorder(Rectangle.BOTTOM);
                 cellOne.setPaddingLeft(40);
                 table.addCell(cellOne);
 
-                cellOne = new PdfPCell(new Paragraph(foodweight.get(i),f));
+                cellOne = new PdfPCell(new Paragraph(foodweight.get(i), f));
                 cellOne.setBorder(Rectangle.BOTTOM);
                 cellOne.setPaddingLeft(40);
                 table.addCell(cellOne);
             }
 
             document.add(table);
-        }catch (Exception e)
-        {}
+        } catch (Exception e) {
+        }
 
 
         document.close();
@@ -363,21 +354,21 @@ bottomNavigationHandler();
             intent.setDataAndType(uri, "application/pdf");
 
             startActivity(intent);
-        }else{
-            Toast.makeText(this,"Download a PDF Viewer to see the generated PDF",Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Download a PDF Viewer to see the generated PDF", Toast.LENGTH_SHORT).show();
         }
     }
 
-    void getList()
-    {
-        AgeRowAdapter listadapter = new AgeRowAdapter(this,week,fishweight,foodweight);
+    void getList() {
+        AgeRowAdapter listadapter = new AgeRowAdapter(this, week, fishweight, foodweight);
         list.setAdapter(listadapter);
     }
+
     private void bottomNavigationHandler() {
 
         SharedPreferences pref = this.getApplicationContext().getSharedPreferences("MyPref", 0);
-        final String  log = pref.getString("log", "");
-        final SharedPreferences.Editor editor   = pref.edit();
+        final String log = pref.getString("log", "");
+        final SharedPreferences.Editor editor = pref.edit();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         bottomNavigationView.getMenu().clear();
         bottomNavigationView.inflateMenu(R.menu.new_bottom_menu_home);
@@ -388,7 +379,6 @@ bottomNavigationHandler();
             bottomNavigationView.getMenu().getItem(3).setTitle("লগআউট");
         } else {
             bottomNavigationView.getMenu().removeItem(R.id.menu_profile);
-
 
 
         }

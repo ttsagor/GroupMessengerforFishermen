@@ -40,7 +40,7 @@ public class disease extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_disease);
         bottomNavigationHandler();
-        final DbHandler db = new DbHandler(this,null,null,1);
+        final DbHandler db = new DbHandler(this, null, null, 1);
 
         GridView diseaseListListview = findViewById(R.id.diseaseListListview);
 
@@ -49,21 +49,21 @@ public class disease extends AppCompatActivity {
         tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
 
-
-       ArrayList<DiseaseModel> diseaseList =  db.getDiseases("1=1");
+        ArrayList<DiseaseModel> diseaseList = db.getDiseases("1=1");
 
         for (DiseaseModel cDisease : diseaseList) {
-            System.out.println(cDisease.getDiseaseID()+": "+ cDisease.getDiseaseName());
+            System.out.println(cDisease.getDiseaseID() + ": " + cDisease.getDiseaseName());
         }
 
         DiseaseListAdapter adapter = new DiseaseListAdapter(this, diseaseList);
         diseaseListListview.setAdapter(adapter);
     }
+
     private void bottomNavigationHandler() {
 
         SharedPreferences pref = this.getApplicationContext().getSharedPreferences("MyPref", 0);
-        final String  log = pref.getString("log", "");
-        final SharedPreferences.Editor editor   = pref.edit();
+        final String log = pref.getString("log", "");
+        final SharedPreferences.Editor editor = pref.edit();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         bottomNavigationView.getMenu().clear();
         bottomNavigationView.inflateMenu(R.menu.new_bottom_menu_home);
@@ -74,7 +74,6 @@ public class disease extends AppCompatActivity {
             bottomNavigationView.getMenu().getItem(3).setTitle("লগআউট");
         } else {
             bottomNavigationView.getMenu().removeItem(R.id.menu_profile);
-
 
 
         }

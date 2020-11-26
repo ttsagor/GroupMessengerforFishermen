@@ -59,6 +59,9 @@ public class HomeScreenActivity extends AppCompatActivity implements View.OnClic
         findViewById(R.id.ll_desease).setOnClickListener(this);
         findViewById(R.id.ll_khude_barta_peron).setOnClickListener(this);
         findViewById(R.id.ll_chasi_onusandhan).setOnClickListener(this);
+        findViewById(R.id.ll_mosso_chas).setOnClickListener(this);
+        findViewById(R.id.ll_totto_kos).setOnClickListener(this);
+        findViewById(R.id.ll_prosno_bank).setOnClickListener(this);
         DbHandler db = new DbHandler(this, null, null, 1);
         SystemInformationModel cSystemInfo = db.getSystemInfo();
         divisionID = cSystemInfo.getUserDivisionID();
@@ -150,6 +153,14 @@ public class HomeScreenActivity extends AppCompatActivity implements View.OnClic
                 break;
             case R.id.ll_chasi_onusandhan:
                 startActivity(new Intent(HomeScreenActivity.this, ChasiOnusandhanActivity.class));
+                break;
+
+            case R.id.ll_totto_kos:
+                startActivity(new Intent(HomeScreenActivity.this, SotorkotaActivity.class));
+                break;
+            case R.id.ll_mosso_chas:
+            case R.id.ll_prosno_bank:
+                startActivity(new Intent(HomeScreenActivity.this, ComingSoonActivity.class));
                 break;
         }
     }

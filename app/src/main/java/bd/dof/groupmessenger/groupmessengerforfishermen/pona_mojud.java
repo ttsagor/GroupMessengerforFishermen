@@ -60,16 +60,16 @@ import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SplashScreenAc
 
 public class pona_mojud extends AppCompatActivity {
 
-    int katlaPer= 16;
-    int silverPer= 14;
-    int ruiPer= 30;
-    int mrigelPer= 26;
-    int kalibausPer= 8;
-    int putiPer= 2;
-    int grasscupPer= 4;
+    int katlaPer = 16;
+    int silverPer = 14;
+    int ruiPer = 30;
+    int mrigelPer = 26;
+    int kalibausPer = 8;
+    int putiPer = 2;
+    int grasscupPer = 4;
 
-    int ponaAreaText =0;
-    int ponaAmountText =0;
+    int ponaAreaText = 0;
+    int ponaAmountText = 0;
 
     TextView katla;
     TextView silver;
@@ -107,8 +107,8 @@ public class pona_mojud extends AppCompatActivity {
         pona_mojud_share = (ImageView) findViewById(R.id.pona_mojud_share);
         pona_mojud_save = (ImageView) findViewById(R.id.pona_mojud_save);
 
-bottomNavigationHandler();
-        AppCompatButton ponaAreaSubmit =  findViewById(R.id.ponaAreaSubmit);
+        bottomNavigationHandler();
+        AppCompatButton ponaAreaSubmit = findViewById(R.id.ponaAreaSubmit);
 
         TextView pona_mojud_katla = (TextView) findViewById(R.id.pona_mojud_katla);
         TextView pona_mojud_silva = (TextView) findViewById(R.id.pona_mojud_silva);
@@ -153,12 +153,12 @@ bottomNavigationHandler();
                 try {
                     ponaAreaText = Integer.parseInt(ponaArea.getText().toString());
                     ponaAmountText = Integer.parseInt(ponaAmount.getText().toString());
-                    if(getCurrentFocus()!=null) {
+                    if (getCurrentFocus() != null) {
                         InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
                         inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
                     }
                     calculate();
-                }catch (Exception e){
+                } catch (Exception e) {
                     ponaAreaText = 0;
                     ponaAmountText = 0;
                     calculate();
@@ -173,7 +173,8 @@ bottomNavigationHandler();
                 try {
                     try {
                         createPdf();
-                    }catch (Exception e){}
+                    } catch (Exception e) {
+                    }
                 } catch (Exception e) {
                     //Toast.makeText(getApplicationContext(),e.toString(),Toast.LENGTH_LONG).show();
                     //System.out.println( e.toString());
@@ -190,19 +191,19 @@ bottomNavigationHandler();
                     Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                     sharingIntent.setType("text/plain");
 
-                   String des = "আয়তন(শতাংশ): " +engToBng(ponaArea.getText().toString())+"\n"+
-                                "পোনা/শতাংশ: " + engToBng(ponaAmount.getText().toString())+"\n"+
-                                "কাতলা (১৬%): " + katla.getText()+"\n"+
-                                "সিলভার(১৪%): " + silver.getText()+"\n"+
-                                "রুই(৩০%): " + rui.getText()+"\n"+
-                                "মৃগেল(২৬%): " + mrigel.getText()+"\n"+
-                                "কালিবাউস(৮%): " + kalibaus.getText()+"\n"+
-                                "পুটি (২%): " + puti.getText()+"\n"+
-                                "গ্রাসকার্প (৪%): " + grasscup.getText()+"\n"+
-                                "মোট পোনা: " +   totalPona.getText();
+                    String des = "আয়তন(শতাংশ): " + engToBng(ponaArea.getText().toString()) + "\n" +
+                            "পোনা/শতাংশ: " + engToBng(ponaAmount.getText().toString()) + "\n" +
+                            "কাতলা (১৬%): " + katla.getText() + "\n" +
+                            "সিলভার(১৪%): " + silver.getText() + "\n" +
+                            "রুই(৩০%): " + rui.getText() + "\n" +
+                            "মৃগেল(২৬%): " + mrigel.getText() + "\n" +
+                            "কালিবাউস(৮%): " + kalibaus.getText() + "\n" +
+                            "পুটি (২%): " + puti.getText() + "\n" +
+                            "গ্রাসকার্প (৪%): " + grasscup.getText() + "\n" +
+                            "মোট পোনা: " + totalPona.getText();
 
-                    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,"পোনা মজুদের সূত্র");
-                    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT,des);
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "পোনা মজুদের সূত্র");
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, des);
                     startActivity(Intent.createChooser(sharingIntent, "Share via"));
                 } catch (Exception e) {
                     //Toast.makeText(getApplicationContext(),e.toString(),Toast.LENGTH_LONG).show();
@@ -259,17 +260,16 @@ bottomNavigationHandler();
 
     }
 
-    void calculate()
-    {
+    void calculate() {
 
-        katla.setText (engToBng(String.valueOf ((ponaAreaText * ponaAmountText * katlaPer)/100)));
-        silver.setText (engToBng(String.valueOf ((ponaAreaText * ponaAmountText * silverPer)/100)));
-        rui.setText (engToBng(String.valueOf ((ponaAreaText * ponaAmountText * ruiPer)/100)));
-        mrigel.setText (engToBng(String.valueOf ((ponaAreaText * ponaAmountText * mrigelPer)/100)));
-        kalibaus.setText (engToBng(String.valueOf ((ponaAreaText * ponaAmountText * kalibausPer)/100)));
-        puti.setText (engToBng(String.valueOf ((ponaAreaText * ponaAmountText * putiPer)/100)));
-        grasscup.setText (engToBng(String.valueOf ((ponaAreaText * ponaAmountText * grasscupPer)/100)));
-        totalPona.setText (engToBng(String.valueOf ((ponaAreaText * ponaAmountText))));
+        katla.setText(engToBng(String.valueOf((ponaAreaText * ponaAmountText * katlaPer) / 100)));
+        silver.setText(engToBng(String.valueOf((ponaAreaText * ponaAmountText * silverPer) / 100)));
+        rui.setText(engToBng(String.valueOf((ponaAreaText * ponaAmountText * ruiPer) / 100)));
+        mrigel.setText(engToBng(String.valueOf((ponaAreaText * ponaAmountText * mrigelPer) / 100)));
+        kalibaus.setText(engToBng(String.valueOf((ponaAreaText * ponaAmountText * kalibausPer) / 100)));
+        puti.setText(engToBng(String.valueOf((ponaAreaText * ponaAmountText * putiPer) / 100)));
+        grasscup.setText(engToBng(String.valueOf((ponaAreaText * ponaAmountText * grasscupPer) / 100)));
+        totalPona.setText(engToBng(String.valueOf((ponaAreaText * ponaAmountText))));
 
     }
 
@@ -283,11 +283,11 @@ bottomNavigationHandler();
 
         DateFormat df = new SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss Z");
         String date = df.format(Calendar.getInstance().getTime());
-        pdfFile = new File(docsFolder.getAbsolutePath(),date+"_pona_mojad.pdf");
+        pdfFile = new File(docsFolder.getAbsolutePath(), date + "_pona_mojad.pdf");
 
         OutputStream output = new FileOutputStream(pdfFile);
         Document document = new Document();
-        String FONT="assets/fonts/SolaimanLipi.ttf";
+        String FONT = "assets/fonts/SolaimanLipi.ttf";
 
         try {
             BaseFont bf = BaseFont.createFont(FONT, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
@@ -339,7 +339,7 @@ bottomNavigationHandler();
             cellOne.setBorder(Rectangle.NO_BORDER);
             table.addCell(cellOne);
 
-            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(ponaArea.getText().toString()),f));
+            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(ponaArea.getText().toString()), f));
             cellOne.setBorder(Rectangle.NO_BORDER);
             cellOne.setPaddingTop(-5);
             table.addCell(cellOne);
@@ -353,7 +353,7 @@ bottomNavigationHandler();
             cellOne.setBorder(Rectangle.NO_BORDER);
             table.addCell(cellOne);
 
-            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(ponaAmount.getText().toString()),f));
+            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(ponaAmount.getText().toString()), f));
             cellOne.setBorder(Rectangle.NO_BORDER);
             cellOne.setPaddingTop(-5);
             table.addCell(cellOne);
@@ -373,8 +373,8 @@ bottomNavigationHandler();
             cellOne.setPaddingTop(5);
             cellOne.setPaddingBottom(5);
             table.addCell(cellOne);
-            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(katla.getText().toString()),f));
-            cellOne.setBorder(Rectangle.BOTTOM| Rectangle.TOP);
+            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(katla.getText().toString()), f));
+            cellOne.setBorder(Rectangle.BOTTOM | Rectangle.TOP);
             cellOne.setPaddingLeft(-20);
             //cellOne.setPaddingTop(-10);
             table.addCell(cellOne);
@@ -390,8 +390,8 @@ bottomNavigationHandler();
             cellOne.setPaddingTop(5);
             cellOne.setPaddingBottom(5);
             table.addCell(cellOne);
-            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(silver.getText().toString()),f));
-            cellOne.setBorder(Rectangle.BOTTOM| Rectangle.TOP);
+            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(silver.getText().toString()), f));
+            cellOne.setBorder(Rectangle.BOTTOM | Rectangle.TOP);
             cellOne.setPaddingLeft(-20);
             //cellOne.setPaddingTop(-10);
             table.addCell(cellOne);
@@ -406,8 +406,8 @@ bottomNavigationHandler();
             cellOne.setPaddingBottom(5);
             cellOne.setBorder(Rectangle.BOTTOM);
             table.addCell(cellOne);
-            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(rui.getText().toString()),f));
-            cellOne.setBorder(Rectangle.BOTTOM );
+            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(rui.getText().toString()), f));
+            cellOne.setBorder(Rectangle.BOTTOM);
             cellOne.setPaddingLeft(-20);
             table.addCell(cellOne);
 
@@ -421,8 +421,8 @@ bottomNavigationHandler();
             cellOne.setPaddingBottom(5);
             cellOne.setBorder(Rectangle.BOTTOM);
             table.addCell(cellOne);
-            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(mrigel.getText().toString()),f));
-            cellOne.setBorder(Rectangle.BOTTOM );
+            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(mrigel.getText().toString()), f));
+            cellOne.setBorder(Rectangle.BOTTOM);
             cellOne.setPaddingLeft(-20);
             table.addCell(cellOne);
 
@@ -436,8 +436,8 @@ bottomNavigationHandler();
             cellOne.setPaddingBottom(5);
             cellOne.setBorder(Rectangle.BOTTOM);
             table.addCell(cellOne);
-            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(kalibaus.getText().toString()),f));
-            cellOne.setBorder(Rectangle.BOTTOM );
+            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(kalibaus.getText().toString()), f));
+            cellOne.setBorder(Rectangle.BOTTOM);
             cellOne.setPaddingLeft(-20);
             table.addCell(cellOne);
 
@@ -451,8 +451,8 @@ bottomNavigationHandler();
             cellOne.setPaddingBottom(5);
             cellOne.setBorder(Rectangle.BOTTOM);
             table.addCell(cellOne);
-            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(puti.getText().toString()),f));
-            cellOne.setBorder(Rectangle.BOTTOM );
+            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(puti.getText().toString()), f));
+            cellOne.setBorder(Rectangle.BOTTOM);
             cellOne.setPaddingLeft(-20);
             table.addCell(cellOne);
 
@@ -466,8 +466,8 @@ bottomNavigationHandler();
             cellOne.setPaddingBottom(5);
             cellOne.setBorder(Rectangle.BOTTOM);
             table.addCell(cellOne);
-            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(grasscup.getText().toString()),f));
-            cellOne.setBorder(Rectangle.BOTTOM );
+            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(grasscup.getText().toString()), f));
+            cellOne.setBorder(Rectangle.BOTTOM);
             cellOne.setPaddingLeft(-20);
             table.addCell(cellOne);
 
@@ -481,14 +481,14 @@ bottomNavigationHandler();
             cellOne.setPaddingBottom(5);
             cellOne.setBorder(Rectangle.BOTTOM);
             table.addCell(cellOne);
-            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(totalPona.getText().toString()),f));
-            cellOne.setBorder(Rectangle.BOTTOM );
+            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(totalPona.getText().toString()), f));
+            cellOne.setBorder(Rectangle.BOTTOM);
             cellOne.setPaddingLeft(-20);
             table.addCell(cellOne);
 
             document.add(table);
-        }catch (Exception e)
-        {}
+        } catch (Exception e) {
+        }
 
 
         document.close();
@@ -509,30 +509,30 @@ bottomNavigationHandler();
             intent.setDataAndType(uri, "application/pdf");
 
             startActivity(intent);
-        }else{
-            Toast.makeText(this,"Download a PDF Viewer to see the generated PDF",Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Download a PDF Viewer to see the generated PDF", Toast.LENGTH_SHORT).show();
         }
     }
 
-    public static String engToBng(String num)
-    {
-        num = num.replace('1','১');
-        num = num.replace('2','২');
-        num = num.replace('3','৩');
-        num = num.replace('4','৪');
-        num = num.replace('5','৫');
-        num = num.replace('6','৬');
-        num = num.replace('7','৭');
-        num = num.replace('8','৮');
-        num = num.replace('9','৯');
-        num = num.replace('0','০');
+    public static String engToBng(String num) {
+        num = num.replace('1', '১');
+        num = num.replace('2', '২');
+        num = num.replace('3', '৩');
+        num = num.replace('4', '৪');
+        num = num.replace('5', '৫');
+        num = num.replace('6', '৬');
+        num = num.replace('7', '৭');
+        num = num.replace('8', '৮');
+        num = num.replace('9', '৯');
+        num = num.replace('0', '০');
         return num;
     }
+
     private void bottomNavigationHandler() {
 
         SharedPreferences pref = this.getApplicationContext().getSharedPreferences("MyPref", 0);
-        final String  log = pref.getString("log", "");
-        final SharedPreferences.Editor editor   = pref.edit();
+        final String log = pref.getString("log", "");
+        final SharedPreferences.Editor editor = pref.edit();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         bottomNavigationView.getMenu().clear();
         bottomNavigationView.inflateMenu(R.menu.new_bottom_menu_home);
@@ -543,7 +543,6 @@ bottomNavigationHandler();
             bottomNavigationView.getMenu().getItem(3).setTitle("লগআউট");
         } else {
             bottomNavigationView.getMenu().removeItem(R.id.menu_profile);
-
 
 
         }
