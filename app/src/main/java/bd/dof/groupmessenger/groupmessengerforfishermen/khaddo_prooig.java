@@ -109,7 +109,7 @@ public class khaddo_prooig extends AppCompatActivity {
 
         foodAmount = (TextView) findViewById(R.id.foodAmount);
         totalWeigt = (TextView) findViewById(R.id.totalWeigt);
-bottomNavigationHandler();
+        bottomNavigationHandler();
 
         TextView khaddo_prooig_result_food = (TextView) findViewById(R.id.khaddo_prooig_result_food);
         TextView khaddo_prooig_result_fish_weight = (TextView) findViewById(R.id.khaddo_prooig_result_fish_weight);
@@ -250,10 +250,9 @@ bottomNavigationHandler();
             @Override
             public void onClick(View v) {
                 try {
-                        createPdf();
-                    }
-                    catch (Exception e) {
-                    }
+                    createPdf();
+                } catch (Exception e) {
+                }
             }
         });
 
@@ -279,11 +278,11 @@ bottomNavigationHandler();
 
         DateFormat df = new SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss Z");
         String date = df.format(Calendar.getInstance().getTime());
-        pdfFile = new File(docsFolder.getAbsolutePath(),date+"_khaddo_prooig.pdf");
+        pdfFile = new File(docsFolder.getAbsolutePath(), date + "_khaddo_prooig.pdf");
 
         OutputStream output = new FileOutputStream(pdfFile);
         Document document = new Document();
-        String FONT="assets/fonts/SolaimanLipi.ttf";
+        String FONT = "assets/fonts/SolaimanLipi.ttf";
 
         try {
             BaseFont bf = BaseFont.createFont(FONT, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
@@ -335,7 +334,7 @@ bottomNavigationHandler();
             cellOne.setBorder(Rectangle.NO_BORDER);
             table.addCell(cellOne);
 
-            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(totalFish.getText().toString()),f));
+            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(totalFish.getText().toString()), f));
             cellOne.setBorder(Rectangle.NO_BORDER);
             cellOne.setPaddingTop(-5);
             table.addCell(cellOne);
@@ -349,7 +348,7 @@ bottomNavigationHandler();
             cellOne.setBorder(Rectangle.NO_BORDER);
             table.addCell(cellOne);
 
-            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(avgWeight.getText().toString()),f));
+            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(avgWeight.getText().toString()), f));
             cellOne.setBorder(Rectangle.NO_BORDER);
             cellOne.setPaddingTop(-5);
             table.addCell(cellOne);
@@ -362,7 +361,7 @@ bottomNavigationHandler();
             cellOne = new PdfPCell(image);
             cellOne.setBorder(Rectangle.NO_BORDER);
             table.addCell(cellOne);
-            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(foodPercent.getText().toString()),f));
+            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(foodPercent.getText().toString()), f));
             cellOne.setBorder(Rectangle.NO_BORDER);
             cellOne.setPaddingTop(-5);
             table.addCell(cellOne);
@@ -385,8 +384,8 @@ bottomNavigationHandler();
             cellOne.setPaddingTop(5);
             cellOne.setPaddingBottom(5);
             table.addCell(cellOne);
-            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(foodAmount.getText().toString()),f));
-            cellOne.setBorder(Rectangle.BOTTOM| Rectangle.TOP);
+            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(foodAmount.getText().toString()), f));
+            cellOne.setBorder(Rectangle.BOTTOM | Rectangle.TOP);
             cellOne.setPaddingLeft(90);
             //cellOne.setPaddingTop(-10);
             table.addCell(cellOne);
@@ -401,17 +400,17 @@ bottomNavigationHandler();
             cellOne.setPaddingBottom(5);
             cellOne.setBorder(Rectangle.BOTTOM);
             table.addCell(cellOne);
-            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(totalWeigt.getText().toString()),f));
+            cellOne = new PdfPCell(new Paragraph(pona_mojud.engToBng(totalWeigt.getText().toString()), f));
 
-            cellOne.setBorder(Rectangle.BOTTOM );
+            cellOne.setBorder(Rectangle.BOTTOM);
             //cellOne.setPaddingTop(-10);
             cellOne.setPaddingLeft(90);
 
             table.addCell(cellOne);
 
             document.add(table);
-        }catch (Exception e)
-        {}
+        } catch (Exception e) {
+        }
 
 
         document.close();
@@ -432,8 +431,8 @@ bottomNavigationHandler();
             intent.setDataAndType(uri, "application/pdf");
 
             startActivity(intent);
-        }else{
-            Toast.makeText(this,"Download a PDF Viewer to see the generated PDF",Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Download a PDF Viewer to see the generated PDF", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -472,11 +471,12 @@ bottomNavigationHandler();
         AppIndex.AppIndexApi.end(client, getIndexApiAction());
         client.disconnect();
     }
+
     private void bottomNavigationHandler() {
 
         SharedPreferences pref = this.getApplicationContext().getSharedPreferences("MyPref", 0);
-        final String  log = pref.getString("log", "");
-        final SharedPreferences.Editor editor   = pref.edit();
+        final String log = pref.getString("log", "");
+        final SharedPreferences.Editor editor = pref.edit();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         bottomNavigationView.getMenu().clear();
         bottomNavigationView.inflateMenu(R.menu.new_bottom_menu_home);
@@ -487,7 +487,6 @@ bottomNavigationHandler();
             bottomNavigationView.getMenu().getItem(3).setTitle("লগআউট");
         } else {
             bottomNavigationView.getMenu().removeItem(R.id.menu_profile);
-
 
 
         }

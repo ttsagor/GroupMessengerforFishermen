@@ -45,7 +45,6 @@ public class fishFarming extends AppCompatActivity {
         CardView protin_wise_food = findViewById(R.id.protin_wise_food);
         CardView ppm_formula = findViewById(R.id.ppm_formula);
         CardView fertilizer_formula = findViewById(R.id.fertilizer_formula);
-
         CardView khetrofol_formula = findViewById(R.id.khetrofol_formula);
         CardView area_formula = findViewById(R.id.area_formula);
 
@@ -122,7 +121,7 @@ public class fishFarming extends AppCompatActivity {
         });
 
         EditText title = findViewById(R.id.title);
-        title.setText("মৎস্য চাষ সূএ");
+        title.setText("মৎস্যচাষ সূএ");
     }
 
     private void bottomNavigationHandler() {

@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.View;
@@ -26,23 +27,48 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class PhoneNumberValidation extends AppCompatActivity {
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SplashScreenActivity;
 
+public class PhoneNumberValidation extends AppCompatActivity {
+DbHandler db;
+  Context context;
+    SystemInformationModel cSystemInfo;
+SystemInformationModel nSystemInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phone_number_validation);
-        final DbHandler db = new DbHandler(this,null,null,1);
-        SystemInformationModel cSystemInfo = db.getSystemInfo();
+        db = new DbHandler(this,null,null,1);
+        cSystemInfo = db.getSystemInfo();
         String phonenumber;
-        final Context context = this;
+        context = this;
+         nSystemInfo = new SystemInformationModel();
 
         System.out.println(cSystemInfo.getUserID()+" "+cSystemInfo.getDataLoaded()+" "+cSystemInfo.getUserName());
+        checkSystem();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                //Do some thing after 100ms
+                startActivity(new Intent(PhoneNumberValidation.this, HomeScreenActivity.class));
+            }
+        }, 5000);
+
+
+
+
+    }
+
+    private void checkSystem() {
+
+
+
         if (cSystemInfo.getDataLoaded()==1)
         {
             Intent intent = new Intent(PhoneNumberValidation.this,
-                    MainActivity.class);
+                    HomeScreenActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
             startActivity(intent);
             PhoneNumberValidation.this.finish();
@@ -54,72 +80,34 @@ public class PhoneNumberValidation extends AppCompatActivity {
             final Button phonenumberconfirm = (Button) findViewById(R.id.phonenumberconfirm);
             final Context mContext = this;
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS}, 1);
-
             userphonenumber.requestFocus();
             getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
 
-            phonenumberconfirm.setOnClickListener(new View.OnClickListener() {
 
-                public void onClick(View v) {
-
-                    if (getCurrentFocus() != null) {
-                        InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
-                        inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-                    }
-
-                    AlertDialog.Builder dlgAlertChecking = new AlertDialog.Builder(mContext);
-                    dlgAlertChecking.setMessage("মোবাইল নাম্বার যাচাই প্রক্রিয়া চলছে \n অনুগ্রহকপূর্বক অপেক্ষা করুন");
-                    dlgAlertChecking.setCancelable(false);
-
-
-                    final AlertDialog alertChecking = dlgAlertChecking.create();
-                    alertChecking.show();
-                    if (userphonenumber.getText().toString().length() > 0) {
-
-                        final SystemInformationModel nSystemInfo = new SystemInformationModel();
-                        nSystemInfo.setUserID(1);
-                        nSystemInfo.setUserName("Admin");
-                        nSystemInfo.setUserPhoneNumber("111111111111");
-                        nSystemInfo.setUserDivisionID(MainActivity.divisionID);
-                        nSystemInfo.setUserDistrictID(MainActivity.districtID);
-                        nSystemInfo.setUserUpazillaID(MainActivity.upazillaID);
-                        nSystemInfo.setDataLoaded(1);
-                        try {
-                            db.insertData(nSystemInfo);
-                        }catch (Exception e)
-                        {
-                            System.out.println(e.toString());
-                        }
-
-                        Intent intent = new Intent(PhoneNumberValidation.this,
-                                MainActivity.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                        startActivity(intent);
-                        alertChecking.dismiss();
-                        PhoneNumberValidation.this.finish();
-
-                    }
-                    else
-                    {
-                        alertChecking.cancel();
-                        AlertDialog.Builder dlgAlert = new AlertDialog.Builder(mContext);
-                        dlgAlert.setMessage("নম্বরটি অনুমোদিত নয় অনুগ্রহপূর্বক যথাযথ কর্তৃপক্ষের সাথে যোগাযোগ করুন ");
-                        dlgAlert.setTitle("");
-                        dlgAlert.setPositiveButton("বন্ধ করুন", null);
-                        dlgAlert.setCancelable(false);
-
-                        dlgAlert.setPositiveButton("বন্ধ করুন", new DialogInterface.OnClickListener() {
-
-                            public void onClick(DialogInterface dialog, int which) {
-                                // TODO Auto-generated method stub
-                                finish();
-                            }
-                        });
-                        dlgAlert.create().show();
-                    }
-                }
-            });
         }
+
+
+
+                    nSystemInfo.setUserID(1);
+                    nSystemInfo.setUserName("Admin");
+                    nSystemInfo.setUserPhoneNumber("111111111111");
+                    nSystemInfo.setUserDivisionID(MainActivity.divisionID);
+                    nSystemInfo.setUserDistrictID(MainActivity.districtID);
+                    nSystemInfo.setUserUpazillaID(MainActivity.upazillaID);
+                    nSystemInfo.setDataLoaded(1);
+                    try {
+                        db.insertData(nSystemInfo);
+                    }catch (Exception e)
+                    {
+                        System.out.println(e.toString());
+                    }
+
+
+
+
+
+
+
 
     }
 

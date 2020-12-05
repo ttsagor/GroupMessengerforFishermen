@@ -133,7 +133,7 @@ bottomNavigationHandler();
         });
 
         EditText title = findViewById(R.id.title);
-        title.setText("মাছের খাদ্য প্রয়োগের সূত্র");
+        title.setText("খাদ্যপ্রয়োগের সূত্র");
 
     }
     private void bottomNavigationHandler() {

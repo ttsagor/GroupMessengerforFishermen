@@ -61,209 +61,208 @@
 30-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:20:9-41
 31        android:largeHeap="true"
 31-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:21:9-33
-32        android:testOnly="true"
-33        android:theme="@style/AppTheme" >
-33-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:22:9-40
-34        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity" />
-34-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:23:9-72
-34-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:23:19-60
-35        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity" />
-35-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:24:9-66
-35-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:24:19-63
-36        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity" />
-36-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:25:9-67
-36-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:25:19-64
-37        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity" />
-37-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:26:9-65
-37-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:26:19-62
-38        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity" />
-38-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:27:9-66
-38-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:27:19-63
-39        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity" />
-39-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:28:9-64
-39-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:28:19-61
-40        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ChasiOnusandhanActivity" />
-40-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:29:9-71
-40-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:29:19-68
-41        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.KhudebartaActivity" />
-41-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:30:9-66
-41-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:30:19-63
-42        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.MainActivity" />
-42-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:31:9-50
-42-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:31:19-47
-43        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.PhoneNumberValidation" />
-43-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:32:9-59
-43-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:32:19-56
-44        <activity
-44-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:33:9-36:52
-45            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.LoginActivity"
-45-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:34:13-52
-46            android:label="@string/app_name"
-46-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:35:13-45
-47            android:screenOrientation="portrait" />
-47-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:36:13-49
-48        <activity
-48-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:37:9-40:52
-49            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.GroupSmsAreaSelection"
-49-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:38:13-50
-50            android:label="@string/title_activity_group_sms_area_selection"
-50-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:39:13-76
-51            android:screenOrientation="portrait" />
-51-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:40:13-49
-52        <activity
-52-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:41:9-44:52
-53            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.GroupSmsFarmingCategory"
-53-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:42:13-52
-54            android:label="@string/title_activity_group_sms_farming_category"
-54-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:43:13-78
-55            android:screenOrientation="portrait" />
-55-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:44:13-49
-56        <activity
-56-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:45:9-48:52
-57            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.GroupSmsTemplateSelection"
-57-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:46:13-54
-58            android:label="@string/title_activity_group_sms_template_selection"
-58-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:47:13-80
-59            android:screenOrientation="portrait" />
-59-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:48:13-49
-60        <activity
-60-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:49:9-53:52
-61            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.GroupSmsNewMessage"
-61-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:50:13-47
-62            android:label="@string/title_activity_group_sms_new_message"
-62-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:51:13-73
-63            android:noHistory="true"
-63-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:52:13-37
-64            android:screenOrientation="portrait" />
-64-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:53:13-49
-65        <activity
-65-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:54:9-57:52
-66            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AddFarmerPersonalInformation"
-66-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:55:13-57
-67            android:label="@string/title_activity_add_farmer_personal_information"
-67-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:56:13-83
-68            android:screenOrientation="portrait" />
-68-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:57:13-49
-69        <activity
-69-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:58:9-60:52
-70            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.groupsmsfilter"
-70-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:59:13-43
-71            android:screenOrientation="portrait" />
-71-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:60:13-49
-72        <activity
-72-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:61:9-63:52
-73            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.GroupSmsSending"
-73-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:62:13-44
-74            android:screenOrientation="portrait" />
-74-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:63:13-49
-75        <activity
-75-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:64:9-66:67
-76            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.farmerSearchActivity"
-76-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:65:13-49
-77            android:windowSoftInputMode="stateHidden|adjustPan" />
-77-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:66:13-64
-78        <activity
-78-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:67:9-70:52
-79            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AddUpdateUser"
-79-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:68:13-42
-80            android:label="@string/title_activity_add_update_user"
-80-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:69:13-67
-81            android:screenOrientation="portrait" />
-81-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:70:13-49
-82        <activity
-82-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:71:9-73:67
-83            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AddTemplate"
-83-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:72:13-40
-84            android:label="@string/title_activity_add_template" />
-84-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:73:13-64
-85        <activity
-85-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:74:9-77:52
-86            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.InventorInformation"
-86-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:75:13-48
-87            android:label="@string/title_activity_inventor_information"
-87-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:76:13-72
-88            android:screenOrientation="portrait" />
-88-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:77:13-49
-89        <activity
-89-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:78:9-80:52
-90            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.recpiant_limit"
-90-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:79:13-43
-91            android:screenOrientation="portrait" />
-91-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:80:13-49
-92
-93        <service
-93-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:82:9-85:39
-94            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.ForegroundService"
-94-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:83:13-46
-95            android:enabled="true"
-95-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:84:13-35
-96            android:exported="true" />
-96-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:85:13-36
-97
-98        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.fishFarming" />
-98-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:87:9-49
-98-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:87:19-46
-99        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.pona_mojud" />
-99-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:88:9-48
-99-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:88:19-45
-100        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.khaddo_prooig" />
-100-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:89:9-51
-100-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:89:19-48
-101        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.Protein_base_food" />
-101-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:90:9-55
-101-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:90:19-52
-102        <activity
-102-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:91:9-93:67
-103            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AgeWiseFood"
-103-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:92:13-40
-104            android:windowSoftInputMode="stateHidden|adjustPan" />
-104-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:93:13-64
-105        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SplashScreenActivity" >
-105-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:94:9-100:20
-105-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:94:19-65
-106            <intent-filter>
-106-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:95:13-99:29
-107                <action android:name="android.intent.action.MAIN" />
-107-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:96:17-69
-107-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:96:25-66
-108
-109                <category android:name="android.intent.category.LAUNCHER" />
-109-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:98:17-77
-109-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:98:27-74
-110            </intent-filter>
-111        </activity>
-112        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.disease" />
-112-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:101:9-45
-112-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:101:19-42
-113        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.diseaseDetails" />
-113-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:102:9-52
-113-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:102:19-49
-114        <!--
-115 ATTENTION: This was auto-generated to add Google Play services to your project for
-116     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
-117        -->
-118        <meta-data
-118-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:107:9-109:69
-119            android:name="com.google.android.gms.version"
-119-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:108:13-58
-120            android:value="@integer/google_play_services_version" />
-120-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:109:13-66
-121
-122        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.ppm_formula" />
-122-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:111:9-49
-122-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:111:19-46
-123        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.fertilizer_formula" />
-123-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:112:9-56
-123-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:112:19-53
-124        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.KhetrofolFormula" />
-124-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:113:9-54
-124-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:113:19-51
-125        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AreaFormula" />
-125-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:114:9-49
-125-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:114:19-46
-126        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.Setting" />
-126-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:115:9-45
-126-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:115:19-42
-127    </application>
-128
-129</manifest>
+32        android:theme="@style/AppTheme" >
+32-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:22:9-40
+33        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity" />
+33-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:23:9-63
+33-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:23:19-60
+34        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity" />
+34-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:24:9-66
+34-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:24:19-63
+35        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity" />
+35-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:25:9-67
+35-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:25:19-64
+36        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity" />
+36-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:26:9-65
+36-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:26:19-62
+37        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity" />
+37-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:27:9-66
+37-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:27:19-63
+38        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity" />
+38-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:28:9-64
+38-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:28:19-61
+39        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ChasiOnusandhanActivity" />
+39-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:29:9-71
+39-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:29:19-68
+40        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.KhudebartaActivity" />
+40-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:30:9-66
+40-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:30:19-63
+41        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.MainActivity" />
+41-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:31:9-50
+41-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:31:19-47
+42        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SplashScreenActivity" />
+42-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:32:9-68
+42-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:32:19-65
+43        <activity
+43-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:33:9-36:52
+44            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.LoginActivity"
+44-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:34:13-52
+45            android:label="@string/app_name"
+45-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:35:13-45
+46            android:screenOrientation="portrait" />
+46-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:36:13-49
+47        <activity
+47-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:37:9-40:52
+48            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.GroupSmsAreaSelection"
+48-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:38:13-50
+49            android:label="@string/title_activity_group_sms_area_selection"
+49-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:39:13-76
+50            android:screenOrientation="portrait" />
+50-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:40:13-49
+51        <activity
+51-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:41:9-44:52
+52            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.GroupSmsFarmingCategory"
+52-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:42:13-52
+53            android:label="@string/title_activity_group_sms_farming_category"
+53-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:43:13-78
+54            android:screenOrientation="portrait" />
+54-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:44:13-49
+55        <activity
+55-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:45:9-48:52
+56            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.GroupSmsTemplateSelection"
+56-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:46:13-54
+57            android:label="@string/title_activity_group_sms_template_selection"
+57-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:47:13-80
+58            android:screenOrientation="portrait" />
+58-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:48:13-49
+59        <activity
+59-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:49:9-53:52
+60            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.GroupSmsNewMessage"
+60-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:50:13-47
+61            android:label="@string/title_activity_group_sms_new_message"
+61-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:51:13-73
+62            android:noHistory="true"
+62-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:52:13-37
+63            android:screenOrientation="portrait" />
+63-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:53:13-49
+64        <activity
+64-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:54:9-57:52
+65            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AddFarmerPersonalInformation"
+65-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:55:13-57
+66            android:label="@string/title_activity_add_farmer_personal_information"
+66-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:56:13-83
+67            android:screenOrientation="portrait" />
+67-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:57:13-49
+68        <activity
+68-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:58:9-60:52
+69            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.groupsmsfilter"
+69-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:59:13-43
+70            android:screenOrientation="portrait" />
+70-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:60:13-49
+71        <activity
+71-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:61:9-63:52
+72            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.GroupSmsSending"
+72-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:62:13-44
+73            android:screenOrientation="portrait" />
+73-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:63:13-49
+74        <activity
+74-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:64:9-66:67
+75            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.farmerSearchActivity"
+75-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:65:13-49
+76            android:windowSoftInputMode="stateHidden|adjustPan" />
+76-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:66:13-64
+77        <activity
+77-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:67:9-70:52
+78            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AddUpdateUser"
+78-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:68:13-42
+79            android:label="@string/title_activity_add_update_user"
+79-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:69:13-67
+80            android:screenOrientation="portrait" />
+80-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:70:13-49
+81        <activity
+81-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:71:9-73:67
+82            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AddTemplate"
+82-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:72:13-40
+83            android:label="@string/title_activity_add_template" />
+83-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:73:13-64
+84        <activity
+84-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:74:9-77:52
+85            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.InventorInformation"
+85-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:75:13-48
+86            android:label="@string/title_activity_inventor_information"
+86-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:76:13-72
+87            android:screenOrientation="portrait" />
+87-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:77:13-49
+88        <activity
+88-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:78:9-80:52
+89            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.recpiant_limit"
+89-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:79:13-43
+90            android:screenOrientation="portrait" />
+90-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:80:13-49
+91
+92        <service
+92-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:82:9-85:39
+93            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.ForegroundService"
+93-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:83:13-46
+94            android:enabled="true"
+94-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:84:13-35
+95            android:exported="true" />
+95-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:85:13-36
+96
+97        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.fishFarming" />
+97-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:87:9-49
+97-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:87:19-46
+98        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.pona_mojud" />
+98-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:88:9-48
+98-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:88:19-45
+99        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.khaddo_prooig" />
+99-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:89:9-51
+99-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:89:19-48
+100        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.Protein_base_food" />
+100-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:90:9-55
+100-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:90:19-52
+101        <activity
+101-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:91:9-93:67
+102            android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AgeWiseFood"
+102-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:92:13-40
+103            android:windowSoftInputMode="stateHidden|adjustPan" />
+103-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:93:13-64
+104        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.PhoneNumberValidation" >
+104-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:94:9-100:20
+104-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:94:19-56
+105            <intent-filter>
+105-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:95:13-99:29
+106                <action android:name="android.intent.action.MAIN" />
+106-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:96:17-69
+106-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:96:25-66
+107
+108                <category android:name="android.intent.category.LAUNCHER" />
+108-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:98:17-77
+108-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:98:27-74
+109            </intent-filter>
+110        </activity>
+111        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.disease" />
+111-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:101:9-45
+111-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:101:19-42
+112        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.diseaseDetails" />
+112-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:102:9-52
+112-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:102:19-49
+113        <!--
+114 ATTENTION: This was auto-generated to add Google Play services to your project for
+115     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+116        -->
+117        <meta-data
+117-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:107:9-109:69
+118            android:name="com.google.android.gms.version"
+118-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:108:13-58
+119            android:value="@integer/google_play_services_version" />
+119-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:109:13-66
+120
+121        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.ppm_formula" />
+121-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:111:9-49
+121-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:111:19-46
+122        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.fertilizer_formula" />
+122-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:112:9-56
+122-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:112:19-53
+123        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.KhetrofolFormula" />
+123-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:113:9-54
+123-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:113:19-51
+124        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AreaFormula" />
+124-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:114:9-49
+124-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:114:19-46
+125        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.Setting" />
+125-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:115:9-45
+125-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:115:19-42
+126    </application>
+127
+128</manifest>

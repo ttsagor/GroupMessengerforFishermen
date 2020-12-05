@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_centerInParent="true"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/icon" />
+    <TextView
+        android:layout_below="@id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="25dp"
+        android:text="মৎস্য চাষি বার্তা"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp" />
     <View
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.1"
         android:background="@android:color/transparent"/>
     <LinearLayout
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
@@ -48,4 +68,4 @@
         android:background="@android:color/transparent"/>
 
 
-</LinearLayout>
+</RelativeLayout>

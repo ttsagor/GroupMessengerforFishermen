@@ -1874,6 +1874,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id avgWeight
+id back
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2724,6 +2725,7 @@ string title_activity_protin_base_food
 string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
+style AlertDialogCustom
 style Animation_AppCompat_Dialog
 style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip

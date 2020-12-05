@@ -7,7 +7,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.content.res.Resources;
+import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 
@@ -29,6 +32,7 @@ import java.util.ArrayList;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.LoginActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity;
@@ -47,6 +51,13 @@ public class diseaseDetails extends AppCompatActivity {
         Bundle b = iin.getExtras();
         final DbHandler db = new DbHandler(this, null, null, 1);
         final Context mContext = this;
+        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(diseaseDetails.this, HomeScreenActivity.class));
+            }
+        });
+
 
         bottomNavigationHandler();
         TextView disease_name = (TextView) findViewById(R.id.disease_name);
@@ -137,7 +148,7 @@ public class diseaseDetails extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try{
-                    AlertDialog.Builder alert = new AlertDialog.Builder(mContext);
+                    AlertDialog.Builder alert = new AlertDialog.Builder(mContext,R.style.AlertDialogCustom);
 
                     alert.setTitle("প্রতিকার পরিবর্তন");
                     alert.setMessage(disease.getDiseaseName());
