@@ -60,7 +60,7 @@ public class farmerSearchActivity extends AppCompatActivity {
         super.onResume();
         farmerinfolistview = (ListView) findViewById(R.id.farmerinfolistview);
         EditText searcheditbox = (EditText) findViewById(R.id.searcheditbox);
-bottomNavigationHandler();
+         bottomNavigationHandler();
 
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;

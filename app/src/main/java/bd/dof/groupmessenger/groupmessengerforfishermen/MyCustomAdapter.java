@@ -1,7 +1,9 @@
 package bd.dof.groupmessenger.groupmessengerforfishermen;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.view.LayoutInflater;
@@ -17,6 +19,9 @@ import android.widget.ListAdapter;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -131,16 +136,27 @@ public class MyCustomAdapter extends BaseAdapter implements ListAdapter {
         holder.phone_call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (ContextCompat.checkSelfPermission(
+                        context, android.Manifest.permission.CALL_PHONE) !=
+                        PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions((Activity) context, new
+                            String[]{android.Manifest.permission.CALL_PHONE}, 0);
+                } else {
+                    context.startActivity(new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + allFarmerInfo.get(position).getPhoneNumber())));
+                }
+//
+//                try {
+//                    Intent intent = new Intent(Intent.ACTION_CALL);
+//                    intent.setData(Uri.parse("tel:" +allFarmerInfo.get(position).getPhoneNumber() ));
+//                    context.startActivity(intent);
+//                }
+//                catch (Exception e)
+//                {
+//                    Toast.makeText(context, e.toString(), Toast.LENGTH_LONG).show();
+//                }
+//
 
-                try {
-                    Intent intent = new Intent(Intent.ACTION_CALL);
-                    intent.setData(Uri.parse("tel:" +allFarmerInfo.get(position).getPhoneNumber() ));
-                    context.startActivity(intent);
-                }
-                catch (Exception e)
-                {
-                    Toast.makeText(context, e.toString(), Toast.LENGTH_LONG).show();
-                }
+
             }
         });
 

@@ -1,19 +1,12 @@
 package bd.dof.groupmessenger.groupmessengerforfishermen;
 
 import android.Manifest;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-
 import android.os.Bundle;
 import android.os.Handler;
-import android.telephony.SmsManager;
-import android.util.Log;
-import android.view.View;
 import android.view.WindowManager;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -28,7 +21,6 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.HomeScreenActivity;
-import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SplashScreenActivity;
 
 public class PhoneNumberValidation extends AppCompatActivity {
 DbHandler db;
