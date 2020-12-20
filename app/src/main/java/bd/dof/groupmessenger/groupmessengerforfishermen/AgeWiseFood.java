@@ -35,6 +35,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.textfield.TextInputEditText;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.Image;
@@ -69,9 +70,7 @@ import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SplashScreenAc
 
 public class AgeWiseFood extends AppCompatActivity {
     private String[] arraySpinner;
-    EditText agePona;
-    EditText ageWeight;
-    EditText agePer;
+    TextInputEditText agePona, ageWeight, agePer;
     ListView list;
     Spinner s;
     ArrayList<String> week = new ArrayList<String>();
@@ -99,9 +98,9 @@ public class AgeWiseFood extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, arraySpinner);
         s.setAdapter(adapter);
-        agePona = (EditText) findViewById(R.id.agePona);
-        ageWeight = (EditText) findViewById(R.id.ageWeight);
-        agePer = (EditText) findViewById(R.id.agePer);
+        agePona =  findViewById(R.id.agePona);
+        ageWeight =  findViewById(R.id.ageWeight);
+        agePer =  findViewById(R.id.agePer);
         list = (ListView) findViewById(R.id.scrolAgeList);
         AppCompatButton agePonaSubmit = findViewById(R.id.agePonaSubmit);
         week.add("মাছের বয়স");

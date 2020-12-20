@@ -37,22 +37,25 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="100dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".7">
+              android:layout_marginTop="15dp"
+            android:background="@drawable/background_border"
+            android:layout_weight=".6">
 
             <EditText
                 android:padding="8dp"
-                android:layout_marginBottom="25dp"
+
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="top"
                 android:inputType="textMultiLine"
                 android:ems="10"
+                android:background="@android:color/transparent"
                 android:id="@+id/addtemplateMsgBox"
                 android:layout_weight="1"
-                android:background="@drawable/smsbg"/>
+            />
         </LinearLayout>
         <include layout="@layout/new_footer_layout" />
     </LinearLayout>
