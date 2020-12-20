@@ -1,385 +1,430 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/smsbg">
+    android:background="#eee"
+    android:orientation="vertical">
 
-
-    <include layout="@layout/row_slim_header" />
-
-    <include layout="@layout/header_timeline" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight=".75"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <include layout="@layout/row_slim_header" />
+
+        <include layout="@layout/header_timeline" />
 
         <LinearLayout
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".2"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingTop="5dp">
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
 
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:padding="6dp">
 
-                        <EditText
-                            android:layout_marginBottom="8dp"
-                            android:hint="আয়তন(শতাংশ)"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+            <ImageView
+                android:id="@+id/pona_mojud_save"
+                android:layout_width="40dp"
 
+                android:layout_height="40dp"
 
-                            android:padding="10dp"
-                            android:inputType="number"
-                            android:id="@+id/ponaArea"
-                            android:background="@drawable/background_border"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                        />
+                android:background="@drawable/saveicon"
+                android:backgroundTint="@color/colorPrimaryDark" />
 
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
 
-
-
-
-
-
-                        <EditText
-                            android:layout_marginBottom="8dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="number"
-
-                            android:padding="10dp"
-                            android:hint="পোনা/শতাংশ"
-                            android:background="@drawable/background_border"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:id="@+id/ponaAmount"
-                           />
-
-
-
-                        <androidx.appcompat.widget.AppCompatButton
-
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textSize="18dp"
-                            android:layout_marginBottom="8dp"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginEnd="6dp"
-                            android:id="@+id/ponaAreaSubmit"
-                            android:background="@drawable/button_background"
-                            android:textColor="@color/textColorPrimary"
-                            android:text="নির্ণয় করুন"/>
-
-
-
+            <ImageView
+                android:id="@+id/pona_mojud_share"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shareicon"
+                android:backgroundTint="@color/colorPrimaryDark" />
 
         </LinearLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="12dp"
+
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/background_border">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ponaArea"
+
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/transparent"
+                android:hint="আয়তন(শতাংশ)"
+                android:inputType="number"
+                android:maxLines="1"
+
+
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/background_border">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ponaAmount"
+
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/transparent"
+                android:hint="পোনা/শতাংশ"
+                android:inputType="number"
+                android:maxLines="1"
+
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/ponaAreaSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_background"
+android:textStyle="bold"
+            android:gravity="center"
+            android:text="নির্ণয় করুন"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="16dp" />
+
+
         <LinearLayout
+            android:id="@+id/countShowlayout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight=".5"
-            android:orientation="vertical"
             android:gravity="center"
+            android:orientation="vertical"
             android:paddingLeft="15dp"
-            android:paddingRight="15dp"
             android:paddingTop="5dp"
-            android:id="@+id/countShowlayout">
+            android:paddingRight="15dp">
+
             <LinearLayout
-                android:layout_marginBottom="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_marginBottom="25dp"
                 android:layout_weight="1"
-                android:orientation="vertical"
                 android:background="@drawable/white_bg"
-                android:paddingLeft="20dp">
+                android:orientation="vertical"
+                android:padding="12dp"
+                >
 
                 <LinearLayout
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
                     android:layout_weight=".13"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5">
+
                         <TextView
+                            android:id="@+id/pona_mojud_katla"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="কাতলা (১৬%)"
-                            android:id="@+id/pona_mojud_katla"/>
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5">
+
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:id="@+id/katla"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text=":০"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":০"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                     </LinearLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
+                    android:padding="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".13"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5">
+
                         <TextView
+                            android:id="@+id/pona_mojud_silva"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="সিলভার(১৪%)"
-                            android:id="@+id/pona_mojud_silva"/>
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5">
+
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:id="@+id/silver"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text=":০"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":০"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                     </LinearLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
+                    android:padding="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".13"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5">
+
                         <TextView
+                            android:id="@+id/pona_mojud_rui"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="রুই(৩০%)"
-                            android:id="@+id/pona_mojud_rui"/>
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5">
+
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:id="@+id/rui"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text=":০"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":০"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                     </LinearLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
+                    android:padding="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".13"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5">
+
                         <TextView
+                            android:id="@+id/pona_mojud_mrigel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="মৃগেল(২৬%)"
-                            android:id="@+id/pona_mojud_mrigel"/>
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5">
+
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:id="@+id/mrigel"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text=":০"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":০"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                     </LinearLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
+                    android:padding="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".13"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5">
+
                         <TextView
+                            android:id="@+id/pona_mojug_kalibaus"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="কালিবাউস(৮%)"
-                            android:id="@+id/pona_mojug_kalibaus"/>
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5">
+
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:id="@+id/kalibaus"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text=":০"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":০"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                     </LinearLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
+                    android:padding="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".13"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5">
+
                         <TextView
+                            android:id="@+id/pona_mojud_puti"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="পুটি (২%)"
-                            android:id="@+id/pona_mojud_puti"/>
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5">
+
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:id="@+id/puti"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text=":০"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":০"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                     </LinearLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
+                    android:padding="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".13"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5">
+
                         <TextView
+                            android:id="@+id/pona_mojud_panggas"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="গ্রাসকার্প (৪%)"
-                            android:id="@+id/pona_mojud_panggas"/>
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5">
+
                         <TextView
+                            android:id="@+id/grasscup"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/grasscup"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text=":০"/>
+                            android:text=":০"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                     </LinearLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
+                    android:padding="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight=".13"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5">
+
                         <TextView
+                            android:id="@+id/pona_mojud_total"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="মোট পোনা"
-                            android:id="@+id/pona_mojud_total"/>
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5">
+
                         <TextView
+                            android:id="@+id/totalPona"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/totalPona"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text=":০"/>
+                            android:text=":০"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
                     </LinearLayout>
 
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:padding="6dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_weight=".25"
-                    android:orientation="horizontal"
-                    android:gravity="center_horizontal">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
 
-                        android:backgroundTint="@color/colorPrimaryDark"
-                           android:tint="@color/colorPrimaryDark"
-                        android:background="@drawable/saveicon"
-                        android:id="@+id/pona_mojud_save"/>
-                    <View
-                        android:layout_width="20dp"
-                        android:layout_height="match_parent">
-                    </View>
-                    <ImageView
-                        android:backgroundTint="@color/colorPrimaryDark"
-                        android:tint="@color/colorPrimaryDark"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/shareicon"
-                        android:id="@+id/pona_mojud_share"/>
-
-                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
 
-        <include layout="@layout/new_footer_layout" />
-
-
     </LinearLayout>
 
-</LinearLayout>
+    <include layout="@layout/new_footer_layout" />
+</RelativeLayout>

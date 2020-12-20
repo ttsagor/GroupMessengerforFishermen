@@ -9,11 +9,12 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
+        android:elevation="16dp"
         android:background="@color/textColorPrimary"
         android:layout_height="60dp"
         app:menu="@menu/new_bottom_menu_home"
         app:itemIconTint="@color/colorPrimaryDark"
-        app:elevation="12dp"
+        app:elevation="60dp"
         app:labelVisibilityMode="labeled"
         app:itemTextColor="@color/colorPrimaryDark"
         app:itemRippleColor="#3F51B5"

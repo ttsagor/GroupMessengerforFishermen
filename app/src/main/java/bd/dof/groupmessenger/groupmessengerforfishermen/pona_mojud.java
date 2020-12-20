@@ -29,6 +29,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.textfield.TextInputEditText;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.Image;
@@ -72,19 +73,10 @@ public class pona_mojud extends AppCompatActivity {
     int ponaAreaText = 0;
     int ponaAmountText = 0;
 
-    TextView katla;
-    TextView silver;
-    TextView rui;
-    TextView mrigel;
-    TextView kalibaus;
-    TextView puti;
-    TextView grasscup;
-    TextView totalPona;
+    TextView katla,silver, rui, mrigel, kalibaus, puti, grasscup, totalPona;
 
-    EditText ponaArea;
-    EditText ponaAmount;
-    ImageView pona_mojud_share;
-    ImageView pona_mojud_save;
+    TextInputEditText ponaArea,ponaAmount;
+    ImageView pona_mojud_share, pona_mojud_save;
     private File pdfFile;
 
     @Override
@@ -93,8 +85,8 @@ public class pona_mojud extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pona_mojud);
 
-        ponaArea = (EditText) findViewById(R.id.ponaArea);
-        ponaAmount = (EditText) findViewById(R.id.ponaAmount);
+        ponaArea =  findViewById(R.id.ponaArea);
+        ponaAmount =  findViewById(R.id.ponaAmount);
 
         katla = (TextView) findViewById(R.id.katla);
         silver = (TextView) findViewById(R.id.silver);
