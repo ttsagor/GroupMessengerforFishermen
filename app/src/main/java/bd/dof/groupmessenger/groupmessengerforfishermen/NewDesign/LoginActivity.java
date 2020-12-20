@@ -10,12 +10,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 import java.util.Objects;
 
 import bd.dof.groupmessenger.groupmessengerforfishermen.R;
 
 public class LoginActivity extends AppCompatActivity {
-    private EditText mobileNumber, password;
+    private TextInputEditText mobileNumber, password;
     private SharedPreferences.Editor editor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

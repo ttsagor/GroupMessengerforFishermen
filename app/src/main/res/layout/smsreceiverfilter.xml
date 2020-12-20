@@ -120,8 +120,8 @@
                     android:id="@+id/catwiserdo"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
-                    android:layout_marginEnd="15dp"
-                    android:layout_weight="1"
+
+                    android:layout_weight="2"
                     android:orientation="horizontal"
                     android:gravity="center"
                     android:background="@drawable/button_background"
@@ -135,7 +135,7 @@
                         android:textColor="@color/textColorPrimary"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="চাষের ধরন ভিত্তিক"
-                        android:textSize="13sp"
+                        android:textSize="16sp"
                         android:gravity="center"
                         android:id="@+id/smsMainFarmingWiseText"/>
                     <RadioButton
@@ -151,6 +151,7 @@
 
 
                 <LinearLayout
+                    android:visibility="gone"
                     android:padding="8dp"
                     android:id="@+id/operatorwiserdo"
                     android:layout_width="0dp"
