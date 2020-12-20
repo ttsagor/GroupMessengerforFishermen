@@ -125,6 +125,11 @@
         <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.KhetrofolFormula" />
         <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.AreaFormula" />
         <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.Setting" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="bd.dof.groupmessenger.groupmessengerforfishermen.com.squareup.picasso"
+            android:exported="false" />
     </application>
 
 </manifest>

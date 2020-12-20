@@ -9,6 +9,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -189,10 +190,10 @@ public class MyCustomAdapter extends BaseAdapter implements ListAdapter {
                     final ImageButton cancel = promptView.findViewById(R.id.cancel);
                     final EditText edt_message = promptView.findViewById(R.id.edt_message);
                     defaultAlert.setCanceledOnTouchOutside(false);
-                    final HashMap<String, String> smsMap = new HashMap<String, String>();
+                    final Map<String, String> smsMap = new HashMap<String, String>();
                     smsMap.put("api_key", "16857887899815422020/12/1101:31:11pmReza & Reza Solution");
                     smsMap.put("sender_id", "867");
-                    smsMap.put("user_email", "minhaz.shatil@gmail.com");
+
                     cancel.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
@@ -209,11 +210,14 @@ public class MyCustomAdapter extends BaseAdapter implements ListAdapter {
 
                                 smsMap.put("message", edt_message.getText().toString());
                                 smsMap.put("mobile_no", allFarmerInfo.get(position).getPhoneNumber());
+                                smsMap.put("user_email", "minhaz.shatil@gmail.com");
                                 ourSmsClient.sendSmsToFarmers(smsMap).enqueue(new Callback<smsResponse>() {
                                     @Override
                                     public void onResponse(Call<smsResponse> call, Response<smsResponse> response) {
+                                        Log.d("log",response.body().getMessage());
                                         if (response.body().getMessage().equals("Successfull")) {
                                             Toast.makeText(context, "Message Send", Toast.LENGTH_SHORT).show();
+                                            defaultAlert.dismiss();
                                         } else {
                                             Toast.makeText(context, "Please try Again !", Toast.LENGTH_SHORT).show();
                                         }
@@ -221,7 +225,8 @@ public class MyCustomAdapter extends BaseAdapter implements ListAdapter {
 
                                     @Override
                                     public void onFailure(Call<smsResponse> call, Throwable t) {
-
+                                        defaultAlert.dismiss();
+                                        Toast.makeText(context, "Please try Again !", Toast.LENGTH_SHORT).show();
                                     }
                                 });
                             }

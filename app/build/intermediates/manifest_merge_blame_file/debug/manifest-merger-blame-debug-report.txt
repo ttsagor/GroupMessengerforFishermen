@@ -267,6 +267,15 @@
 127        <activity android:name="bd.dof.groupmessenger.groupmessengerforfishermen.Setting" />
 127-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:116:9-45
 127-->/Users/admin/Desktop/MossoChasiBatra/GroupMessengerforFishermen/app/src/main/AndroidManifest.xml:116:19-42
-128    </application>
-129
-130</manifest>
+128
+129        <provider
+129-->[com.squareup.picasso:picasso:2.71828] /Users/admin/.gradle/caches/transforms-2/files-2.1/3cd9becb19e9e9922f1fa55938e657ec/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+130            android:name="com.squareup.picasso.PicassoProvider"
+130-->[com.squareup.picasso:picasso:2.71828] /Users/admin/.gradle/caches/transforms-2/files-2.1/3cd9becb19e9e9922f1fa55938e657ec/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+131            android:authorities="bd.dof.groupmessenger.groupmessengerforfishermen.com.squareup.picasso"
+131-->[com.squareup.picasso:picasso:2.71828] /Users/admin/.gradle/caches/transforms-2/files-2.1/3cd9becb19e9e9922f1fa55938e657ec/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+132            android:exported="false" />
+132-->[com.squareup.picasso:picasso:2.71828] /Users/admin/.gradle/caches/transforms-2/files-2.1/3cd9becb19e9e9922f1fa55938e657ec/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+133    </application>
+134
+135</manifest>
