@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/smsbg"
+    android:background="#eee"
     android:orientation="vertical">
 
     <include layout="@layout/row_slim_header" />
@@ -19,72 +19,133 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:gravity="center"
             android:orientation="vertical"
             android:paddingLeft="20dp"
             android:paddingTop="5dp"
             android:paddingRight="20dp">
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
                 android:orientation="vertical">
-
-
-                <EditText
-                    android:id="@+id/area_formula_length"
+                <LinearLayout
+                    android:layout_marginBottom="6dp"
+                    android:padding="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/background_border"
-                    android:hint="পুকুরের দৈর্ঘ্য(ফুট)"
-                    android:inputType="number"
-                    android:minWidth="80dp"
-                    android:padding="10dp"
-                    android:paddingLeft="2dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
+                    android:gravity="end"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/area_formula_height"
+                    <ImageView
+                        android:id="@+id/area_formula_SaveImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/saveicon"
+                        android:backgroundTint="@color/colorPrimaryDark" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"></View>
+
+                    <ImageView
+                        android:id="@+id/area_formula_ShareImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shareicon"
+                        android:backgroundTint="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayoutStyle"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/background_border"
-                    android:hint="পুকুরের উচ্চতা(ফুট)"
-                    android:inputType="number"
-                    android:minWidth="80dp"
-                    android:padding="10dp"
-                    android:paddingLeft="2dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:layout_height="45dp"
+                    android:layout_marginStart="12dp"
+
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/background_border">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/area_formula_length"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@android:color/transparent"
+                        android:hint="পুকুরের দৈর্ঘ্য(ফুট)"
+                        android:inputType="number"
+                        android:maxLines="1"
 
 
-                <EditText
-                    android:id="@+id/area_formula_width"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayoutStyle"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/background_border"
-                    android:hint="পুকুরের প্রস্থ(ফুট)"
-                    android:inputType="number"
-                    android:minWidth="80dp"
-                    android:padding="10dp"
-                    android:paddingLeft="2dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:layout_height="45dp"
+                    android:layout_marginStart="12dp"
+
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/background_border">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/area_formula_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@android:color/transparent"
+                        android:hint="পুকুরের উচ্চতা(ফুট)"
+                        android:inputType="number"
+                        android:maxLines="1"
+
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="12dp"
+
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/background_border">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/area_formula_width"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@android:color/transparent"
+                        android:hint="পুকুরের প্রস্থ(ফুট)"
+                        android:inputType="number"
+                        android:maxLines="1"
+
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
 
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/area_formula_agePonaSubmit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="15dp"
                     android:background="@drawable/button_background"
                     android:text="নির্ণয় করুন"
+                    android:textStyle="bold"
                     android:textColor="@color/windowBackground"
-                    android:textSize="15dp" />
+                    android:textSize="16dp" />
 
 
             </LinearLayout>
@@ -207,32 +268,7 @@
                         android:layout_weight="0.05"></View>
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".1"
-                    android:gravity="center_horizontal"
-                    android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/area_formula_SaveImg"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/saveicon"
-                        android:backgroundTint="@color/colorPrimaryDark" />
-
-                    <View
-                        android:layout_width="20dp"
-                        android:layout_height="match_parent"></View>
-
-                    <ImageView
-                        android:id="@+id/area_formula_ShareImg"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/shareicon"
-                        android:backgroundTint="@color/colorPrimaryDark" />
-
-                </LinearLayout>
 
 
             </LinearLayout>

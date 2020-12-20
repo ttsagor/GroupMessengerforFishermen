@@ -21,6 +21,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.textfield.TextInputEditText;
 
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
@@ -41,9 +42,7 @@ public class AreaFormula extends AppCompatActivity {
     TextView area_formula_hector_text;
     TextView area_formula_hector;
 
-    EditText area_formula_length;
-    EditText area_formula_height;
-    EditText area_formula_width;
+    TextInputEditText area_formula_length, area_formula_height, area_formula_width;
 
     AppCompatButton area_formula_agePonaSubmit;
 
@@ -66,9 +65,9 @@ public class AreaFormula extends AppCompatActivity {
         area_formula_hector_text = (TextView) findViewById(R.id.area_formula_hector_text);
         area_formula_hector = (TextView) findViewById(R.id.area_formula_hector);
 
-        area_formula_length = (EditText) findViewById(R.id.area_formula_length);
-        area_formula_height = (EditText) findViewById(R.id.area_formula_height);
-        area_formula_width = (EditText) findViewById(R.id.area_formula_width);
+        area_formula_length =  findViewById(R.id.area_formula_length);
+        area_formula_height =  findViewById(R.id.area_formula_height);
+        area_formula_width =  findViewById(R.id.area_formula_width);
 
         area_formula_ShareImg = (ImageView) findViewById(R.id.area_formula_ShareImg);
 

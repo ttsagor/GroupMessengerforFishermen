@@ -21,6 +21,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.textfield.TextInputEditText;
 
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
@@ -40,8 +41,7 @@ public class KhetrofolFormula extends AppCompatActivity {
     TextView khetrofol_hector_text;
     TextView khetrofol_hector;
 
-    EditText khetrofol_length;
-    EditText khetrofol_width;
+    TextInputEditText khetrofol_length, khetrofol_width;
 
     AppCompatButton khetrofol_agePonaSubmit;
 
@@ -69,8 +69,8 @@ bottomNavigationHandler();
 
         khetrofol_agePonaSubmit =  findViewById(R.id.khetrofol_agePonaSubmit);
 
-        khetrofol_length = (EditText) findViewById(R.id.khetrofol_length);
-        khetrofol_width = (EditText) findViewById(R.id.khetrofol_width);
+        khetrofol_length =  findViewById(R.id.khetrofol_length);
+        khetrofol_width = findViewById(R.id.khetrofol_width);
 
         khetrofol_ShareImg = (ImageView) findViewById(R.id.khetrofol_ShareImg);
         String fontPath = "fonts/SolaimanLipi.ttf";

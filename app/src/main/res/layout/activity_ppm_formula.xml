@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/smsbg"
+    android:background="#eee"
     android:orientation="vertical">
 
     <include layout="@layout/row_slim_header" />
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight=".75"
-        android:gravity="center"
+
         android:orientation="vertical">
 
         <LinearLayout
@@ -24,84 +24,147 @@
             android:gravity="center"
             android:orientation="vertical"
             android:paddingLeft="20dp"
-            android:paddingTop="5dp"
             android:paddingRight="20dp">
 
             <LinearLayout
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="15dp"
+                android:padding="6dp"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
+                android:layout_height="wrap_content"
 
-                >
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ppm_SaveImg"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/saveicon"
+                    android:backgroundTint="@color/colorPrimaryDark" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/ppm_ShareImg"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shareicon"
+
+                    android:backgroundTint="@color/colorPrimaryDark" />
 
 
-                <EditText
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="12dp"
+
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/background_border">
+
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/ppm_length"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/background_border"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
                     android:hint=" দৈর্ঘ্য (ফুট)"
                     android:inputType="number"
-                    android:minWidth="80dp"
-                    android:padding="10dp"
-                    android:paddingLeft="2dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:maxLines="1"
 
-                <EditText
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="12dp"
+
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/background_border">
+
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/ppm_height"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/background_border"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
                     android:hint="উচ্চতা(ফুট)"
                     android:inputType="number"
-                    android:minWidth="80dp"
-                    android:padding="10dp"
-                    android:paddingLeft="2dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:maxLines="1"
 
 
-                <EditText
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="12dp"
+
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/background_border">
+
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/ppm_width"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/background_border"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
                     android:hint="প্রস্থ(ফুট)"
                     android:inputType="number"
-                    android:minWidth="80dp"
-                    android:padding="10dp"
-                    android:paddingLeft="2dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:maxLines="1"
 
 
-                <EditText
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="12dp"
+
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/background_border">
+
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/ppm_density"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/background_border"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
                     android:hint="মাত্র (পিপিএম)"
                     android:inputType="number"
-                    android:minWidth="80dp"
-                    android:padding="10dp"
-                    android:paddingLeft="2dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:maxLines="1"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
 
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/ppm_agePonaSubmit"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginEnd="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
                     android:background="@drawable/button_background"
                     android:text="নির্ণয় করুন"
+                    android:textStyle="bold"
                     android:textColor="@color/windowBackground"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
 
                 <View
@@ -112,41 +175,41 @@
                 <LinearLayout
                     android:id="@+id/countShowlayout"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="50dp"
-                    android:layout_weight=".3"
+                  android:padding="15dp"
                     android:background="@drawable/white_bg"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:paddingLeft="20dp"
                     android:paddingTop="5dp"
-                    android:paddingRight="20dp">
+                    android:paddingRight="10dp">
 
                     <LinearLayout
 
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+
                         android:orientation="vertical">
 
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight=".6"
+                            android:layout_height="wrap_content"
+
                             android:orientation="horizontal">
 
                             <LinearLayout
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_weight="1"
+
                                 android:orientation="vertical">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight=".04"
+                                    android:layout_weight=".02"
                                     android:orientation="horizontal"
                                     android:paddingTop="10dp">
 
@@ -184,9 +247,10 @@
                                 </LinearLayout>
 
                                 <LinearLayout
+                                    android:layout_marginTop="16dp"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight=".04"
+                                    android:layout_weight=".02"
                                     android:orientation="horizontal">
 
                                     <LinearLayout
@@ -221,41 +285,14 @@
                                         android:layout_weight=".1" />
                                 </LinearLayout>
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight=".04"
-                                    android:gravity="center_horizontal"
-                                    android:orientation="horizontal">
 
-                                    <ImageView
-                                        android:id="@+id/ppm_SaveImg"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:background="@drawable/saveicon"
-                                        android:backgroundTint="@color/colorPrimaryDark" />
-
-                                    <View
-                                        android:layout_width="20dp"
-                                        android:layout_height="match_parent" />
-
-                                    <ImageView
-                                        android:id="@+id/ppm_ShareImg"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:background="@drawable/shareicon"
-
-                                        android:backgroundTint="@color/colorPrimaryDark" />
-
-
-                                </LinearLayout>
                             </LinearLayout>
 
                         </LinearLayout>
 
 
                     </LinearLayout>
-                </LinearLayout>
+
 
 
             </LinearLayout>

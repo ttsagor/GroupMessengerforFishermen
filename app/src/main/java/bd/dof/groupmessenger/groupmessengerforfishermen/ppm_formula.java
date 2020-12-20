@@ -21,6 +21,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.textfield.TextInputEditText;
 
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
@@ -33,24 +34,15 @@ import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SplashScreenAc
 
 public class ppm_formula extends AppCompatActivity {
 
-    TextView ppm_length_text;
-    TextView ppm_height_text;
-    TextView ppm_width_text;
-    TextView ppm_density_text;
     TextView ppm_area_text;
     TextView ppm_area;
     TextView ppm_med_quantity_text;
     TextView ppm_med_quantity;
-    EditText ppm_length;
-    EditText ppm_height;
-    EditText ppm_width;
-    EditText ppm_density;
+    TextInputEditText ppm_length, ppm_height, ppm_width, ppm_density;
     AppCompatButton ppm_agePonaSubmit;
     ImageView ppm_SaveImg;
     ImageView ppm_ShareImg;
-    TextView top_farming_banner_ppm;
-    TextView top_head_app_fish_farming_ppm;
-    TextView top_head_fish_farming_ppm;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -63,13 +55,13 @@ public class ppm_formula extends AppCompatActivity {
         ppm_area = (TextView) findViewById(R.id.ppm_area);
         ppm_med_quantity_text = (TextView) findViewById(R.id.ppm_med_quantity_text);
         ppm_med_quantity = (TextView) findViewById(R.id.ppm_med_quantity);
-bottomNavigationHandler();
-        ppm_length = (EditText) findViewById(R.id.ppm_length);
-        ppm_height = (EditText) findViewById(R.id.ppm_height);
-        ppm_width = (EditText) findViewById(R.id.ppm_width);
-        ppm_density = (EditText) findViewById(R.id.ppm_density);
+        bottomNavigationHandler();
+        ppm_length = findViewById(R.id.ppm_length);
+        ppm_height = findViewById(R.id.ppm_height);
+        ppm_width = findViewById(R.id.ppm_width);
+        ppm_density = findViewById(R.id.ppm_density);
 
-        ppm_agePonaSubmit =  findViewById(R.id.ppm_agePonaSubmit);
+        ppm_agePonaSubmit = findViewById(R.id.ppm_agePonaSubmit);
 
         ppm_SaveImg = (ImageView) findViewById(R.id.ppm_SaveImg);
         ppm_ShareImg = (ImageView) findViewById(R.id.ppm_ShareImg);
@@ -82,18 +74,19 @@ bottomNavigationHandler();
                     int ppm_width_int = Integer.parseInt(ppm_width.getText().toString());
                     int ppm_density_int = Integer.parseInt(ppm_density.getText().toString());
 
-                    double area_out = (ppm_length_int*ppm_height_int*ppm_width_int)*28.3;
-                    double med_q_out = (area_out*ppm_density_int)/1000;
+                    double area_out = (ppm_length_int * ppm_height_int * ppm_width_int) * 28.3;
+                    double med_q_out = (area_out * ppm_density_int) / 1000;
 
                     ppm_area.setText(pona_mojud.engToBng(String.format("%.3f", area_out)));
                     ppm_med_quantity.setText(pona_mojud.engToBng(String.format("%.3f", med_q_out)));
 
-                    if(getCurrentFocus()!=null) {
+                    if (getCurrentFocus() != null) {
                         InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
                         inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
                     }
 
-                }catch (Exception e){}
+                } catch (Exception e) {
+                }
             }
         });
 
@@ -106,15 +99,15 @@ bottomNavigationHandler();
                     Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                     sharingIntent.setType("text/plain");
 
-                    String des = "পুকুর/চৌবাচ্চার  দৈর্ঘ্য : " +pona_mojud.engToBng(ppm_length.getText().toString())+"\n"+
-                            "পুকুর/চৌবাচ্চার  উচ্চতা: " + pona_mojud.engToBng(ppm_height.getText().toString())+"\n"+
-                            "পুকুর/চৌবাচ্চার  প্রস্থ: " + pona_mojud.engToBng(ppm_width.getText().toString())+"\n"+
-                            "মাত্র (পিপিএম): " + pona_mojud.engToBng(ppm_density.getText().toString())+"\n"+
-                            "পুকুর/চৌবাচ্চার আয়তন (লিটার): " + ppm_area.getText()+"\n"+
+                    String des = "পুকুর/চৌবাচ্চার  দৈর্ঘ্য : " + pona_mojud.engToBng(ppm_length.getText().toString()) + "\n" +
+                            "পুকুর/চৌবাচ্চার  উচ্চতা: " + pona_mojud.engToBng(ppm_height.getText().toString()) + "\n" +
+                            "পুকুর/চৌবাচ্চার  প্রস্থ: " + pona_mojud.engToBng(ppm_width.getText().toString()) + "\n" +
+                            "মাত্র (পিপিএম): " + pona_mojud.engToBng(ppm_density.getText().toString()) + "\n" +
+                            "পুকুর/চৌবাচ্চার আয়তন (লিটার): " + ppm_area.getText() + "\n" +
                             "দ্রবীভুত পদার্থ বা ঔষধের পরিমান: " + ppm_med_quantity.getText();
 
-                    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,"পিপিএম নির্নয় ফরমুলা");
-                    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT,des);
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "পিপিএম নির্নয় ফরমুলা");
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, des);
                     startActivity(Intent.createChooser(sharingIntent, "Share via"));
                 } catch (Exception e) {
                     //Toast.makeText(getApplicationContext(),e.toString(),Toast.LENGTH_LONG).show();
@@ -134,11 +127,12 @@ bottomNavigationHandler();
         title.setText("পিপিএম নির্নয় ফরমুলা ");
 
     }
+
     private void bottomNavigationHandler() {
 
         SharedPreferences pref = this.getApplicationContext().getSharedPreferences("MyPref", 0);
-        final String  log = pref.getString("log", "");
-        final SharedPreferences.Editor editor   = pref.edit();
+        final String log = pref.getString("log", "");
+        final SharedPreferences.Editor editor = pref.edit();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         bottomNavigationView.getMenu().clear();
         bottomNavigationView.inflateMenu(R.menu.new_bottom_menu_home);
@@ -149,7 +143,6 @@ bottomNavigationHandler();
             bottomNavigationView.getMenu().getItem(3).setTitle("লগআউট");
         } else {
             bottomNavigationView.getMenu().removeItem(R.id.menu_profile);
-
 
 
         }
