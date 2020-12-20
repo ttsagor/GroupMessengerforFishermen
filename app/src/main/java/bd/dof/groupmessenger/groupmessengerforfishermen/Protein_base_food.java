@@ -29,6 +29,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.textfield.TextInputEditText;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.Image;
@@ -70,8 +71,8 @@ public class Protein_base_food extends AppCompatActivity {
     TextView rice;
     TextView totalfoodSum;
 
-    EditText proteinAmount;
-    EditText totalfood;
+    TextInputEditText proteinAmount;
+    TextInputEditText totalfood;
     ImageView protein_base_share;
     ImageView protein_base_save;
     private File pdfFile;
@@ -83,8 +84,8 @@ public class Protein_base_food extends AppCompatActivity {
 
         setContentView(R.layout.activity_protein_base_food2);
 
-        proteinAmount = (EditText) findViewById(R.id.proteinAmount);
-        totalfood = (EditText) findViewById(R.id.totalfood);
+        proteinAmount = findViewById(R.id.proteinAmount);
+        totalfood =  findViewById(R.id.totalfood);
 
         fishmeal = (TextView) findViewById(R.id.fishmeal);
         khoil = (TextView) findViewById(R.id.khoil);
@@ -224,7 +225,7 @@ bottomNavigationHandler();
         });
 
         EditText title = findViewById(R.id.title);
-        title.setText("প্রোটিনের জন্য খাদ্য প্রস্তুত");
+        title.setText("প্রোটিনের প্রস্তুত");
     }
 
     void calculate()

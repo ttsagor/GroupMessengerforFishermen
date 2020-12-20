@@ -37,6 +37,7 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.textfield.TextInputEditText;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Element;
@@ -79,9 +80,7 @@ public class khaddo_prooig extends AppCompatActivity {
     TextView foodAmount;
     TextView totalWeigt;
 
-    EditText totalFish;
-    EditText avgWeight;
-    EditText foodPercent;
+    TextInputEditText totalFish, avgWeight, foodPercent;
     ImageView khaddo_prooig_share_img;
     ImageView khaddo_prooig_save_img;
     int totalFishAmount = 0;
@@ -103,9 +102,9 @@ public class khaddo_prooig extends AppCompatActivity {
         setContentView(R.layout.activity_khaddo_prooig);
 
 
-        totalFish = (EditText) findViewById(R.id.totalFish);
-        avgWeight = (EditText) findViewById(R.id.avgWeight);
-        foodPercent = (EditText) findViewById(R.id.foodPercent);
+        totalFish =  findViewById(R.id.totalFish);
+        avgWeight = findViewById(R.id.avgWeight);
+        foodPercent =  findViewById(R.id.foodPercent);
 
         foodAmount = (TextView) findViewById(R.id.foodAmount);
         totalWeigt = (TextView) findViewById(R.id.totalWeigt);

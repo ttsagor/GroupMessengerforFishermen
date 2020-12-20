@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/smsbg">
+    android:background="#eee">
 
     <include layout="@layout/row_slim_header" />
 
@@ -15,7 +15,31 @@
         android:layout_weight=".75"
         android:orientation="vertical"
         android:gravity="center">
+        <LinearLayout
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            android:gravity="end">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/saveicon"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:id="@+id/protein_base_save"/>
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent">
+            </View>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shareicon"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:id="@+id/protein_base_share"/>
 
+        </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -27,61 +51,73 @@
 
 
 
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/background_border">
 
-                    <LinearLayout
-
-                        android:layout_marginTop="12dp"
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/proteinAmount"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                  >
-                        <EditText
-                            android:padding="10dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-
-                            android:inputType="number"
-                            android:id="@+id/proteinAmount"
-                            android:background="@drawable/background_border"
-                            android:paddingLeft="2dp"
-                            android:hint="প্রোটিনের কাঙ্ক্ষিত পরিমাণ (শতাংশে) "
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            />
+                        android:layout_height="45dp"
+                        android:background="@android:color/transparent"
+                        android:hint="প্রোটিনের কাঙ্ক্ষিত পরিমাণ (শতাংশে) "
+                        android:inputType="number"
+                        android:maxLines="1"
 
 
-                </LinearLayout>
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
 
 
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/background_border">
 
-                    <LinearLayout
-                        android:layout_marginTop="8dp"
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/totalfood"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                       >
-                        <EditText
-                            android:padding="10dp"
-                            android:hint="মোট খাদ্যের পরিমাণ (কেজি)"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:inputType="number"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:background="@drawable/background_border"
-                            android:paddingLeft="2dp"
-                            android:id="@+id/totalfood"/>
+                        android:layout_height="45dp"
+                        android:background="@android:color/transparent"
+                        android:hint="মোট খাদ্যের পরিমাণ (কেজি)"
+                        android:inputType="number"
+                        android:maxLines="1"
 
-                </LinearLayout>
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
 
 
                         <androidx.appcompat.widget.AppCompatButton
                             android:layout_marginStart="8dp"
                             android:layout_marginEnd="8dp"
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
-
-                            android:layout_marginTop="8dp"
+                            android:layout_height="45dp"
+android:textStyle="bold"
+                           android:layout_marginTop="6dp"
                             android:id="@+id/proteinAmountButton"
                             android:background="@drawable/button_background"
                             android:textColor="@color/windowBackground"
-                            android:textSize="15dp"
+                            android:textSize="16dp"
                             android:text="নির্ণয় করুন"/>
 
 
@@ -264,30 +300,7 @@
                     </LinearLayout>
 
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".3"
-                    android:orientation="horizontal"
-                    android:gravity="center_horizontal">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/saveicon"
-                        android:backgroundTint="@color/colorPrimaryDark"
-                        android:id="@+id/protein_base_save"/>
-                    <View
-                        android:layout_width="20dp"
-                        android:layout_height="match_parent">
-                    </View>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/shareicon"
-                        android:backgroundTint="@color/colorPrimaryDark"
-                        android:id="@+id/protein_base_share"/>
 
-                </LinearLayout>
 
             </LinearLayout>
 

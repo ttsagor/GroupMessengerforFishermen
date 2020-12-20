@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/smsbg"
+    android:background="#eee"
     android:orientation="vertical">
 <LinearLayout
     android:layout_width="match_parent"
@@ -19,67 +19,127 @@
         android:layout_weight=".75"
         android:gravity="center"
         android:orientation="vertical">
-
         <LinearLayout
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
+            android:gravity="end"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:id="@+id/khaddo_prooig_save_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/saveicon" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/khaddo_prooig_share_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:background="@drawable/shareicon" />
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
             android:gravity="center"
             android:orientation="vertical"
-            android:paddingLeft="20dp"
+            android:paddingLeft="10dp"
             android:paddingTop="5dp"
-            android:paddingRight="20dp">
+            android:paddingRight="10dp">
 
 
-            <EditText
-                android:id="@+id/totalFish"
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutStyle"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/background_border"
-                android:hint="মাছের সংখ্যা"
-                android:inputType="number"
-                android:minWidth="80dp"
-                android:padding="10dp"
-                android:paddingLeft="2dp"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:layout_height="45dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/background_border">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/totalFish"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
+                    android:hint="মাছের সংখ্যা"
+                    android:inputType="number"
+                    android:maxLines="1"
 
 
-            <EditText
-                android:id="@+id/avgWeight"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutStyle"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/background_border"
-                android:hint="গড় ওজন (গ্রাম)"
-                android:inputType="number"
-                android:minWidth="80dp"
-                android:padding="10dp"
-                android:paddingLeft="2dp"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:layout_height="45dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/background_border">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/avgWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
+                    android:hint="গড় ওজন (গ্রাম)"
+                    android:inputType="number"
+                    android:maxLines="1"
 
 
-            <EditText
-                android:id="@+id/foodPercent"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutStyle"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/background_border"
-                android:hint="খাদ্য হার(%)"
-                android:inputType="number"
-                android:minWidth="80dp"
-                android:padding="10dp"
-                android:paddingLeft="2dp"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:layout_height="45dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/background_border">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/foodPercent"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
+                    android:hint="খাদ্য হার(%)"
+                    android:inputType="number"
+                    android:maxLines="1"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/foodPercentButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="6dp"
-                android:layout_marginEnd="6dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/button_background"
                 android:minWidth="90dp"
@@ -183,34 +243,7 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".05"
-                    android:layout_marginBottom="10dp"
-                    android:gravity="center_horizontal"
-                    android:orientation="horizontal">
 
-                    <ImageView
-                        android:backgroundTint="@color/colorPrimaryDark"
-                        android:id="@+id/khaddo_prooig_save_img"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/saveicon" />
-
-                    <View
-                        android:layout_width="20dp"
-                        android:layout_height="match_parent"></View>
-
-                    <ImageView
-                        android:id="@+id/khaddo_prooig_share_img"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/colorPrimaryDark"
-                        android:background="@drawable/shareicon" />
-
-                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
