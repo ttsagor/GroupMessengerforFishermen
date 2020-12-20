@@ -63,8 +63,7 @@ public class recpiant_limit extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recpiant_limit);
         mContext = this;
@@ -75,7 +74,7 @@ public class recpiant_limit extends AppCompatActivity {
         {
             message =(String) b.get("message");
         }
-bottomNavigationHandler();
+        bottomNavigationHandler();
         final TextView title = (TextView) findViewById(R.id.limit_title_total_count);
         final EditText limit_start_point = (EditText) findViewById(R.id.limit_start_point);
         final EditText limit_end_point = (EditText) findViewById(R.id.limit_end_point);

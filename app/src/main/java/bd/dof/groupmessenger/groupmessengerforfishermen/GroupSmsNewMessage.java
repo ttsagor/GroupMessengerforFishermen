@@ -7,6 +7,7 @@ import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,8 +24,12 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+import bd.dof.groupmessenger.groupmessengerforfishermen.API.OurSmsClient;
+import bd.dof.groupmessenger.groupmessengerforfishermen.API.OurSmsConnection;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.BaboharbidiActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ComingSoonActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.EditUserActivity;
@@ -33,6 +38,10 @@ import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.LoginActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.ProfileActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SotorkotaActivity;
 import bd.dof.groupmessenger.groupmessengerforfishermen.NewDesign.SplashScreenActivity;
+import bd.dof.groupmessenger.groupmessengerforfishermen.Response.smsResponse;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class GroupSmsNewMessage extends AppCompatActivity {
     String message = "";
@@ -41,13 +50,14 @@ public class GroupSmsNewMessage extends AppCompatActivity {
     String wardID = "";
     DbHandler dbc;
     TextView GroupSmsNewMessageTotalFarme;
-
+    OurSmsClient ourSmsClient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_group_sms_new_message);
+        ourSmsClient = OurSmsConnection.cteateService(OurSmsClient.class);
         findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,6 +84,15 @@ public class GroupSmsNewMessage extends AppCompatActivity {
         final AppCompatButton GroupSmsNewMessageSend = findViewById(R.id.GroupSmsNewMessageSend);
         final AppCompatButton GroupSmsNewMessageSave = findViewById(R.id.GroupSmsNewMessageSave);
         final EditText GroupSmsNewMessageText = (EditText) findViewById(R.id.GroupSmsNewMessageText);
+ /**
+ Number List
+  */
+        final StringBuffer output = new StringBuffer();
+
+        for (int i = 0; i < groupsmsfilter.finalRecipient.size(); i++) {
+            output.append(groupsmsfilter.finalRecipient.get(i).getPhoneNumber()+",");
+        }
+        Log.d("filter", String.valueOf(output));
         GroupSmsNewMessageTotalFarme.setText(GroupSmsNewMessageTotalFarme.getText() + " " + pona_mojud.engToBng(String.valueOf(groupsmsfilter.finalRecipient.size())));
         Intent iin = getIntent();
         Bundle b = iin.getExtras();
@@ -87,6 +106,9 @@ public class GroupSmsNewMessage extends AppCompatActivity {
         GroupSmsNewMessageSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                final Map<String, String> smsMap = new HashMap<String, String>();
+                smsMap.put("api_key", "16857887899815422020/12/1101:31:11pmReza & Reza Solution");
+                smsMap.put("sender_id", "867");
                 List<FarmerInfoModel> farmerInfoList = groupsmsfilter.finalRecipient;
 
                /* if(GroupSmsNewMessageText.getText().length()>160)
@@ -95,11 +117,34 @@ public class GroupSmsNewMessage extends AppCompatActivity {
                 }
                 else*/
                 if (farmerInfoList.size() > 0 && GroupSmsNewMessageText.getText().length() > 0) {
-                    Intent i = new Intent(GroupSmsNewMessage.this, recpiant_limit.class);
-                    i.putExtra("message", GroupSmsNewMessageText.getText().toString());
-                    startActivity(i);
+//                    Intent i = new Intent(GroupSmsNewMessage.this, recpiant_limit.class);
+//                    i.putExtra("message", GroupSmsNewMessageText.getText().toString());
+//                    startActivity(i);
+                    smsMap.put("message", GroupSmsNewMessageText.getText().toString());
+                    smsMap.put("mobile_no", String.valueOf(output));
+                    smsMap.put("user_email", "minhaz.shatil@gmail.com");
+                    ourSmsClient.sendSmsToFarmers(smsMap).enqueue(new Callback<smsResponse>() {
+                        @Override
+                        public void onResponse(Call<smsResponse> call, Response<smsResponse> response) {
+                            Log.d("log",response.body().getMessage());
+                            if (response.body().getMessage().equals("Successfull")) {
+                                Toast.makeText(getApplicationContext(), "Message Send", Toast.LENGTH_SHORT).show();
+
+                            } else {
+                                Toast.makeText(getApplicationContext(), "Please try Again !", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+
+                        @Override
+                        public void onFailure(Call<smsResponse> call, Throwable t) {
+
+                            Toast.makeText(getApplicationContext(), "Please try Again !", Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 }
-            }
+
+                }
+
         });
         GroupSmsNewMessageSave.setOnClickListener(new View.OnClickListener() {
             @Override
