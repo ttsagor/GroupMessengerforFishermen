@@ -86,7 +86,7 @@ public class GroupSmsNewMessage extends AppCompatActivity {
         final EditText GroupSmsNewMessageText = (EditText) findViewById(R.id.GroupSmsNewMessageText);
  /**
  Number List
-  */
+  **/
         final StringBuffer output = new StringBuffer();
 
         for (int i = 0; i < groupsmsfilter.finalRecipient.size(); i++) {
