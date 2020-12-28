@@ -132,25 +132,25 @@ public class MainActivity extends AppCompatActivity {
         allUnion = db.getAllUnion(MainActivity.divisionID,MainActivity.districtID,MainActivity.upazillaID);
         allFarmerInfo = db.getAllFarmerInfoBy();
 
-        LinearLayout groupsms = (LinearLayout) findViewById(R.id.groupsms);
-        LinearLayout search = (LinearLayout) findViewById(R.id.search);
-        LinearLayout inventor = (LinearLayout) findViewById(R.id.inventor);
-        LinearLayout adduser = (LinearLayout) findViewById(R.id.adduser);
-        LinearLayout addtemplate = (LinearLayout) findViewById(R.id.addtemplate);
-        LinearLayout farming = (LinearLayout) findViewById(R.id.farming);
-        LinearLayout disease = (LinearLayout) findViewById(R.id.disease);
-        LinearLayout settings = (LinearLayout) findViewById(R.id.settings);
+        LinearLayout groupsms =  findViewById(R.id.groupsms);
+        LinearLayout search = findViewById(R.id.search);
+        LinearLayout inventor =  findViewById(R.id.inventor);
+        LinearLayout adduser =  findViewById(R.id.adduser);
+        LinearLayout addtemplate =  findViewById(R.id.addtemplate);
+        LinearLayout farming =  findViewById(R.id.farming);
+        LinearLayout disease =  findViewById(R.id.disease);
+        LinearLayout settings =  findViewById(R.id.settings);
 
-        TextView smsMainText = (TextView) findViewById(R.id.smsMainText);
-        TextView searchMainText = (TextView) findViewById(R.id.searchMainText);
-        TextView farmingMainText = (TextView) findViewById(R.id.farmingMainText);
-        TextView disMainText = (TextView) findViewById(R.id.disMainText);
-        TextView invoMainText = (TextView) findViewById(R.id.invoMainText);
-        TextView top_head = (TextView) findViewById(R.id.top_head);
-        TextView top_head_app = (TextView) findViewById(R.id.top_head_app);
-        TextView addtemplatetext = (TextView) findViewById(R.id.addtemplatetext);
-        TextView addusertext = (TextView) findViewById(R.id.addusertext);
-        TextView settingicontext = (TextView) findViewById(R.id.settingicontext);
+        TextView smsMainText = findViewById(R.id.smsMainText);
+        TextView searchMainText =  findViewById(R.id.searchMainText);
+        TextView farmingMainText = findViewById(R.id.farmingMainText);
+        TextView disMainText =  findViewById(R.id.disMainText);
+        TextView invoMainText =  findViewById(R.id.invoMainText);
+        TextView top_head =  findViewById(R.id.top_head);
+        TextView top_head_app = findViewById(R.id.top_head_app);
+        TextView addtemplatetext =  findViewById(R.id.addtemplatetext);
+        TextView addusertext = findViewById(R.id.addusertext);
+        TextView settingicontext = findViewById(R.id.settingicontext);
 
         String fontPath = "fonts/SolaimanLipi.ttf";
         Typeface tf;

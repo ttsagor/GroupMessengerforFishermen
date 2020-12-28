@@ -46,7 +46,7 @@ SystemInformationModel nSystemInfo;
                 //Do some thing after 100ms
                 startActivity(new Intent(PhoneNumberValidation.this, HomeScreenActivity.class));
             }
-        }, 5000);
+        }, 4000);
 
 
 
