@@ -34,9 +34,12 @@ import bd.dof.groupmessenger.groupmessengerforfishermen.disease;
 import bd.dof.groupmessenger.groupmessengerforfishermen.fishFarming;
 
 public class HomeScreenActivity extends AppCompatActivity implements View.OnClickListener {
-    public static String divisionID = "10";
-    public static String districtID = "78";
-    public static String upazillaID = "66";
+//    public static String divisionID = "10";
+//    public static String districtID = "78";
+//    public static String upazillaID = "66";
+    public static String divisionID;
+    public static String districtID;
+    public static String upazillaID;
     public static ArrayList<FarmerInfoModel> allFarmerInfo = new ArrayList<FarmerInfoModel>();
     public static ArrayList<UnionModel> allUnion = new ArrayList<UnionModel>();
     public static String log;
@@ -48,7 +51,21 @@ public class HomeScreenActivity extends AppCompatActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
         SharedPreferences pref = HomeScreenActivity.this.getApplicationContext().getSharedPreferences("MyPref", 0);
+        /**
+         *                editor.putString("division_id",response.body().get(0).getDivision_id() );
+         *                         editor.putString("district_id", response.body().get(0).getDistrict_id());
+         *                         editor.putString("upazilla_id", response.body().get(0).getUpazilla_id());
+         *                         editor.putString("user_name", response.body().get(0).getUser_name());
+         *                         editor.putString("user_phone", response.body().get(0).getUser_phone());
+         *                         editor.putString("user_password", response.body().get(0).getUser_password());
+         *                         editor.putString("status", response.body().get(0).getUser_password());
+         *                         editor.putString("date", response.body().get(0).getDate());
+         *                         editor.putString("time",response.body().get(0).getTime());
+         */
         log = pref.getString("log", "");
+       districtID =   pref.getString("district_id", "");
+       upazillaID = pref.getString("upazilla_id", "");
+       divisionID =  pref.getString("division_id", "");
         editor = pref.edit();
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS}, 1);
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 1);
